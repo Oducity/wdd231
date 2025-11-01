@@ -1,4 +1,4 @@
-:root {
+/*:root {
     --title-color: #3C096C;
     --header-font: verdana, Geneva, Tahoma, sans-serif;
 }
@@ -28,7 +28,9 @@ header span {
     font-size: 1.6rem;
     color: var(--title-color);
 }
-/* ============================= HAMBURGER MENU ============================== */
+ ============================= HAMBURGER MENU ============================== */
+
+ /*
 .hamburger {
     background-color: #fff;
     border: none;
@@ -87,3 +89,124 @@ h1 {
 .current {
     background-color: #add;
 }
+*/
+
+/* ============================== New ======================= */
+
+
+:root {
+    --title-color: #3C096C;
+    --white-color: "#f7f7f7";
+    --light-blue: "#ddf";
+    --blue-blue: "#0573e1";
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+/*===================== Header ==================*/
+header {
+    background-color: #adf;
+    display: grid;
+    grid-template-columns: 60px auto 46px;
+    column-gap: 15px;
+    align-items: end;
+    border-bottom: 2px solid #adf;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #adf;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+header span {
+    font-size: 2rem;
+    align-self: end;
+    text-align: center;
+}
+
+/*======================== Hamburger Menu ======================*/
+
+.hamburger {
+    background-color: #fff;
+    border: none;
+    color: var(--title-color);
+    cursor: pointer;
+    font-family: var(--header-font);
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2.5rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+    font-size: 2.5rem;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation li {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.navigation.show {
+    display: block;
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    border-bottom: 1px solid #adf;
+    color: #000;
+}
+
+.navigation a:hover{
+    color: darkcyan;
+    border: lightblue 1px solid;
+    border-radius: 8px;
+    padding: 1px 2px;
+}
+
+
+/* =================== main ==================== */
+
+main {
+    background-color: pink;
+    border: 2px solid #adf;
+    margin: .2rem auto;
+}
+
+h1 {
+    width: 100%;
+    margin-left: 100px;
+}
+
+#foot {
+    padding: 1.2rem 0;
+    background-color: #adf;
+    font-size: 1.1rem;
+    align-self: end;
+    text-align: center;
+}
+
