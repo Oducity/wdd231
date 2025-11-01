@@ -108,6 +108,41 @@ h1 {
     margin-left: 100px;
 }
 
+.course-box {
+    display: grid;
+}
+
+.course-box button {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 45px;
+    font-size: 1.2rem;
+}
+
+.cse110-info,
+.cse111-info,
+.cse210-info,
+.wdd130-info,
+.wdd131-info,
+.wdd231-info {
+    display: none;
+}
+
+.cse110-course-card .display {
+    display: block;
+}
+/*
+#cse111-info,
+#cse210-info,
+#wdd130-info,
+#wdd131-info,
+#wdd231-info {
+    display: block;
+    background-color: var(--light-blue);
+    color: var(--title-color);
+    text-align: left;
+}
+*/
 #foot {
     padding: 1.2rem 0;
     background-color: #adf;

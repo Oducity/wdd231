@@ -29,6 +29,9 @@ function addClassName(allClass) {
     });
 }
 
+
+// Bellow is the code for manipulating the <main> element and its innerHtml.
+
 const courses = [
     {
         subject: 'CSE',
@@ -107,4 +110,109 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+
+
+
+const allCourses = document.getElementById("all-courses");
+const cseCourses = document.getElementById("cse");
+const wddCourses = document.getElementById("wdd");
+
+createCourseCard(allCourses, courses);
+
+
+allCourses.addEventListener("click", () => {
+
+    createCourseCard(allCourses, courses);
+});
+
+
+cseCourses.addEventListener("click", () => {
+    createCourseCard(cseCourses, courses.filter(c => c.subject.toLowerCase() === "cse"));
+});
+
+wddCourses.addEventListener("click", () => {
+    createCourseCard(wddCourses, courses.filter(c => c.subject.toLowerCase() === "wdd"));
+});
+
+
+function createCourseCard(clicked, course) {
+    document.querySelector(".course-box").innerHTML = "";
+    const courseBox = document.querySelector(".course-box");
+    let heading = document.createElement("h2");
+    heading.innerText = clicked.innerText;
+    courseBox.appendChild(heading);
+
+    course.forEach(innerCourse => {
+        let card = document.createElement("div");
+        let thirdHead = document.createElement("Button");
+        let p = document.createElement("p");
+        
+
+        let courseCode = `${innerCourse.subject}${innerCourse.number}`;
+        let courseTitle = innerCourse.title;
+        let credit = innerCourse.credits;
+        let certification = innerCourse.certificate;
+        let discribe = innerCourse.description;
+        let tech = innerCourse.technology;
+        let attrInfo = `${courseCode.toLowerCase()}-info`;
+
+        card.setAttribute("class", `${courseCode.toLowerCase()}-course-card`);
+        thirdHead.setAttribute("class", courseCode.toLowerCase());
+        p.setAttribute("id", attrInfo);
+        thirdHead.innerText = `${courseCode} - ${courseTitle}`;
+        p.innerHTML = `<strong>Credit: ${credit}<br>Certificate: ${certification}<br>Technology Used: ${tech}</strong> <br> ${discribe}`;
+        card.appendChild(thirdHead);
+        card.appendChild(p);
+        document.querySelector(".course-box").appendChild(card);
+    });
+    
+
+};
+
+/* ========== Set Id attribute for use in css file to display hidden info on mouse click =========== */
+
+const cseOneTen = document.querySelector(".cse110");
+const cseOneTenP = document.querySelector("#cse110-info");
+
+const cseOneEle = document.querySelector(".cse111-info");
+const cseTwoTen = document.querySelector(".cse210-info");
+const wddOneThirty = document.querySelector(".wdd130-info");
+const wddOneThreeOne = document.querySelector(".wdd131-info");
+const wddTwoThreeOne = document.querySelector(".wdd231-info");
+
+
+cseOneTen.addEventListener("click", () => {
+    cseOneTenP.classList.toggle("display");
+
+});
+
+cseOneEle.addEventListener("click", () => {
+    const idValue = cseOneTen.className;
+    cseOneTen.setAttribute("id", idValue);
+});
+
+cseTwoTen.addEventListener("click", () => {
+    const idValue = cseOneTen.className;
+    cseOneTen.setAttribute("id", idValue);
+});
+
+wddOneThirty.addEventListener("click", () => {
+    const idValue = cseOneTen.className;
+    cseOneTen.setAttribute("id", idValue);
+});
+
+wddOneThreeOne.addEventListener("click", () => {
+    const idValue = cseOneTen.className;
+    cseOneTen.setAttribute("id", idValue);
+});
+
+wddTwoThreeOne.addEventListener("click", () => {
+    const idValue = cseOneTen.className;
+    cseOneTen.setAttribute("id", idValue);
+});
+
+
+
+
+
