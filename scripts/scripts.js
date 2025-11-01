@@ -15,25 +15,17 @@ hamburgerBtn.addEventListener("click", () => {
 });
 
 
+addClassName(navList);
 
+function addClassName(allClass) {
+    
+    allClass.forEach(navItem => {
+        
+        navItem.addEventListener("click", () => {
+            
+            h1.innerText = navItem.innerText;
+            navItem.classList.toggle("current");
+        });
+    });
+}
 
-
-homePage.addEventListener("click", () => {
-    h1.innerText = `${homePage.innerText} Page`;
-    homePage.classList.toggle("current");
-});
-
-discoveryPage.addEventListener("click", () => {
-    h1.innerText = `${discoveryPage.innerText} Page`;
-    discoveryPage.classList.toggle("current");
-});
-
-directoryPage.addEventListener("click", () => {
-    h1.innerText = `${directoryPage.innerText} Page`;
-    directoryPage.classList.toggle("current");
-});
-
-joinUsPage.addEventListener("click", () => {
-    h1.innerText = `${joinUsPage.innerText} Page`;
-    joinUsPage.classList.toggle("current");
-});
