@@ -139,7 +139,7 @@ wddCourses.addEventListener("click", () => {
 function createCourseCard(clicked, course) {
     document.querySelector(".course-box").innerHTML = "";
     const courseBox = document.querySelector(".course-box");
-    let heading = document.createElement("h2");
+    let heading = document.createElement("h3");
     heading.innerText = clicked.innerText;
     courseBox.appendChild(heading);
 
@@ -180,37 +180,6 @@ const cseTwoTen = document.querySelector(".cse210-info");
 const wddOneThirty = document.querySelector(".wdd130-info");
 const wddOneThreeOne = document.querySelector(".wdd131-info");
 const wddTwoThreeOne = document.querySelector(".wdd231-info");
-
-
-cseOneTen.addEventListener("click", () => {
-    cseOneTenP.classList.toggle("display");
-
-});
-
-cseOneEle.addEventListener("click", () => {
-    const idValue = cseOneTen.className;
-    cseOneTen.setAttribute("id", idValue);
-});
-
-cseTwoTen.addEventListener("click", () => {
-    const idValue = cseOneTen.className;
-    cseOneTen.setAttribute("id", idValue);
-});
-
-wddOneThirty.addEventListener("click", () => {
-    const idValue = cseOneTen.className;
-    cseOneTen.setAttribute("id", idValue);
-});
-
-wddOneThreeOne.addEventListener("click", () => {
-    const idValue = cseOneTen.className;
-    cseOneTen.setAttribute("id", idValue);
-});
-
-wddTwoThreeOne.addEventListener("click", () => {
-    const idValue = cseOneTen.className;
-    cseOneTen.setAttribute("id", idValue);
-});
 
 
 
