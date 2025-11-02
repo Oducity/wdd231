@@ -19,7 +19,7 @@ header, nav, main, footer {
 header {
     background-color: #adf;
     display: grid;
-    grid-template-columns: 70px auto 46px;
+    grid-template-columns: 90px auto 46px;
     column-gap: 15px;
     align-items: end;
     border-bottom: 2px solid #adf;
@@ -35,7 +35,7 @@ header img {
 }
 
 header span {
-    font-size: 1.5rem;
+    font-size: 2rem;
     align-self: end;
     text-align: center;
 }
@@ -141,6 +141,7 @@ h1, .personal-info p {
     height: 2rem;
     font-size: 1.1rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .course-box {
@@ -158,9 +159,11 @@ div {
 .course-box button {
     width: 100%;
     margin-top: 20px;
-    height: 45px;
+    height: auto;
+    min-height: 57px;
     font-size: 1.2rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .cse110-info,
@@ -174,6 +177,7 @@ div {
 
 .cse110-course-card .display {
     display: block;
+    line-height: 1.5rem;
 }
 /*
 #cse111-info,
@@ -190,8 +194,11 @@ div {
 #foot {
     padding: 1.2rem 0;
     background-color: #adf;
-    font-size: 1.1rem;
     align-self: end;
+}
+
+footer p {
     text-align: center;
+    font-size: 1.1rem;
 }
 

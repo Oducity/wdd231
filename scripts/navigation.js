@@ -142,6 +142,8 @@ function createCourseCard(clicked, course) {
     let heading = document.createElement("h3");
     heading.innerText = clicked.innerText;
     courseBox.appendChild(heading);
+    let counterP = document.createElement("p");
+    let count = 0;
 
     course.forEach(innerCourse => {
         let card = document.createElement("div");
@@ -165,9 +167,11 @@ function createCourseCard(clicked, course) {
         card.appendChild(thirdHead);
         card.appendChild(p);
         document.querySelector(".course-box").appendChild(card);
+        count++;
     });
-    
 
+    counterP.innerText = `The number of courses listed above is ${count}`;
+    courseBox.appendChild(counterP);
 };
 
 /* ========== Set Id attribute for use in css file to display hidden info on mouse click =========== */
