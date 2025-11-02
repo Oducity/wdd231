@@ -191,6 +191,10 @@ div {
     text-align: left;
 }
 */
+.course-box .total-courses {
+    margin-left: 30px;
+    border: 1px solid #adf;
+}
 #foot {
     padding: 1.2rem 0;
     background-color: #adf;

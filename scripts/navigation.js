@@ -143,6 +143,7 @@ function createCourseCard(clicked, course) {
     heading.innerText = clicked.innerText;
     courseBox.appendChild(heading);
     let counterP = document.createElement("p");
+    counterP.setAttribute("class", "total-courses");
     let count = 0;
 
     course.forEach(innerCourse => {
