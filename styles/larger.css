@@ -25,6 +25,9 @@
 
     .navigation {
         display: block;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #adf;
     }
 
     .navigation ul {
@@ -36,7 +39,7 @@
         margin: 0 auto;
         align-items: center;
         background-color: #adf;
-    
+        border-bottom: 1px solid #000;
     }
 
     .course-list {

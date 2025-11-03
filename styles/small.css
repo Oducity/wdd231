@@ -87,7 +87,7 @@ font-family: var(--header-font);
 }
 
 .navigation.show a {
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid #000;
 }
 
 
@@ -201,7 +201,7 @@ text-align: center;
 /* ==================== Completed courses ================= */
 
 .completed {
-    color: brown;
+    color: green;
     font-size: 25px;
 }
 
@@ -300,7 +300,7 @@ footer p {
         width: 100%;
         margin-left: 0;
         background-color: #adf;
-        border-bottom: 1px solid blue;
+        border-bottom: 1px solid #000;
     }
     .course-box .total-courses, .total-credit {
         background-color: green;
@@ -311,5 +311,10 @@ footer p {
         padding: 5px 0;
         border: 2px solid #000;
         border-radius: 5px;
+    }
+
+    footer .social {
+        display: grid;
+        grid-template-columns: ifr;
     }
 }
