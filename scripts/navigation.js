@@ -43,7 +43,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -56,7 +56,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -68,7 +68,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -80,7 +80,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -94,7 +94,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -144,12 +144,19 @@ function createCourseCard(clicked, course) {
     courseBox.appendChild(heading);
     let counterP = document.createElement("p");
     counterP.setAttribute("class", "total-courses");
+    let totalCreditP = document.createElement("p");
+    totalCreditP.setAttribute("class", "total-credit");
+    
+    
+
     let count = 0;
+    let totalCredit = 0;
 
     course.forEach(innerCourse => {
         let card = document.createElement("div");
-        let thirdHead = document.createElement("Button");
+        let button = document.createElement("div");
         let p = document.createElement("p");
+        
         
 
         let courseCode = `${innerCourse.subject}${innerCourse.number}`;
@@ -160,32 +167,71 @@ function createCourseCard(clicked, course) {
         let tech = innerCourse.technology;
         let attrInfo = `${courseCode.toLowerCase()}-info`;
 
+        
         card.setAttribute("class", `${courseCode.toLowerCase()}-course-card`);
-        thirdHead.setAttribute("class", courseCode.toLowerCase());
-        p.setAttribute("id", attrInfo);
-        thirdHead.innerText = `${courseCode} - ${courseTitle}`;
+        button.setAttribute("class", courseCode.toLowerCase());
+        p.setAttribute("class", attrInfo);
+        button.innerText = `${courseCode} - ${courseTitle}`;
+        let completedCourseSpan = document.createElement("span");
+        completedCourseSpan.setAttribute("class", "completed");
+        completedCourseSpan.textContent = "\u2714"; //Checkmark unicode character.
+        if (innerCourse.completed) {
+            button.appendChild(completedCourseSpan);
+        };
         p.innerHTML = `<strong>Credit: ${credit}<br>Certificate: ${certification}<br>Technology Used: ${tech}</strong> <br> ${discribe}`;
-        card.appendChild(thirdHead);
+        card.appendChild(button);
         card.appendChild(p);
         document.querySelector(".course-box").appendChild(card);
         count++;
+        totalCredit += parseInt(innerCourse.credits);
     });
 
+    totalCreditP.innerText = `The total credit for courses listed above is ${totalCredit}`;
     counterP.innerText = `The number of courses listed above is ${count}`;
+    courseBox.appendChild(totalCreditP);
     courseBox.appendChild(counterP);
 };
 
 /* ========== Set Id attribute for use in css file to display hidden info on mouse click =========== */
 
 const cseOneTen = document.querySelector(".cse110");
-const cseOneTenP = document.querySelector("#cse110-info");
+const cseOneTenInfo = document.querySelector(".cse110-info");
 
-const cseOneEle = document.querySelector(".cse111-info");
-const cseTwoTen = document.querySelector(".cse210-info");
-const wddOneThirty = document.querySelector(".wdd130-info");
-const wddOneThreeOne = document.querySelector(".wdd131-info");
-const wddTwoThreeOne = document.querySelector(".wdd231-info");
+const cseOneEle = document.querySelector(".cse111");
+const cseOneEleInfo = document.querySelector(".cse111-info");
 
+const cseTwoTen = document.querySelector(".cse210");
+const cseTwoTenInfo = document.querySelector(".cse210-info");
 
+const wddOneThirty = document.querySelector(".wdd130");
+const wddOneThirtyInfo = document.querySelector(".wdd130-info");
 
+const wddOneThreeOne = document.querySelector(".wdd131");
+const wddOneThreeOneInfo = document.querySelector(".wdd131-info");
 
+const wddTwoThreeOne = document.querySelector(".wdd231");
+const wddTwoThreeOneInfo = document.querySelector(".wdd231-info");
+
+cseOneTen.addEventListener("click", () => {
+    cseOneTenInfo.classList.toggle("cse-one-ten-info");
+});
+
+cseOneEle.addEventListener("click", () => {
+    cseOneEleInfo.classList.toggle("cse-one-ele-info");
+});
+
+cseTwoTen.addEventListener("click", () => {
+    cseTwoTenInfo.classList.toggle("cse-two-ten-info");
+});
+
+wddOneThirty.addEventListener("click", () => {
+    wddOneThirtyInfo.classList.toggle("wdd-one-thirty-info");
+});
+
+wddOneThreeOne.addEventListener("click", () => {
+    wddOneThreeOneInfo.classList.toggle("wdd-one-three-one-info");
+});
+
+wddTwoThreeOne.addEventListener("click", () => {
+    wddTwoThreeOneInfo.classList.toggle("wdd-two-three-one-info");
+});

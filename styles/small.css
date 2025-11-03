@@ -160,6 +160,7 @@ main h1 {
     font-size: 1.1rem;
     border-radius: 5px;
     cursor: pointer;
+    background-color: #ddd;
 }
 
 .course-box {
@@ -171,10 +172,10 @@ main h1 {
 }
 
 div {
-    margin: 0 2rem;
+    margin: 0 2rem
 }
 
-.course-box button {
+.course-box div div {
     width: 100%;
     margin-top: 20px;
     height: auto;
@@ -182,7 +183,29 @@ div {
     font-size: 1.2rem;
     border-radius: 5px;
     cursor: pointer;
+    border: 2px solid#000;
+    margin: 0 auto;
+    background-color: #ddd;
 }
+
+.cse110-course-card,
+.cse111-course-card,
+.cse210-course-card,
+.wdd130-course-card,
+.wdd131-course-card,
+.wdd231-course-card {
+margin-bottom: 1rem;
+text-align: center;
+}
+
+/* ==================== Completed courses ================= */
+
+.completed {
+    color: brown;
+    font-size: 25px;
+}
+
+/* ======================================================= */
 
 .cse110-info,
 .cse111-info,
@@ -197,24 +220,19 @@ div {
     display: block;
     line-height: 1.5rem;
 }
-/*
-#cse111-info,
-#cse210-info,
-#wdd130-info,
-#wdd131-info,
-#wdd231-info {
+/* ============ display course idetails ============== */
+.cse110-info.cse-one-ten-info,
+.cse111-info.cse-one-ele-info,
+.cse210-info.cse-two-ten-info,
+.wdd130-info.wdd-one-thirty-info,
+.wdd131-info.wdd-one-three-one-info,
+.wdd231-info.wdd-two-three-one-info {
     display: block;
-    background-color: var(--light-blue);
-    color: var(--title-color);
-    text-align: left;
+    line-height: 2rem;
 }
-*/
-.course-box .total-courses {
-    margin-left: 30px;
-    border: 1px solid #adf;
-}
+/* ============ display course idetails ============== */
 
-.course-box .total-courses {
+.course-box .total-courses, .total-credit {
     background-color: green;
     margin: 30px;
     color: #fff;
@@ -284,7 +302,7 @@ footer p {
         background-color: #adf;
         border-bottom: 1px solid blue;
     }
-    .course-box .total-courses {
+    .course-box .total-courses, .total-credit {
         background-color: green;
         margin: 30px;
         color: #fff;
