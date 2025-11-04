@@ -128,7 +128,18 @@ main h1 {
     text-align: center;
 }
 
-.course-section, .personal-info {
+.personal-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+}
+
+.personal-info h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.course-section {
     display: flex;
     margin: 0 auto;
 }
