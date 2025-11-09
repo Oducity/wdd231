@@ -2,17 +2,17 @@
     "familyName": "Aisiokuebor",
     "moved_in_date": "9-June-2021",
     "Number_of_people": 5,
+    "visited_by_bishop": true,
     "address": {
         "house_number": 6,
         "street1": "Okugbe",
         "street2": "Egharevba",
-        "community": "Evbotubu",
+        "community": "Evbotubu quarter",
         "L.G.A": "Egor",
         "city": "Benin",
         "state/province": "Edo",
         "country": "Nigeria"
     },
-    "visited_by_bishop": true,
     "family_members": [
         {
             "name": "Odumamwen Aisiokuebor",
