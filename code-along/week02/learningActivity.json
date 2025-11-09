@@ -1,0 +1,68 @@
+{
+  "warehouse": {
+    "id": "AB0234-7",
+    "manager": "John Ojo",
+    "location": "Delphi"
+  },
+  "products": [
+    {
+      "id": 132,
+      "name": "Zeeway 300",
+      "category": "Electric Bike",
+      "price": 89.99,
+      "inStock": true
+    },
+    {
+      "id": 221,
+      "name": "City Cruiser 300",
+      "category": "Commuter Bike",
+      "price": 99.50,
+      "inStock": true
+    },
+    {
+      "id": 367,
+      "name": "Speedster Road Elite",
+      "category": "Road Bike",
+      "price": 199.00,
+      "inStock": false
+    }
+  ]
+};
+
+
+const jsonCustomers = '{
+    "victor": {
+        "bigWindows": {
+            "length": 1.2,
+            "width": 1.8,
+            "quantity": 2
+        },
+        "medium": {
+            "length": 1.2,
+            "width": 1.2,
+            "quantity": 8
+        },
+        "small": {
+            "length": 0.7,
+            "width": 0.7,
+            "quantity": 4
+        }
+    },
+    "jhohn": {
+        "bigWindows": {
+            "length": 1.2,
+            "width": 2.1,
+            "quantity": 3
+        },
+        "medium": {
+            "length": 1.2,
+            "width": 1.2,
+            "quantity": 6
+        },
+        "small": {
+            "length": 0.6,
+            "width": 0.5,
+            "quantity": 3
+        }
+    }
+}';
