@@ -1,0 +1,67 @@
+:root {
+    --border-line: 1px transparent grey;
+    --background-color: #abc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    background-color: rgb(216, 222, 230);
+    padding: 2rem;
+    box-shadow: 10px 10px 10px 10px lightblue;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    text-align: center;
+    gap: .5rem;
+}
+
+section {
+    background-color: lightblue;
+    align-items: center;
+    border: 2px solid darkblue;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+img {
+    box-shadow: 10px 10px rgb(155, 172, 204);
+}
+
+h1 {
+    color: rgb(62, 62, 165);
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: -.5rem;
+    font-family: "Sofia", sans-serif;
+}
+
+h2 {
+    color: rgb(62, 62, 165);
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Sofia", sans-serif;
+}
+
+p {
+    font-size: 22px;
+    margin: 0;
+}
+img {
+    margin: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+footer p {
+    font-size: 1.6rem;
+    font-family: "Sofia", sans-serif;
+    color: rgb(62, 62, 165);
+}
