@@ -1,0 +1,124 @@
+{
+    "companies": [
+        {
+            "name": "Unicon Aluminum Roof Company",
+            "address": {
+                "street": "5 Usunobun street, Upper sokponba road",
+                "city": "Benin",
+                "state": "Edo",
+                "country": "Nigeria",
+                "zip": 300732
+            },
+            "phone":  "+2348032729007",
+            "url": "https://www.unicon-al-roof.com",
+            "logo": "",
+            "membership": "2",
+            "about": "We supply and install quality and durable aluminum roof materials of all kinds which includes: lonspan aluminum roof sheets, step-tiles aluminum roof sheets, metcoppo aluminum roof sheets and metro/stone coated aluminum roof sheets. You can find all these materials in various thickness ranging from 0.4mm to 0.7mm in different colors of your choice. Our service is of high quality, cost effective and fast as possible."
+        },
+        {
+            "name": "Uni Bio-Digester Company",
+            "address": {
+                "street": "56 Erhauyi street, Ikpoba-Hill",
+                "city": "Benin",
+                "state": "Edo",
+                "country": "Nigeria",
+                "zip": 300735
+            },
+            "phone":  "+2348078915488",
+            "url": "https://www.uni-bio-digester.com",
+            "logo": "",
+            "membership": "2",
+            "about": "Uni Bio-Digester Company apply high technique using durable and high quality materials to construct bio-digester that can replace your normal septic tank while converting you toilet and kitchen waste to cooking gas and farm fertilizer. With Uni Bio-Digester you can maximize your money while periodically collecting gas for cooking and fertilizer for enriching your farm products and even sale to others if you may not need them."
+        },
+        {
+            "name": "Unicon Solar Solution",
+            "address": {
+                "street": "125 Erhunmwunse street,",
+                "city": "Benin",
+                "state": "Edo",
+                "country": "Nigeria",
+                "zip": 300271
+            },
+            "phone": "+234",
+            "url": "",
+            "logo": "",
+            "membership": 2,
+            "about": ""
+        },
+        {
+            "name": "",
+            "address": {
+                "street": "",
+                "city": "Benin",
+                "state": "Edo",
+                "country": "Nigeria",
+                "zip": 300271
+            },
+            "phone": "",
+            "url": "",
+            "logo": "",
+            "membership": 2,
+            "about": ""
+        },
+        {
+            "name": "",
+            "address": {
+                "street": "",
+                "city": "Benin",
+                "state": "Edo",
+                "country": "Nigeria",
+                "zip": 300271
+            },
+            "phone": "",
+            "url": "",
+            "logo": "",
+            "membership": 2,
+            "about": ""
+        },
+        {
+            "name": "",
+            "address": {
+                "street": "",
+                "city": "Benin",
+                "state": "Edo",
+                "country": "Nigeria",
+                "zip": 300271
+            },
+            "phone": "",
+            "url": "",
+            "logo": "",
+            "membership": 2,
+            "about": ""
+        },
+        {
+            "name": "",
+            "address": {
+                "street": "",
+                "city": "Benin",
+                "state": "Edo",
+                "country": "Nigeria",
+                "zip": 300271
+            },
+            "phone": "",
+            "url": "",
+            "logo": "",
+            "membership": 2,
+            "about": ""
+        },
+        {
+            "name": "",
+            "address": {
+                "street": "",
+                "city": "Benin",
+                "state": "Edo",
+                "country": "Nigeria",
+                "zip": 300271
+            },
+            "phone": "",
+            "url": "",
+            "logo": "",
+            "membership": 2,
+            "about": ""
+        }
+    ]
+}

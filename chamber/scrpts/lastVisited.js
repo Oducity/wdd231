@@ -1,5 +1,5 @@
 
-const visitNum = document.getElementById("visit-times");
+const visitNum = document.querySelector(".visit-times");
 
 
 let numOfVisit = parseInt(window.localStorage.getItem("visit"), 10) || 0;

@@ -10,7 +10,7 @@
     <meta property="og:image" content="mylogo-facebook">
     <meta property="og:url" content="Oducity.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="styles/chamber-base.css">
-    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Sans:wght@200..800&family=Sofia&display=swap" rel="stylesheet">
@@ -21,26 +21,34 @@
 </head>
 <body>
     <header>
-        <img src="images/benin-city-commerce.svg" alt="Logo of Benin City Chamber of Commerce" height="250" width="250">
-        <span>Benin City Chamber of Commerce</span>
+        <div>
+            <img src="images/benin-city-commerce.svg" alt="Logo of Benin City Chamber of Commerce" height="100" width="100">
+            <span>Benin City Chamber of Commerce</span>
+        </div>
+        
+        <nav class="navigation-btn">
+            <ul>
+                <li>
+                    <a class="home">Home</a>
+                </li>
+                <li>
+                    <a class="discover">Discover</a>
+                </li>
+                <li>
+                    <a class="directory">Directory</a>
+                </li>
+                <li>
+                    <a class="join">Join</a>
+                </li>
+            </ul>
+            <div class="circle">
+                <p class="first-half"></p>
+                <p class="second-half"></p>
+            </div>
+            <button id="ham-btn" class="hamburger"></button>
+        </nav>
+        
     </header>
-
-    <nav>
-        <ul>
-            <li>
-                <a class="home">Home</a>
-            </li>
-            <li>
-                <a class="discover">Discover</a>
-            </li>
-            <li>
-                <a class="directory">Directory</a>
-            </li>
-            <li>
-                <a class="join">Join</a>
-            </li>
-        </ul>
-    </nav>
     
     <main>
         <h1 class="h-one"></h1>
