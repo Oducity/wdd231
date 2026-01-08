@@ -40,3 +40,276 @@ header span {
 }
 
 /******************************    *****************************/
+
+.hamburger.show::after {
+    content: "\00D7";
+    font-size: 2.5rem;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation ul {
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+.navigation li {
+    list-style-type: none;
+}
+
+.navigation.show {
+    display: block;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: #adf;
+}
+
+.navigation.show a {
+    border-bottom: 1px solid #000;
+}
+
+
+/* ============== navigation items =============== */
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    padding-top: 10px;
+    border-bottom: 1px solid #adf;
+    color: #000;
+}
+
+.navigation a:hover{
+    color: rgb(139, 0, 19);
+    border: lightblue 1px solid;
+    border-radius: 8px;
+    padding: 1px 2px;
+}
+
+
+/* =================== main ==================== */
+
+main {
+    background-color: #add;
+    border: 2px solid rgb(170, 238, 255);
+    margin: .2rem auto;
+}
+
+main .personal-info p {
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
+    
+}
+
+main h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+}
+
+.personal-info h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.course-section {
+    display: flex;
+    margin: 0 auto;
+}
+
+.courses-section h2, .courses-section p {
+    margin: 0 30px;
+    text-align: center;
+    
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 30px;
+}
+
+.course-list li {
+    display: grid;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.course-list button {
+    width: 100%;
+    height: 2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.course-box {
+    display: grid;
+}
+
+.course-box h3 {
+    text-align: center;
+}
+
+div {
+    margin: 0 2rem
+}
+
+.course-box div div {
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    min-height: 57px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid#000;
+    margin: 0 auto;
+    background-color: #ddd;
+}
+
+.cse110-course-card,
+.cse111-course-card,
+.cse210-course-card,
+.wdd130-course-card,
+.wdd131-course-card,
+.wdd231-course-card {
+margin-bottom: 1rem;
+text-align: center;
+}
+
+/* ==================== Completed courses ================= */
+
+.completed {
+    color: green;
+    font-size: 25px;
+}
+
+/* ======================================================= */
+
+.cse110-info,
+.cse111-info,
+.cse210-info,
+.wdd130-info,
+.wdd131-info,
+.wdd231-info {
+    display: none;
+}
+
+.cse110-course-card .display {
+    display: block;
+    line-height: 1.5rem;
+}
+/* ============ display course idetails ============== */
+.cse110-info.cse-one-ten-info,
+.cse111-info.cse-one-ele-info,
+.cse210-info.cse-two-ten-info,
+.wdd130-info.wdd-one-thirty-info,
+.wdd131-info.wdd-one-three-one-info,
+.wdd231-info.wdd-two-three-one-info {
+    display: block;
+    line-height: 2rem;
+}
+/* ============ display course idetails ============== */
+
+.course-box .total-courses, .total-credit {
+    background-color: green;
+    margin: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px 0;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+#foot {
+    padding: 1.2rem 0;
+    background-color: #adf;
+    align-self: end;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    header img {
+        width: 100%;
+        max-width: 6rem;
+        justify-self: center;
+    }
+
+    header span {
+        width: 100%;
+    }
+
+    header button {
+        display: none;
+    }
+
+    main h1 {
+        align-self: center;
+        text-align: center;
+        margin: 10px auto 0 auto;
+    }
+
+    #nav-bar {
+        display: block;
+        background-color: #adf;
+    }
+
+    .navigation .nav-ul {
+        display: grid;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .navigation .nav-ul a {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        width: 100%;
+        margin-left: 0;
+        background-color: #adf;
+        border-bottom: 1px solid #000;
+    }
+    .course-box .total-courses, .total-credit {
+        background-color: green;
+        margin: 30px;
+        color: #fff;
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 5px 0;
+        border: 2px solid #000;
+        border-radius: 5px;
+    }
+
+    footer .social {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

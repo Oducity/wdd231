@@ -3,71 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Odumamwen Evans Henry Aisiokuebor">
-    <meta name="description" content="Odumamwen Evans Henry Aisiokuebor's Home Page, Student Home Page.">
-    <meta property="og:title" content="Odumamwen Evans Henry Aisiokuebor Home Page">
-    <meta property="description" content="Odumamwen Evans Henry Aisiokuebor's home-page, Web and Computer Programmer, Web Programmer, Web Developer Entry Level, Front-End Web Developer 1">
-    <title>WDD231 | Odumamwen Evans Henry Aisiokuebor Home Page | BYUI</title>
+    <meta name="description" content="Student home page, Odumamawen Evans Henry Aisiokuebor home page, WDD231 course student home page, Oducity home page Web, Frontend Development 1 student home page">
+    <meta name="author" content="Odumamawen Evans Henry Aisiokuebor, Oducity, EngrOdus">
+    <meta property="og:title" content="Odumamawen Henry Home Page, Home Page">
+    <meta property="og:description" content="Web and Computer Programmer, Web deveoper, Web Programmer Intern, Web developer Entry">
+    <meta property="og:image" content="mylogo-facebook">
+    <meta property="og:locale" content="https://oducity.github.io/wdd231/">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <script src="scripts/lastModified.js" defer></script>
+    <script src="scripts/lastVisited.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <title>WDD231 || Web Frontend Development 1</title>
 </head>
 <body>
-
     <header>
-        <img src="images/logo.svg" alt="Website logo" width="512" height="512">
-        <span>Evans Henry</span>
+        <img src="images/engineering.svg" alt="Site logo" width="500" height="500">
+        <span>ODUMAMWEN EVANS HENRY AISIOKUEBOR</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
-
     <nav id="nav-bar" class="navigation">
-        <ul id="nav-ul">
-            <li><a href="#" id="home-page-btn" class="home-page-btn">Home</a></li>
-            <li><a href="#" id="chamber-site-btn" class="chamber-site-btn">Chamber</a></li>
-            <li><a href="#" id="final-project-btn" class="final-project-btn">Final</a></li>
-            <li><a href="#" id="contact-btn" class="contact-btn">Contact Me</a></li>
+        <ul class="nav-ul">
+            <li><a href="#" class="home" id="home-pg">Home</a></li>
+            <li><a href="#" class="chamber-btn">Chamber Project</a></li>
+            <li><a href="#" class="about-btn">Final</a></li>
+            <li><a href="#" class="contact-btn">Contact Me</a></li>
         </ul>
     </nav>
-
     <main>
-        <h1 class="heading-one" id="wayfinder"></h1>
-        <section>
+        <h1></h1>
+        <section class="personal-info">
             <h2>About Me</h2>
-            <p>
-                My name is Odumamwen Evans Henry Aisiokuebor, a detailed, quality and result oriented web developer skilled in Html5, Css3, JavaScript, python and C#. With certification in Web and Computer Programming from BYUI, I am currently a student of BYUI studying software development with start date of September 2024 and projected graduation of October 2027.
+            <p>My name is Odumamwen Evans Henry Aisiokuebor, a detailed, quality and result oriented web developer skilled in Html5, Css3, JavaScript, python and C#. With certification in Web and Computer Programming from BYUI, I am currently a student of BYUI studying software development with start date of September 2024 and projected graduation of October 2027.
                 Haven't gained much knowledge and skills while taking multiple rigorous challenge of web and computer programming in BYUI, I which to serve in challenging capacity to enable me horn my skills and make meaningful contribution to life as a web developer.
             </p>
             <p>Bellow are courses taken while studying web and computer programming in BYUI.</p>
         </section>
-            
-        <section class="course-section">
-            <h2>My courses</h2>
+
+        <section class="courses-section">
+            <h2>My Courses</h2>
             <p>Click button bellow to view related courses.</p>
             <ul class="course-list">
                 <li>
-                    <button class="all-courses" value="All-Courses">All Courses</button>
+                    <button id="all-courses" value="All Courses">All Courses</button>
                 </li>
                 <li>
-                    <button class="wdd-courses">WDD Courses</button>
+                    <button id="cse">CSE Courses</button>
                 </li>
                 <li>
-                    <button class="cse-courses">CSE-Courses</button>
+                    <button id="wdd">WDD Courses</button>
                 </li>
             </ul>
         </section>
-        <section class="display-box">
+        
+        <section id="course-box" class="course-box"></section>
 
-        </section>
     </main>
-    <footer>
-        <p id="lastModified"></p>
-        <p>
-            <ul>
-                <li><a href="#"><img src="images/facebook-svg-logo.svg" alt="facebook logo" width="95" height="95"></a></li>
-                <li><a href="#"><img src="images/linkedin-svg-logo.svg" alt="linkedin logo" width="80" height="80"></a></li>
-                <li><a href="#"><img src="images/github-outline-svgrepo-com.svg" alt="github logo." width="83" height="83"></a></li>
-            </ul>
-        </p>
+    <footer id="foot">
+        <p id="lastModify"></p>
+        <p id="last-box"><span class="visit-text"></span> <span id="visit-times"></span> </p>
+        <p class="social"> <a href="" class="facebook"><img src="images/facebook-svg-logo.svg" alt="facebook logo" width="95" height="95"></a> <a href="" class="linkedin"><img src="images/linkedin-svg-logo.svg" alt="linkedin logo" width="85" height="85"></a> <a href="" class="git"><img src="images/github-outline-svgrepo-com.svg" alt="github logo." width="90" height="90"></span></p>
         <p>&copy; <span id="currentyear"></span> &nbsp; 🎏 &nbsp;  Odumamwen Evans Henry Aisiokuebor &nbsp; 🎏 &nbsp;  Nigeria.</p>
     </footer>
 </body>
