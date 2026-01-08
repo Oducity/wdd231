@@ -1,0 +1,40 @@
+*{
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/*===================== header ================*/
+
+header {
+    display: grid;
+    grid-template-columns:24px auto 44px;
+    align-items: end; /*this pushes the items to the bottom of the container*/
+    padding: 5px 0 5px 10px;
+    border-bottom: 1.5px solid #bbc;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.5rem;
+    color: #00008b;
+}
+
+/*======================== hamburber ===================*/
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #00008b;
+    cursor: pointer;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
