@@ -6,17 +6,22 @@
 
 /* This css file will be applied when the screen is 38rem(16 * 38 = 608px) and above */
 @media only screen and (min-width: 650px) {
-    header, main, nav, footer {
+    main, nav, footer {
         width: 100%;
         max-width: 900px;
         margin: 0 auto;
     }
     header {
-        grid-template-columns: 100px auto;
+        display: grid;
+        width: 100%;
+        max-width:900px;
+        margin: 0 auto;
+        grid-template-columns: 80px auto;
+        grid-column-gap: 8rem;
     }
 
     header span {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .hamburger {
