@@ -81,7 +81,7 @@
 .course-box div div {
         height: auto;
         min-height: 57px;
-        font-size: auto;
+        font-size: 1.2rem;
     }
 
     .course-box p {
