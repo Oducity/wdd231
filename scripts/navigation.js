@@ -25,6 +25,7 @@ function addClassName(allClass) {
             
             h1.innerText = navItem.innerText;
             navItem.classList.toggle("current");
+            navItem.classList.toggle("way");
         });
     });
 }

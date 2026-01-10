@@ -85,6 +85,14 @@ header span {
     color: #000;
 }
 
+#nav-bar .nav-ul .way {
+        background-color: #fff;
+        color: #aa00ff;
+        padding: 2px 8px;
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+
 .navigation a:hover{
     color: rgb(139, 0, 19);
     border: lightblue 1px solid;
