@@ -250,7 +250,7 @@ footer p {
     font-size: 1.1rem;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     header {
         display: grid;
         grid-template-columns: 1fr;
