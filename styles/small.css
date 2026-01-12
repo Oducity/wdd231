@@ -8,22 +8,25 @@
 header {
     background-color: cadetblue;
     display: grid;
-    grid-template-columns:24px auto 44px;
+    grid-template-columns:90px auto 44px;
     align-items: end; /*this pushes the items to the bottom of the container*/
-    padding: 5px 0 5px 10px;
+    padding: 5px 0 5px 30px;
     border-bottom: 1.5px solid #bbc;
     column-gap: 8px;
 }
 
 header img {
-    display: block;
+    
     width: 100%;
+    max-width: 5rem;
     height: auto;
+    justify-content: left;
 }
 
 header span {
-    font-size: 1.2rem;
+    font-size: 35px;
     color: #00008b;
+    text-align: left;
 }
 
 /*======================== hamburber ===================*/
@@ -65,7 +68,7 @@ header span {
 .navigation.show {
     display: block;
     justify-items: center;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     background-color: #adf;
 }
@@ -83,6 +86,7 @@ header span {
     padding-top: 10px;
     border-bottom: 1px solid #adf;
     color: #000;
+    font-size: 24px;
 }
 
 #nav-bar .nav-ul .way {
@@ -118,39 +122,46 @@ main .personal-info p {
 
 main h1 {
     width: 100%;
-    text-align: center;
-    color: rgb(86, 3, 3);
+    text-align: left;
+    /*color: rgb(86, 3, 3);*/
+    color: #00008b;
+    margin-left: 30px;
 }
 
 .personal-info {
     display: grid;
     grid-template-columns: 1fr;
     flex-direction: column;
-    margin: 0 0 0 30px;
+    margin: 0 30px 10px 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .personal-info h2 {
     width: 100%;
     text-align: center;
     background-color: cadetblue;
-    color: rgb(86, 3, 3);
+    /*color: rgb(86, 3, 3);*/
+    color: #00008b;
+    margin-top: 0;
 }
 
 .student-photo {
-    margin: 0 30px 0 0;
+    margin: 0 30px 10px 30px;
+    border: 1px solid grey;
+    border-radius: 5px ;
 }
 .student-photo h2 {
     text-align: center;
     background-color: cadetblue;
-    color: rgb(86, 3, 3);
+    color: #00008b;
+    margin-top: 0;
 }
 
 .student-photo div {
     display: flex;
     justify-content: space-around;
 }
-
-
 
 .course-section {
     display: flex;
@@ -167,14 +178,15 @@ main .courses-section h2 {
     margin: 0 30px;
     text-align: center;
     background-color: cadetblue;
-    color: rgb(86, 3, 3);
+    color: #00008b;
 }
 
 .courses-section .instruction {
     background-color: #7b0b07;
     color: #fff;
     width: 100%;
-    max-width: 650px;
+    margin-left: 30px;
+    margin-right: 30px;
     border: black solid 2px;
     border-radius: 5PX;
     justify-self: center;
@@ -287,7 +299,7 @@ text-align: center;
     border-radius: 5px;
 }
 
-#foot {
+footer {
     padding: 1.2rem 0;
     background-color: #adf;
     align-self: end;
@@ -298,21 +310,24 @@ footer p {
     font-size: 1.1rem;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 380px) {
     header {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+        padding-right: 30px;
     }
+    /********************* header div ****************/
 
     header img {
         width: 100%;
-        max-width: 6rem;
-        justify-self: center;
+        max-width: 5rem;
+        justify-self: left;
     }
 
     header span {
         width: 100%;
-        text-align: center;
+        text-align: left;
         font-size: 35px;
     }
 
@@ -322,12 +337,14 @@ footer p {
 
     main h1 {
         align-self: center;
-        text-align: center;
-        margin: 10px auto 0 auto;
+        text-align: left;
+        margin: 0 auto 0 30px;
     }
 
     #nav-bar {
         display: block;
+        width: 100%;
+        max-width: 380px;
         background-color: #adf;
     }
 
@@ -341,16 +358,17 @@ footer p {
 
     .navigation .nav-ul a {
         display: block;
-        text-align: center;
+        text-align: left;
         font-size: 24px;
+        padding-left: 30px;
         width: 100%;
-        margin-left: 0;
+        max-width: 380px;
         background-color: #adf;
         border-bottom: 1px solid #000;
     }
 
     .courses-section .instruction {
-        max-width: 620px;
+        max-width: 380px;
         margin-left: 30px;
         margin-right: 30px;
     }
@@ -375,7 +393,7 @@ footer p {
     }
 
     footer .social {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: block;
+        justify-content: space-around;
     }
 }
