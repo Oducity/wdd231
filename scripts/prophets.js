@@ -1,5 +1,5 @@
 // Declare a variable to store the url string
-const url = "https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json.";
+const url = "https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json";
 // Declare a variable to store the target html element
 const cards = document.querySelector("#cards");
 
