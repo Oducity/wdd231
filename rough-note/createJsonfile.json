@@ -1,0 +1,65 @@
+{
+    "wardMemeber": {
+        "familyName": "Aisiokuebor",
+        "dateMovedIn": "2 September 2020",
+        "numberOfPeople": 5,
+        "isVisited": true,
+        "individuals": [
+            {
+                "firstName": "Odumamwen",
+                "middleName": "Evans",
+                "fatherName": "Henry",
+                "gender": "male",
+                "birthDate": {
+                    "day": 4,
+                    "month": "june",
+                    "year": 1985
+                }
+            },
+            {
+                "firstName": "Osaruonamen",
+                "middleName": "Esther",
+                "fatherName": "Albert",
+                "gender": "female",
+                "birthDate": {
+                    "day": 1,
+                    "month": "april",
+                    "year": 1984
+                }
+            },
+            {
+                "firstName": "Omosefe",
+                "middleName": "Joseph",
+                "fatherName": "Odumamwen",
+                "gender": "male",
+                "birthDate": {
+                    "day": 1,
+                    "month": "september",
+                    "year": 2017
+                }
+            },
+                        {
+                "firstName": "Aisosa",
+                "middleName": "Joshua",
+                "fatherName": "Odumamwen",
+                "gender": "male",
+                "birthDate": {
+                    "day": 1,
+                    "month": "april",
+                    "year": 2019
+                }
+            },
+                        {
+                "firstName": "Osaruonamen",
+                "middleName": "Esther",
+                "fatherName": "Albert",
+                "gender": "male",
+                "birthDate": {
+                    "day": 1,
+                    "month": "april",
+                    "year": 2022
+                }
+            }
+        ]
+    }
+}
