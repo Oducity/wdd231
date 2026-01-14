@@ -20,29 +20,29 @@ getMemebersData();
 //Create a displayMembers() function to process members data.
 const displayMembers = (members) => {
     members.forEach((member) => {
-        let star;
-        if(member.review === 5){
-            star = `\u2605`+`\u2605`+`\u2605`+`\u2605`+`\u2605`;
-        } else if (member.review === 4){
-            star = `\u2605`+`\u2605`+`\u2605`+`\u2605`+`\u2606`;
-        } else if (member.review === 3){
-            star = `\u2605`+`\u2605`+`\u2605`+`\u2606`+`\u2606`;
-        } else if (member.review === 2) {
-            star = `\u2605`+`\u2605`+`\u2606`+`\u2606`+`\u2606`;
-        } else if (member.review === 1) {
-            star = `\u2605`+`\u2606`+`\u2606`+`\u2606`+`\u2606`;
-        } else {
-            star = "No review yet";
-        }
+        //let star = gold
+        //if(member.review === 5){
+        //    star = `\u2605`+`\u2605`+`\u2605`+`\u2605`+`\u2605`;
+        //} else if (member.review === 4){
+        //    star = `\u2605`+`\u2605`+`\u2605`+`\u2605`+`\u2606`;
+        //} else if (member.review === 3){
+        //    star = `\u2605`+`\u2605`+`\u2605`+`\u2606`+`\u2606`;
+        //} else if (member.review === 2) {
+        //    star = `\u2605`+`\u2605`+`\u2606`+`\u2606`+`\u2606`;
+        //} else if (member.review === 1) {
+        //    star = `\u2605`+`\u2606`+`\u2606`+`\u2606`+`\u2606`;
+        //} else {
+        //    star = "No review yet";
+        //}
 
-        let level;
-        if (member.membership === 3) {
-            level = "Gold";
-        } else if (member.membership === 2) {
-            level = "Silver";
-        } else {
-            level = "Member";
-        }
+        //let level = 3;
+        //if (member.membership === 3) {
+        //    level = "Gold";
+        //} else if (member.membership === 2) {
+        //    level = "Silver";
+        //} else {
+        //    level = "Member";
+        //}
 
         let card = document.createElement("section");
 
@@ -50,10 +50,10 @@ const displayMembers = (members) => {
         let companyName = document.createElement("h2");
         let addr = document.createElement("p");
         let phoneNumber = document.createElement("p");
-        let message = document.createElement("p");
-        let statusBox = document.createElement("p");
-        let rated = document.createElement("span");
-        let memberLevel = document.createElement("span");
+        //let message = document.createElement("p");
+        //let statusBox = document.createElement("p");
+        //let rated = document.createElement("span");
+        //let memberLevel = document.createElement("span");
         let url = document.createElement("p");
 
         logo.setAttribute("src", member.image);
@@ -74,15 +74,15 @@ const displayMembers = (members) => {
         message.innerText = member.intro;
         message.setAttribute(".message");
 
-        rated.innerText = star;
-        rated.setAttribute(".rating");
+        //rated.innerHTML = star;
+        //rated.setAttribute(".rating");
         
-        memberLevel.innerHTML = `<strong>Membership</strong>${level}`;
-        memberLevel.setAttribute(".level");
-        
-        statusBox.appendChild(memberLevel);
-        statusBox.appendChild(rated);
-        statusBox.setAttribute(".status");
+        //memberLevel.innerHTML = `<strong>Membership</strong>${level}`;
+        //memberLevel.setAttribute(".level");
+        //
+        //statusBox.appendChild(memberLevel);
+        //statusBox.appendChild(rated);
+        //statusBox.setAttribute(".status");
 
         url.innerHTML = `<strong>Website:</strong> <a>${member.url}`;
         url.setAttribute(".website");
@@ -91,7 +91,7 @@ const displayMembers = (members) => {
         card.appendChild(companyName);
         card.appendChild(addr);
         card.appendChild(phoneNumber);
-        card.appendChild(statusBox);
+        //card.appendChild(statusBox);
         card.appendChild(url);
 
         cards.appendChild(card);
