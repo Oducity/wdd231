@@ -25,7 +25,10 @@ function addClassName(allClass) {
             
             h1.innerText = navItem.innerText;
             navItem.classList.toggle("current");
-            navItem.classList.toggle("way");
+            navList.forEach(nava => {
+                nava.classList.remove("way");
+            });
+            navItem.classList.add("way");
         });
     });
 }
