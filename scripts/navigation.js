@@ -25,9 +25,11 @@ function addClassName(allClass) {
             
             h1.innerText = navItem.innerText;
             navItem.classList.toggle("current");
+            //This remove the className from a anchor elements.
             navList.forEach(nava => {
                 nava.classList.remove("way");
             });
+            //This add the className "way" to the current anchor element for wayfinder use in css.
             navItem.classList.add("way");
         });
     });
