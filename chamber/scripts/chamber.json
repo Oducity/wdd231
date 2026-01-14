@@ -7,7 +7,8 @@
             "url": "hjttps://www.uniconaluminumcompany.com",
             "image": "",
             "membership": 1,
-            "intro": ""
+            "intro": "",
+            "review": 5
         },
         {
             "companyname": "Odus Bio-degester Company",
@@ -16,7 +17,8 @@
             "url": "hjttps://www.uniconaluminumcompany.com",
             "image": "",
             "membership": 2,
-            "intro": "Nice company"
+            "intro": "Nice company",
+            "review": 5
         },
         {
             "companyname": "Oducity Tech World",
@@ -24,7 +26,7 @@
             "phone": "+2348032729007",
             "url": "https://www.uniconaluminumcompany.com",
             "image": "",
-            "membership": 3,
+            "membership": 5,
             "intro": "Reliable company",
             "review": "5"
         },
@@ -36,7 +38,7 @@
             "image": "",
             "membership": 1,
             "intro": "Quality company",
-            "review": 2
+            "review": 4.5
         },
         {
             "companyname": "Unicon Solar Solutions",
