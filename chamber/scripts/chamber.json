@@ -6,7 +6,7 @@
             "phone": "+2348032729007",
             "url": "https://www.uniconaluminumcompany.com",
             "image": "",
-            "membership": 1,
+            "membership": 3,
             "intro": "",
             "review": 5
         },
@@ -26,9 +26,9 @@
             "phone": "+2348032729007",
             "url": "https://www.uniconaluminumcompany.com",
             "image": "",
-            "membership": 5,
+            "membership": 3,
             "intro": "Reliable company",
-            "review": "5"
+            "review": 5
         },
         {
             "companyname": "Unicon Musicals",
@@ -38,7 +38,7 @@
             "image": "",
             "membership": 1,
             "intro": "Quality company",
-            "review": 4.5
+            "review": 3
         },
         {
             "companyname": "Unicon Solar Solutions",
@@ -46,9 +46,9 @@
             "phone": "+2348032729007",
             "url": "https://www.uniconaluminumcompany.com",
             "image": "",
-            "membership": 2,
+            "membership": 3,
             "intro": "good",
-            "review": 5
+            "review": 4
         },
         {
             "companyname": "Unicon Doors and Windows",
@@ -56,7 +56,7 @@
             "phone": "+2348032729007",
             "url": "https://www.uniconaluminumcompany.com",
             "image": "",
-            "membership": 4,
+            "membership": 3,
             "intro": "assurance",
             "review": 5
         },
@@ -66,9 +66,9 @@
             "phone": "+2348032729007",
             "url": "https://www.uniconaluminumcompany.com",
             "image": "",
-            "membership": 5,
+            "membership": 1,
             "intro": "Quality pots",
-            "review": 5
+            "review": 2
         },
         {
             "companyname": "Undus Art and Painting",
@@ -76,7 +76,7 @@
             "phone": "+2348032729007",
             "url": "https://www.uniconaluminumcompany.com",
             "image": "",
-            "membership": 5,
+            "membership": 2,
             "intro": "quality paniting",
             "review": 5
         }
