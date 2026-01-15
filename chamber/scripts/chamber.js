@@ -2,7 +2,7 @@
 const url = "https://oducity.github.io/wdd231/chamber/scripts/chamber.json";
 
 //create a cards variable and store element with id="cards" in it.
-const cards = document.querySelector("#cards")
+const cards = document.querySelector("#cards");
 
 // Create async function to fecth from the JSON source url using await fetch() method.
 
