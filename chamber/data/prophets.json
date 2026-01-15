@@ -1,14 +1,12 @@
 {
   "members": [
     {
-      "name": "Joseph",
-      "lastname": "Smith",
-      "birthdate": "23 December 1805",
-      "death": "27 June 1844",
-      "length": 14,
-      "order": 1,
-      "birthplace": "Vermont",
-      "numofchildren": 11,
+      "name": "Unicon Doors and Windows",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.unicondoorsandwindows.com",
+      "membership": 2,
+      "rating": 5,
       "imageurl": "https://byui-cse.github.io/cse-ww-program/data/images/prophets/joseph-smith.jpg"
     },
     {

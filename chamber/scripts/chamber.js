@@ -1,103 +1,47 @@
-//store the .json file in a variable url.
-const url = "https://Oducity.github.io/wdd231/chamber/data/members.json";
-
-//create a cards variable and store element with id="cards" in it.
+// Declare a variable to store the url string
+const url = "https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json";
+//const url = "https://oducity.github.io/wdd231/data/prophets.json";
+// Declare a variable to store the target html element
 const cards = document.querySelector("#cards");
 
 // Create async function to fecth from the JSON source url using await fetch() method.
 
-async function getMembersData() {
+async function getProphetsData() {
     const response = await fetch(url);
     const data = await response.json();
-    //console.table(data.members);   //this helpin viewing large amount of data in a table in the console.
-    displayMembers(data.members);
+    //console.table(data.prophets);   //this helpin viewing large amount of data in a table in the console.
+    displayProphets(data.prophets);
 };
 
+getProphetsData();
 
-getMembersData();
-
-
-//Create a displayMembers() function to process members data.
-const displayMembers = (members) => {
-    members.forEach((member) => {
-        let star;
-        if(member.review == 5){
-            star = `\u2605`+`\u2605`+`\u2605`+`\u2605`+`\u2605`;
-        } else if (member.review == 4){
-            star = `\u2605`+`\u2605`+`\u2605`+`\u2605`+`\u2606`;
-        } else if (member.review == 3){
-            star = `\u2605`+`\u2605`+`\u2605`+`\u2606`+`\u2606`;
-        } else if (member.review == 2) {
-            star = `\u2605`+`\u2605`+`\u2606`+`\u2606`+`\u2606`;
-        } else if (member.review == 1) {
-            star = `\u2605`+`\u2606`+`\u2606`+`\u2606`+`\u2606`;
-        } else {
-            star = "No review yet";
-        }        
-        let level;
-        if (member.membership == 3) {
-            level = "Gold";
-        } else if (member.membership == 2) {
-            level = "Silver";
-        } else {
-            level = "Member";
-        }
-
+    prophets.forEach((prophet) => {
         let card = document.createElement("section");
+        let fullName = document.createElement("h2");
+        let birthDatePara = document.createElement("p");
+        let placeOfBirthPara = document.createElement("p");
 
-        let logo = document.createElement("img");
-        let companyName = document.createElement("h2");
-        let addr = document.createElement("p");
-        let phoneNumber = document.createElement("p");
-        let message = document.createElement("p");
-        let statusBox = document.createElement("p");
-        let rated = document.createElement("span");
-        let memberLevel = document.createElement("span");
-        let url = document.createElement("p");
+        let portrait = document.createElement("img");
+        let name = `${prophet.name} ${prophet.lastname}`;
+        let imgAlt = `Photo of ${name}`;
+        portrait.setAttribute("src", prophet.imageurl);
+        portrait.setAttribute("alt", imgAlt);
+        portrait.setAttribute("loading", "lazy");
+        portrait.setAttribute("width", "250px");
+        portrait.setAttribute("heigth", "auto");
 
-        logo.setAttribute("src", member.image);
-        logo.setAttribute("alt", `Logo of ${member.companyname}`);
-        logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "120px");
-        logo.setAttribute("heigth", "auto");
+        fullName.innerText = name;
+        card.appendChild(fullName);
 
-        companyName.innerText = member.companyname;
-        companyName.setAttribute(".name");
+        birthDatePara.innerText = `Birth Date: ${prophet.birthdate}`;
+        card.appendChild(birthDatePara);
 
-        addr.innerText = member.address;
-        addr.setAttribute(".address");
+        placeOfBirthPara.innerText = `Place of birth: ${prophet.birthplace}`;
+        card.appendChild(placeOfBirthPara);
 
-        phoneNumber.innerHTML = `<strong>Phone:</strong> ${member.phone}`;
-        phoneNumber.setAttribute(".call-number");
-
-        message.innerText = member.intro;
-        message.setAttribute(".message");
-
-        rated.innerHTML = `<strong>Rating:</strong> ${star}`;
-        rated.setAttribute(".rating");
-
-        memberLevel.innerHTML = `<strong>Membership:</strong> ${level}`;
-        memberLevel.setAttribute(".level");
-        
-        statusBox.appendChild(memberLevel);
-        statusBox.appendChild(rated);
-        statusBox.setAttribute(".status");
-
-        let anchor = document.createElement("a");
-        anchor.setAttribute("href", "#");
-        anchor.innerText = member.url;
-
-        url.innerHTML = `<strong>Website:</strong> ${anchor}`;
-        url.setAttribute(".website");
-
-        card.appendChild(logo);
-        card.appendChild(companyName);
-        card.appendChild(addr);
-        card.appendChild(phoneNumber);
-        card.appendChild(statusBox);
-        card.appendChild(url);
+        card.appendChild(portrait);
 
         cards.appendChild(card);
-
     });
 }
+
