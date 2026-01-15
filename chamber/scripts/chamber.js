@@ -9,7 +9,7 @@ const cards = document.querySelector("#cards");
 async function getMembersData() {
     const response = await fetch(url);
     const data = await response.json();
-    //console.table(data.prophets);   //this helpin viewing large amount of data in a table in the console.
+    //console.table(data.members);   //this helpin viewing large amount of data in a table in the console.
     displayMembers(data.members);
 };
 
