@@ -6,26 +6,26 @@ const cards = document.querySelector("#cards");
 
 // Create async function to fecth from the JSON source url using await fetch() method.
 
-async function getProphetsData() {
+async function getAllFirmsData() {
     const response = await fetch(url);
     const data = await response.json();
     //console.table(data.prophets);   //this helpin viewing large amount of data in a table in the console.
-    displayProphets(data.companies);
+    displayFirmsData(data.allFirms);
 };
 
-getProphetsData();
+getAllFirmsData();
 
-const displayProphets = (companies) => {
-    companies.forEach((company) => {
+const displayFirmsData = (allFirms) => {
+    allFirms.forEach((company) => {
         let memberStar = `\u2605`;
-        let membershipLevel = Gold;
-        //if (company.membership === 1) {
-        //    membershipLevel = "Member";
-        //} else if (company.membership === 2) {
-        //    membershipLevel = "Silver";
-        //} else {
-        //    membershipLevel = "Gold"
-        //}
+        let membershipLevel = "member";
+        if (company.membership === 1) {
+            membershipLevel = "Member";
+        } else if (company.membership === 2) {
+            membershipLevel = "Silver";
+        } else {
+            membershipLevel = "Gold"
+        }
 
         let companySlot = document.createElement("section");
         companySlot.setAttribute(".slot");
@@ -36,7 +36,7 @@ const displayProphets = (companies) => {
         let addressP = document.createElement("p"); // formerly birthDatePara
         addressP.setAttribute(".address");
 
-        let phneP = document.createElement("p"); // formerly placeOfBirthPara
+        let phoneP = document.createElement("p"); // formerly placeOfBirthPara
         phoneP.setAttribute(".phone");
 
         let statusP = document.createElement("p"); //Creted <p> element for company status.
@@ -57,7 +57,7 @@ const displayProphets = (companies) => {
         portrait.setAttribute("width", "250px");
         portrait.setAttribute("heigth", "auto");
 
-        companySlot.appendChild(portrait);
+        //companySlot.appendChild(portrait);
 
         
         companySlot.appendChild(companyName);
@@ -65,15 +65,17 @@ const displayProphets = (companies) => {
         addressP.innerText = `Address: ${company.address}`;
         companySlot.appendChild(addressP);
 
-        phneP.innerText = `Phone: ${company.phone}`;
-        companySlot.appendChild(phneP);
+        phoneP.innerText = `Phone: ${company.phone}`;
+        companySlot.appendChild(phoneP);
 
         statusP.innerText = `Membership: ${membershipLevel} || Rating: ${memberStar * company.rating}`;
+        companySlot.appendChild(statusP);
 
         companyUrl.innerText = `Website Address: ${company.url}`;
         companySlot.appendChild(companyUrl);
+        companySlot.appendChild(portrait);
 
-        cards.appendChild(slot);
+        cards.appendChild(companySlot);
     });
 };
 
