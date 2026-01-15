@@ -6,7 +6,7 @@ const cards = document.querySelector("#cards");
 
 // Create async function to fecth from the JSON source url using await fetch() method.
 
-async function getMemebersData() {
+async function getMembersData() {
     const response = await fetch(url);
     const data = await response.json();
     //console.table(data.prophets);   //this helpin viewing large amount of data in a table in the console.
@@ -14,7 +14,7 @@ async function getMemebersData() {
 };
 
 
-getMemebersData();
+getMembersData();
 
 
 //Create a displayMembers() function to process members data.
@@ -56,7 +56,7 @@ const displayMembers = (members) => {
         let url = document.createElement("p");
 
         logo.setAttribute("src", member.image);
-        logo.setAttribute("alt", `Logo of ${member.companyname}`);
+        //logo.setAttribute("alt", `Logo of ${member.companyname}`);
         logo.setAttribute("loading", "lazy");
         logo.setAttribute("width", "120px");
         logo.setAttribute("heigth", "auto");
