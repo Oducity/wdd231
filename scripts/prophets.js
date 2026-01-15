@@ -15,6 +15,7 @@ async function getProphetsData() {
 
 getProphetsData();
 
+const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
         let card = document.createElement("section");
         let fullName = document.createElement("h2");
@@ -43,5 +44,5 @@ getProphetsData();
 
         cards.appendChild(card);
     });
-}
+};
 
