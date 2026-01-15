@@ -1,84 +1,84 @@
 {
-    "members": [
-        {
-            "companyname": "Unicon Roof Company",
-            "address": "5 Usunobun Street off Upper Sokponba Road",
-            "phone": "+2348032729007",
-            "url": "https://www.uniconaluminumcompany.com",
-            "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-            "membership": 3,
-            "intro": "good",
-            "review": 5
-        },
-        {
-            "companyname": "Odus Bio-degester Company",
-            "address":"5 Usunobun Street off Upper Sokponba Road",
-            "phone": "+2348032729007",
-            "url": "https://www.uniconaluminumcompany.com",
-            "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-            "membership": 2,
-            "intro": "Nice company",
-            "review": 5
-        },
-        {
-            "companyname": "Oducity Tech World",
-            "address": "5 Usunobun Street off Upper Sokponba Road",
-            "phone": "+2348032729007",
-            "url": "https://www.uniconaluminumcompany.com",
-            "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-            "membership": 3,
-            "intro": "Reliable company",
-            "review": 5
-        },
-        {
-            "companyname": "Unicon Musicals",
-            "address": "5 Usunobun Street off Upper Sokponba Road",
-            "phone": "+2348032729007",
-            "url": "https://www.uniconaluminumcompany.com",
-            "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-            "membership": 1,
-            "intro": "Quality company",
-            "review": 3
-        },
-        {
-            "companyname": "Unicon Solar Solutions",
-            "address": "5 Usunobun Street off Upper Sokponba Road",
-            "phone": "+2348032729007",
-            "url": "https://www.uniconaluminumcompany.com",
-            "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-            "membership": 3,
-            "intro": "good",
-            "review": 4
-        },
-        {
-            "companyname": "Unicon Doors and Windows",
-            "address":"5 Usunobun Street off Upper Sokponba Road",
-            "phone": "+2348032729007",
-            "url": "https://www.uniconaluminumcompany.com",
-            "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-            "membership": 3,
-            "intro": "assurance",
-            "review": 5
-        },
-        {
-            "companyname": "Odesth Clay and Potry",
-            "address":"5 Usunobun Street off Upper Sokponba Road",
-            "phone": "+2348032729007",
-            "url": "https://www.uniconaluminumcompany.com",
-            "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-            "membership": 1,
-            "intro": "Quality pots",
-            "review": 2
-        },
-        {
-            "companyname": "Undus Art and Painting",
-            "address":"5 Usunobun Street off Upper Sokponba Road",
-            "phone": "+2348032729007",
-            "url": "https://www.uniconaluminumcompany.com",
-            "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-            "membership": 2,
-            "intro": "quality painting",
-            "review": 5
-        }
-    ]
+  "members": [
+    {
+        "companyname": "Unicon Roof Company",
+        "address": "5 Usunobun Street off Upper Sokponba Road",
+        "phone": "+2348032729007",
+        "url": "https://www.uniconaluminumcompany.com",
+        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
+        "membership": 3,
+        "intro": "good",
+        "review": 5
+    },
+    {
+        "companyname": "Odus Bio-degester Company",
+        "address":"5 Usunobun Street off Upper Sokponba Road",
+        "phone": "+2348032729007",
+        "url": "https://www.uniconaluminumcompany.com",
+        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
+        "membership": 2,
+        "intro": "Nice company",
+        "review": 5
+    },
+    {
+        "companyname": "Oducity Tech World",
+        "address": "5 Usunobun Street off Upper Sokponba Road",
+        "phone": "+2348032729007",
+        "url": "https://www.uniconaluminumcompany.com",
+        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
+        "membership": 3,
+        "intro": "Reliable company",
+        "review": 5
+    },
+    {
+        "companyname": "Unicon Musicals",
+        "address": "5 Usunobun Street off Upper Sokponba Road",
+        "phone": "+2348032729007",
+        "url": "https://www.uniconaluminumcompany.com",
+        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
+        "membership": 1,
+        "intro": "Quality company",
+        "review": 3
+    },
+    {
+        "companyname": "Unicon Solar Solutions",
+        "address": "5 Usunobun Street off Upper Sokponba Road",
+        "phone": "+2348032729007",
+        "url": "https://www.uniconaluminumcompany.com",
+        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
+        "membership": 3,
+        "intro": "good",
+        "review": 4
+    },
+    {
+        "companyname": "Unicon Doors and Windows",
+        "address":"5 Usunobun Street off Upper Sokponba Road",
+        "phone": "+2348032729007",
+        "url": "https://www.uniconaluminumcompany.com",
+        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
+        "membership": 3,
+        "intro": "assurance",
+        "review": 5
+    },
+    {
+        "companyname": "Odesth Clay and Potry",
+        "address":"5 Usunobun Street off Upper Sokponba Road",
+        "phone": "+2348032729007",
+        "url": "https://www.uniconaluminumcompany.com",
+        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
+        "membership": 1,
+        "intro": "Quality pots",
+        "review": 2
+    },
+    {
+        "companyname": "Undus Art and Painting",
+        "address":"5 Usunobun Street off Upper Sokponba Road",
+        "phone": "+2348032729007",
+        "url": "https://www.uniconaluminumcompany.com",
+        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
+        "membership": 2,
+        "intro": "quality painting",
+        "review": 5
+    }
+  ]
 }

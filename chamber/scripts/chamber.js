@@ -1,5 +1,5 @@
 //store the .json file in a variable url.
-const url = "https://oducity.github.io/wdd231/chamber/data/members.json";
+const url = "https://Oducity.github.io/wdd231/chamber/data/members.json";
 
 //create a cards variable and store element with id="cards" in it.
 const cards = document.querySelector("#cards");
