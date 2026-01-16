@@ -24,7 +24,43 @@
       "phone": "+2348032729007",
       "url": "https://www.unicondoorsandwindows.com",
       "membership": 2,
+      "rating": 4,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
+    },
+    {
+      "name": "Unicon Doors and Windows",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.unicondoorsandwindows.com",
+      "membership": 2,
       "rating": 5,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
+    },
+    {
+      "name": "Unicon Doors and Windows",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.unicondoorsandwindows.com",
+      "membership": 2,
+      "rating": 3,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
+    },
+    {
+      "name": "Unicon Doors and Windows",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.unicondoorsandwindows.com",
+      "membership": 2,
+      "rating": 5,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
+    },
+    {
+      "name": "Unicon Doors and Windows",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.unicondoorsandwindows.com",
+      "membership": 2,
+      "rating": 4,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     },
     {
@@ -51,7 +87,16 @@
       "phone": "+2348032729007",
       "url": "https://www.unicondoorsandwindows.com",
       "membership": 2,
-      "rating": 5,
+      "rating": 3,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
+    },
+    {
+      "name": "Unicon Doors and Windows",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.unicondoorsandwindows.com",
+      "membership": 2,
+      "rating": 3,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     },
     {
@@ -78,7 +123,16 @@
       "phone": "+2348032729007",
       "url": "https://www.unicondoorsandwindows.com",
       "membership": 2,
-      "rating": 5,
+      "rating":4,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
+    },
+    {
+      "name": "Unicon Doors and Windows",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.unicondoorsandwindows.com",
+      "membership": 2,
+      "rating": 4,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     },
     {
@@ -105,61 +159,7 @@
       "phone": "+2348032729007",
       "url": "https://www.unicondoorsandwindows.com",
       "membership": 2,
-      "rating": 5,
-      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
-    },
-    {
-      "name": "Unicon Doors and Windows",
-      "address": "6 Usunobun street, Benin City",
-      "phone": "+2348032729007",
-      "url": "https://www.unicondoorsandwindows.com",
-      "membership": 2,
-      "rating": 5,
-      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
-    },
-    {
-      "name": "Unicon Doors and Windows",
-      "address": "6 Usunobun street, Benin City",
-      "phone": "+2348032729007",
-      "url": "https://www.unicondoorsandwindows.com",
-      "membership": 2,
-      "rating": 5,
-      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
-    },
-    {
-      "name": "Unicon Doors and Windows",
-      "address": "6 Usunobun street, Benin City",
-      "phone": "+2348032729007",
-      "url": "https://www.unicondoorsandwindows.com",
-      "membership": 2,
-      "rating": 5,
-      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
-    },
-    {
-      "name": "Unicon Doors and Windows",
-      "address": "6 Usunobun street, Benin City",
-      "phone": "+2348032729007",
-      "url": "https://www.unicondoorsandwindows.com",
-      "membership": 2,
-      "rating": 5,
-      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
-    },
-    {
-      "name": "Unicon Doors and Windows",
-      "address": "6 Usunobun street, Benin City",
-      "phone": "+2348032729007",
-      "url": "https://www.unicondoorsandwindows.com",
-      "membership": 2,
-      "rating": 5,
-      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
-    },
-    {
-      "name": "Unicon Doors and Windows",
-      "address": "6 Usunobun street, Benin City",
-      "phone": "+2348032729007",
-      "url": "https://www.unicondoorsandwindows.com",
-      "membership": 2,
-      "rating": 5,
+      "rating": 4,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     }
   ]

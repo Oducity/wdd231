@@ -6,44 +6,57 @@ const cards = document.querySelector("#cards");
 
 // Create async function to fecth from the JSON source url using await fetch() method.
 
-async function getAllFirmsData() {
+async function getCompaniesData() {
     const response = await fetch(url);
     const data = await response.json();
     //console.table(data.prophets);   //this helpin viewing large amount of data in a table in the console.
-    displayFirmsData(data.allFirms);
+    displayCompaniesData(data.companies);
 };
 
-getAllFirmsData();
+getCompaniesData();
 
-const displayFirmsData = (allFirms) => {
-    allFirms.forEach((company) => {
+const displayCompaniesData = (companies) => {
+    companies.forEach((company) => {
         let memberStar = `\u2605`;
+        if (company.rating === 5) {
+            memberStar = `\u2605\u2605\u2605\u2605\u2605`;
+        } else if (company.rating === 4) {
+            memberStar = `\u2605\u2605\u2605\u2605`;
+        } else if (company.rating === 3) {
+            memberStar = `\u2605\u2605\u2605`;
+        } else if (company.rating === 2) {
+            memberStar = `\u2605\u2605`;
+        } else {
+            
+        }
+        
         let membershipLevel = "member";
+
         if (company.membership === 1) {
             membershipLevel = "Member";
         } else if (company.membership === 2) {
             membershipLevel = "Silver";
         } else {
-            membershipLevel = "Gold"
+            membershipLevel = membershipLevel;
         }
 
         let companySlot = document.createElement("section");
-        companySlot.setAttribute(".slot");
+        companySlot.setAttribute("class", "slot");
 
         let companyName = document.createElement("h2"); // formerly fullname
-        companyName.setAttribute(".company-name")
+        companyName.setAttribute("class", "company-name")
 
         let addressP = document.createElement("p"); // formerly birthDatePara
-        addressP.setAttribute(".address");
+        addressP.setAttribute("class", "address");
 
         let phoneP = document.createElement("p"); // formerly placeOfBirthPara
-        phoneP.setAttribute(".phone");
+        phoneP.setAttribute("class", "phone");
 
         let statusP = document.createElement("p"); //Creted <p> element for company status.
-        statusP.setAttribute(".status-p");
+        statusP.setAttribute("class", "status-p");
 
         let companyUrl = document.createElement("p");
-        companyUrl.setAttribute(".url");
+        companyUrl.setAttribute("class", "url");
 
         //store object's company in a variable "name"
         let name = company.name;
@@ -57,7 +70,7 @@ const displayFirmsData = (allFirms) => {
         portrait.setAttribute("width", "250px");
         portrait.setAttribute("heigth", "auto");
 
-        //companySlot.appendChild(portrait);
+        companySlot.appendChild(portrait);
 
         
         companySlot.appendChild(companyName);
@@ -68,12 +81,11 @@ const displayFirmsData = (allFirms) => {
         phoneP.innerText = `Phone: ${company.phone}`;
         companySlot.appendChild(phoneP);
 
-        statusP.innerText = `Membership: ${membershipLevel} || Rating: ${memberStar * company.rating}`;
+        statusP.innerText = `Membership: ${membershipLevel} || Rating: ${memberStar}`;
         companySlot.appendChild(statusP);
 
         companyUrl.innerText = `Website Address: ${company.url}`;
         companySlot.appendChild(companyUrl);
-        companySlot.appendChild(portrait);
 
         cards.appendChild(companySlot);
     });
