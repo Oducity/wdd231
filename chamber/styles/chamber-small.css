@@ -1,0 +1,133 @@
+:root {
+    --primary-color-blue: #070aaa;
+    --primary-color-red: #781118;
+    --background-color1: aliceblue;
+    --border-color: #c8c1c1;
+    --border-color1: #BDB5B5;
+    --background-color: #f2f2f2;
+}
+
+* {
+    font-family: "Josefin", sans-serif;
+    box-sizing: border-box;
+}
+/*************** header and nav *****************/
+header {
+    background-color: var(--background-color1);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: end;
+    padding: 3px 0 3px 0;
+    margin: 0 10px 0 10px;
+    border-bottom: 1.5px solid var(--border-color1);
+    justify-content: space-between;
+}
+
+header .div-logo {
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: 90px auto;
+    align-items: end;
+    column-gap: 8px;
+}
+
+header img {
+    width: 100%;
+    max-width: 5rem;
+    height: auto;
+}
+
+header span {
+    font-size: 35px;
+    color: var(--primary-color-red);
+    text-align: left;
+}
+
+header .div-nav {
+    grid-column: 7/13;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 20px;
+    align-items: end;
+}
+
+header nav {
+    grid-column: 1/9;
+}
+ header ul {
+    display: flex;
+    column-gap: 25px;
+    font-size: 1.3rem;
+ }
+
+ nav li {
+    list-style: none;
+    
+ }
+
+ header nav a {
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    border: 1px solid var(--border-color1);
+    border-radius: 8px;
+    padding: 1px;
+    color: var(--primary-color-red);
+ }
+.moon {
+    width: 100%;
+    max-width: 30px;
+    height: 30px;
+    max-height: 30PX;
+    border: 2px solid var(--border-color1);
+    border-radius: 50%;
+}
+
+header button {
+    width: 44px;
+    height: 44px;
+}
+
+
+/*********************** main ***********************/
+
+
+
+/**************** cards ********************/
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 10px 0 10px;
+    background-color: var(--background-color1);
+    grid-gap: 20px;
+    padding: 12px;
+}
+
+
+
+/*************************** slot styling ************************/
+.slot {
+    background-color: var(--background-color);
+    padding: 20px 0 20px 0;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.slot h2 {
+    color: var(--primary-color-blue);
+    text-align: center;
+}
+
+.slot img {
+    width: 80px;
+    align-self: center;
+}
+
+
+
+/************************** footer ******************************/
+
+

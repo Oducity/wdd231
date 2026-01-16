@@ -55,8 +55,12 @@ const displayCompaniesData = (companies) => {
         let statusP = document.createElement("p"); //Creted <p> element for company status.
         statusP.setAttribute("class", "status-p");
 
+        let urlAnchor = document.createElement("a");
+        urlAnchor.setAttribute("href", "#");
+        urlAnchor.innerText = company.url;
         let companyUrl = document.createElement("p");
         companyUrl.setAttribute("class", "url");
+
 
         //store object's company in a variable "name"
         let name = company.name;
@@ -84,7 +88,7 @@ const displayCompaniesData = (companies) => {
         statusP.innerText = `Membership: ${membershipLevel} || Rating: ${memberStar}`;
         companySlot.appendChild(statusP);
 
-        companyUrl.innerText = `Website Address: ${company.url}`;
+        companyUrl.appendChild(urlAnchor);
         companySlot.appendChild(companyUrl);
 
         cards.appendChild(companySlot);
