@@ -17,19 +17,19 @@ getCompaniesData();
 
 const displayCompaniesData = (companies) => {
     companies.forEach((company) => {
-        let memberStar = `\u2605`;
+        let memberStar;
         if (company.rating === 5) {
             memberStar = `\u2605\u2605\u2605\u2605\u2605`;
         } else if (company.rating === 4) {
-            memberStar = `\u2605\u2605\u2605\u2605`;
+            memberStar = `\u2605\u2605\u2605\u2605\u2606`;
         } else if (company.rating === 3) {
-            memberStar = `\u2605\u2605\u2605`;
+            memberStar = `\u2605\u2605\u2605\u2606\u2606`;
         } else if (company.rating === 2) {
-            memberStar = `\u2605\u2605`;
+            memberStar = `\u2605\u2605\u2606\u2606\u2606`;
         } else {
-            
+            memberStar = `\u2605\u2606\u2606\u2606\u2606`;
         }
-        
+
         let membershipLevel = "member";
 
         if (company.membership === 1) {
