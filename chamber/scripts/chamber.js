@@ -1,5 +1,5 @@
 // Declare a variable to store the url string
-const url = "https://oducity.github.io/wdd231/chamber/data/companies.json";
+const url = "https://oducity.github.io/wdd231/chamber/data/members.json";
 //const url = "https://oducity.github.io/wdd231/data/prophets.json";
 // Declare a variable to store the target html element
 const cards = document.querySelector("#cards");
