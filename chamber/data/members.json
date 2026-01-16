@@ -1,84 +1,94 @@
 {
-  "members": [
+  "companies": [
     {
-        "companyname": "Unicon Roof Company",
-        "address": "5 Usunobun Street off Upper Sokponba Road",
-        "phone": "+2348032729007",
-        "url": "https://www.uniconaluminumcompany.com",
-        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-        "membership": 3,
-        "intro": "good",
-        "review": 5
+      "name": "Unicon Doors and Windows",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.unicondoorsandwindows.com",
+      "membership": 2,
+      "rating": 5,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     },
     {
-        "companyname": "Odus Bio-degester Company",
-        "address":"5 Usunobun Street off Upper Sokponba Road",
-        "phone": "+2348032729007",
-        "url": "https://www.uniconaluminumcompany.com",
-        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-        "membership": 2,
-        "intro": "Nice company",
-        "review": 5
+      "name": "Unicon Aluminum and Steel Roof",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.uniconaluminumandsteel.com",
+      "membership": 2,
+      "rating": 5,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     },
     {
-        "companyname": "Oducity Tech World",
-        "address": "5 Usunobun Street off Upper Sokponba Road",
-        "phone": "+2348032729007",
-        "url": "https://www.uniconaluminumcompany.com",
-        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-        "membership": 3,
-        "intro": "Reliable company",
-        "review": 5
+      "name": "Unicon Solar and Wind Energy",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.uniconsolarsolution.com",
+      "membership": 2,
+      "rating": 4,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     },
     {
-        "companyname": "Unicon Musicals",
-        "address": "5 Usunobun Street off Upper Sokponba Road",
-        "phone": "+2348032729007",
-        "url": "https://www.uniconaluminumcompany.com",
-        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-        "membership": 1,
-        "intro": "Quality company",
-        "review": 3
+      "name": "Unicon Bio-Degester Technology",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.unicon-bio-degestertechnology.com",
+      "membership": 2,
+      "rating": 5,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     },
     {
-        "companyname": "Unicon Solar Solutions",
-        "address": "5 Usunobun Street off Upper Sokponba Road",
-        "phone": "+2348032729007",
-        "url": "https://www.uniconaluminumcompany.com",
-        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-        "membership": 3,
-        "intro": "good",
-        "review": 4
+      "name": "Unicon Painting and Decor",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.uniconpaintsanddecor.com",
+      "membership": 2,
+      "rating": 3,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     },
     {
-        "companyname": "Unicon Doors and Windows",
-        "address":"5 Usunobun Street off Upper Sokponba Road",
-        "phone": "+2348032729007",
-        "url": "https://www.uniconaluminumcompany.com",
-        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-        "membership": 3,
-        "intro": "assurance",
-        "review": 5
+      "name": "Unicon Clay and Pottery",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.uniconclay-pottery.com",
+      "membership": 2,
+      "rating": 5,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     },
     {
-        "companyname": "Odesth Clay and Potry",
-        "address":"5 Usunobun Street off Upper Sokponba Road",
-        "phone": "+2348032729007",
-        "url": "https://www.uniconaluminumcompany.com",
-        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-        "membership": 1,
-        "intro": "Quality pots",
-        "review": 2
+      "name": "Unicon Audio Tools",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.uniconaudiotools.com",
+      "membership": 2,
+      "rating": 4,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     },
     {
-        "companyname": "Undus Art and Painting",
-        "address":"5 Usunobun Street off Upper Sokponba Road",
-        "phone": "+2348032729007",
-        "url": "https://www.uniconaluminumcompany.com",
-        "image": "https://oducity.github.io/wdd231/chamber/images/chamber-logo.svg",
-        "membership": 2,
-        "intro": "quality painting",
-        "review": 5
+      "name": "Unicon Graphics Design",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.unicongraphics.com",
+      "membership": 2,
+      "rating": 5,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
+    },
+    {
+      "name": "Unicon Web-Soft Tech",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.uniconsoft-tech.com",
+      "membership": 2,
+      "rating": 5,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
+    },
+    {
+      "name": "Unicon Security and Surveillance Systems",
+      "address": "6 Usunobun street, Benin City",
+      "phone": "+2348032729007",
+      "url": "https://www.unicondoorsandwindows.com",
+      "membership": 2,
+      "rating": 3,
+      "imageurl": "https://oducity.github.io/wdd231/chamber/images/test-image.webp"
     }
   ]
 }
