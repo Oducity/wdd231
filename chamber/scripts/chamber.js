@@ -50,10 +50,14 @@ function addClassName(allClass) {
 
 listBtn.addEventListener("click", () => {
     cards.classList.add("display-list");
+    gridBtn.classList.remove("blue");
+    listBtn.classList.add("blue")
 });
 
 gridBtn.addEventListener("click", () => {
     cards.classList.remove("display-list");
+    listBtn.classList.remove("blue");
+    gridBtn.classList.add("blue");
 });
 
 

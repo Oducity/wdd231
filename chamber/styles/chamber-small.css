@@ -158,6 +158,24 @@ h1 {
 }
 
 /**************** Switch display **********************/
+.switch-display {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    background-color: var(--background-color1);
+    margin: 0 8px;
+}
+
+
+.switch-display button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border-color1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+}
+
 
 #cards.cards.display-list {
     display: grid;
@@ -186,6 +204,10 @@ h1 {
 
 #cards.cards.display-list .slot .url {
     padding: 0 10px;
+}
+
+button.blue {
+    color: var(--primary-color-blue);
 }
 
 /**************** cards ********************/
@@ -218,6 +240,12 @@ h1 {
 
 }
 
+@media screen and (max-width: 685px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 /*************************** slot styling ************************/
 .slot {
     background-color: var(--background-color);
@@ -238,6 +266,25 @@ h1 {
     align-self: center;
 }
 
+
+@media screen and (max-width: 520px) {
+    button.hamburger {
+        display: none;
+    }
+    .navigation {
+        display: block;
+    }
+    h1 {
+        padding-left: 7px;
+    }
+    .slot {
+        text-align: center;
+    }
+}
+
+
 /************************** footer ******************************/
 
-
+footer {
+    
+}
