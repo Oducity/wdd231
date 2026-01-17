@@ -1,0 +1,54 @@
+@media screen and (min-width: 600px) {
+    header {
+        background-color: var(--background-color1);
+        display: grid;
+        align-items: end;
+        margin: 0 10px 0 10px;
+        border-bottom: 1.5px solid var(--border-color1);
+        justify-content: space-between;
+    }
+
+    header .div-logo {
+        grid-column: 1/7;
+        display: grid;
+        grid-template-columns: 90px auto;
+        align-items: end;
+        column-gap: 8px;
+    }
+
+    header img {
+        width: 100%;
+        max-width: 5rem;
+        height: auto;
+    }
+
+    header span {
+        font-size: 35px;
+        color: var(--primary-color-red);
+        text-align: left;
+    }
+    .navigation {
+        display: block;
+        padding: 0 8px;
+    }
+
+    button.hamburger {
+        display: none;
+    }
+    .nav-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 1px solid var(--border-color1);
+        padding-left: 0;
+        padding-top: 4px;
+    }
+
+    nav li {
+        border-bottom: 0;
+    }
+
+    .nav-ul a {
+        justify-content: space-around;
+    }
+}

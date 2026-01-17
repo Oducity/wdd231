@@ -15,7 +15,6 @@
 header {
     background-color: var(--background-color1);
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
     align-items: end;
     padding: 3px 0 3px 0;
     margin: 0 10px 0 10px;
@@ -24,11 +23,12 @@ header {
 }
 
 header .div-logo {
-    grid-column: 1/7;
     display: grid;
     grid-template-columns: 90px auto;
     align-items: end;
     column-gap: 8px;
+    background-color: var(--background-color1);
+    padding-left: 8px;
 }
 
 header img {
@@ -41,6 +41,9 @@ header span {
     font-size: 35px;
     color: var(--primary-color-red);
     text-align: left;
+    align-items: end;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 header .div-nav {
@@ -52,48 +55,107 @@ header .div-nav {
     align-items: end;
 }
 
-header nav {
-    grid-column: 1/9;
-}
- header ul {
-    display: flex;
-    column-gap: 25px;
-    font-size: 1.3rem;
- }
-
  nav li {
     list-style: none;
-    
+    margin-top: 5px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--border-color1);
  }
 
- header nav a {
+ nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 10px;
+    padding: 0 5px;
+ }
+
+ nav a {
     text-align: center;
     text-decoration: none;
-    text-align: center;
-    padding-top: 10px;
-    border: 1px solid var(--border-color1);
-    border-radius: 8px;
-    padding: 1px;
+    font-size: 22px;
+    padding: 2px 5px;
     color: var(--primary-color-red);
  }
+
+ /*======================== hamburber ===================*/
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2.5rem;
+    color: var(--primary-color-blue);
+}
+
+/******************************    *****************************/
+
+.hamburger.show::after {
+    content: "\00D7";
+    font-size: 2.5rem;
+    color: var(--primary-color-red);
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+    justify-items: center;
+    text-align: left;
+    text-decoration: none;
+    margin: 0 2px;
+}
+
 .moon {
-    width: 100%;
-    max-width: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 30px;
     height: 30px;
     max-height: 30PX;
     border: 2px solid var(--border-color1);
     border-radius: 50%;
 }
 
+.div-nav .moon .first-part {
+    background-color: var(--border-color1);
+    border: var(--border-color1);
+    border-top-left-radius: 60%;
+    border-bottom-left-radius: 60%;
+    width: 15px;
+    height: 100%;
+    align-self: center;
+}
+
+
 header button {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
+}
+
+.navigation .nav-ul .way {
+    background-color: var(--background-color1);
+    border-left: 2px solid var(--border-color1);
+    border-top: 2px solid var(--border-color1);
+    border-right: 2px solid var(--border-color1);
+    border-radius: 5px;
 }
 
 
 /*********************** main ***********************/
-
-
+h1 {
+    margin: 0 10px;
+    background-color: var(--background-color1);
+    padding-left: 18px;
+    padding-top: 15px;
+    color: var(--primary-color-blue);
+}
 
 /**************** cards ********************/
 .cards {
@@ -105,7 +167,12 @@ header button {
     padding: 12px;
 }
 
-
+@media screen and (max-width: 1000px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 /*************************** slot styling ************************/
 .slot {
@@ -114,6 +181,7 @@ header button {
     text-align: center;
     border: 1px solid grey;
     border-radius: 4px;
+    box-shadow: 5px 5px 3px 3px var(--border-color1);
 }
 
 .slot h2 {

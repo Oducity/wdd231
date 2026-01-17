@@ -2,7 +2,6 @@ const hamburgerBtn = document.getElementById("ham-btn");
 const navBtn = document.getElementById("nav-bar");
 
 const navList = document.querySelectorAll("a");
-const h1 = document.querySelector("h1");
 
 const homePage = document.getElementById("home-pg");
 const discoveryPage = document.getElementById("discovery-pg");
