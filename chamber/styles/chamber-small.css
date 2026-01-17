@@ -167,6 +167,8 @@ h1 {
     padding: 12px;
 }
 
+
+
 @media screen and (max-width: 1000px) {
     .cards {
         display: grid;

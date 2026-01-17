@@ -10,6 +10,10 @@ const navBtn = document.getElementById("nav-bar");
 const navList = document.querySelectorAll("a");//This target and store all <a> element in navList variable
 const h1 = document.querySelector("h1");
 
+//Grab grid-btn and list-btn classes and store in gridBtn and listBtn variables respectively for grid/list toggle view.
+const gridBtn = document.getElementById("grid-btn");
+const listBtn = document.getElementById("list-btn");
+
 const homePage = document.getElementById("home-pg");
 const discoveryPage = document.getElementById("discovery-pg");
 const directoryPage = document.getElementById("directory-pg");
@@ -41,6 +45,17 @@ function addClassName(allClass) {
         });
     });
 }
+
+// Add eventListener() method to add and remove class name for list/grid display
+
+listBtn.addEventListener("click", () => {
+    cards.classList.add("display-list");
+});
+
+gridBtn.addEventListener("click", () => {
+    cards.classList.remove("display-list");
+});
+
 
 // Create async function to fecth from the JSON source url using await fetch() method.
 
