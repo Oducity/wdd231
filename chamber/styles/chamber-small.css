@@ -157,6 +157,14 @@ h1 {
     color: var(--primary-color-blue);
 }
 
+/**************** Switch display **********************/
+
+#cards.cards.display-list {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
 /**************** cards ********************/
 .cards {
     display: grid;
@@ -166,8 +174,6 @@ h1 {
     grid-gap: 20px;
     padding: 12px;
 }
-
-
 
 @media screen and (max-width: 1000px) {
     .cards {
