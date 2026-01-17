@@ -5,7 +5,7 @@
       "address": "6 Usunobun street, Benin City",
       "phone": "+2348032729007",
       "url": "https://www.unicondoorsandwindows.com",
-      "membership": 2,
+      "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/unicondoorswindows.webp"
     },
@@ -14,7 +14,7 @@
       "address": "6 Usunobun street, Benin City",
       "phone": "+2348032729007",
       "url": "https://www.uniconaluminumandsteel.com",
-      "membership": 2,
+      "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/uniconroofsteel.webp"
     },
@@ -32,7 +32,7 @@
       "address": "6 Usunobun street, Benin City",
       "phone": "+2348032729007",
       "url": "https://www.unicon-bio-degestertechnology.com",
-      "membership": 2,
+      "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/bio-digestion.webp"
     },
@@ -41,7 +41,7 @@
       "address": "6 Usunobun street, Benin City",
       "phone": "+2348032729007",
       "url": "https://www.uniconpaintsanddecor.com",
-      "membership": 2,
+      "membership": 1,
       "rating": 3,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/roller-brush.webp"
     },
@@ -50,7 +50,7 @@
       "address": "6 Usunobun street, Benin City",
       "phone": "+2348032729007",
       "url": "https://www.uniconclay-pottery.com",
-      "membership": 2,
+      "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/pottery.webp"
     },
@@ -68,7 +68,7 @@
       "address": "6 Usunobun street, Benin City",
       "phone": "+2348032729007",
       "url": "https://www.unicongraphics.com",
-      "membership": 2,
+      "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/unicon-graphics.svg"
     },
@@ -86,7 +86,7 @@
       "address": "6 Usunobun street, Benin City",
       "phone": "+2348032729007",
       "url": "https://www.unicondoorsandwindows.com",
-      "membership": 2,
+      "membership": 1,
       "rating": 3,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/unicon-security-surveillance.svg"
     }
