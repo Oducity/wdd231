@@ -164,6 +164,29 @@ h1 {
     grid-template-columns: 1fr;
 }
 
+#cards.cards.display-list .slot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    text-align: left;
+}
+
+#cards.cards.display-list .slot img {
+    display: none;
+}
+
+#cards.cards.display-list .slot .status-p {
+    display: none;
+}
+
+#cards.cards.display-list .slot h2 {
+    padding: 0;
+    padding-left: 8px;
+}
+
+#cards.cards.display-list .slot .url {
+    padding: 0 10px;
+}
 
 /**************** cards ********************/
 .cards {
