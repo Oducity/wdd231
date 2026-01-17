@@ -286,5 +286,8 @@ button.blue {
 /************************** footer ******************************/
 
 footer {
-
+    text-align: center;
+    background-color: var(--background-color1);
+    margin: 0 12px 0 12px;
+    font-size: 22px;
 }
