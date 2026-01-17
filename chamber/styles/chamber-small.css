@@ -203,6 +203,19 @@ h1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    #cards.cards.display-list .slot {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 0;
+    }
+
+    #cards.cards.display-list .slot .status-p {
+        display: block;
+        flex-wrap: wrap;
+    }
+
 }
 
 /*************************** slot styling ************************/
@@ -224,8 +237,6 @@ h1 {
     width: 80px;
     align-self: center;
 }
-
-
 
 /************************** footer ******************************/
 
