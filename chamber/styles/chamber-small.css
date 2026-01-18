@@ -152,7 +152,7 @@ header button {
 h1 {
     margin: 0 10px;
     background-color: var(--background-color1);
-    padding-left: 18px;
+    padding-left: 1rem;
     padding-top: 15px;
     color: var(--primary-color-blue);
 }
@@ -274,9 +274,7 @@ button.blue {
     .navigation {
         display: block;
     }
-    h1 {
-        padding-left: 7px;
-    }
+    
     .slot {
         text-align: center;
     }
