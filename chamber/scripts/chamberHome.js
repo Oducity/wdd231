@@ -1,5 +1,5 @@
 const cards = document.querySelector("#cards");
-
+const heroBox = document.querySelector("#hero-box");
 
 const hamburgerBtn = document.getElementById("ham-btn");
 const navBtn = document.getElementById("nav-bar");
@@ -38,12 +38,36 @@ function addClassName(allClass) {
             navItem.classList.add("way");
         });
     });
-}
+};
+
+/*
+
+function displayHeroImages(heros){
+    heros.forEach(hero => {
+        let img = document.createElement("img");
+        img.setAttribute("src", hero.imageUrl);
+        img.setAttribute("alt", "Chamber of commerce image.");
+        img.setAttribute("loading", "lazy");
+        heroBox.appendChild(img);
+    });
+};
 
 
-heros: [
-    "https://oducity.github.io/wdd231/chamber/images/hero1.webp",
-    "https://oducity.github.io/wdd231/chamber/images/hero2.webp",
-    "https://oducity.github.io/wdd231/chamber/images/hero3.webp",
-    "https://oducity.github.io/wdd231/chamber/images/hero4.webp"
-];
+heros: {
+    [
+        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero1.webp",
+    ],
+    [
+        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero2.webp",
+    ],
+    [
+        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero3.webp",
+    ],
+    [
+        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero4.webp",
+    ]
+};
+
+displayHeroImages(heros);
+*/
+

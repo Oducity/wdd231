@@ -89,8 +89,8 @@ const displayCompaniesData = (companies) => {
 
         let membershipLevel = "member";
 
-        if (company.membership === 1) {
-            membershipLevel = "Member";
+        if (company.membership === 3) {
+            membershipLevel = "Gold";
         } else if (company.membership === 2) {
             membershipLevel = "Silver";
         } else {
