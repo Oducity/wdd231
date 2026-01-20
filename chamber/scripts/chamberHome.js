@@ -1,5 +1,6 @@
 const cards = document.querySelector("#cards");
 
+
 const hamburgerBtn = document.getElementById("ham-btn");
 const navBtn = document.getElementById("nav-bar");
 
@@ -38,3 +39,11 @@ function addClassName(allClass) {
         });
     });
 }
+
+
+heros: [
+    "https://oducity.github.io/wdd231/chamber/images/hero1.webp",
+    "https://oducity.github.io/wdd231/chamber/images/hero2.webp",
+    "https://oducity.github.io/wdd231/chamber/images/hero3.webp",
+    "https://oducity.github.io/wdd231/chamber/images/hero4.webp"
+];
