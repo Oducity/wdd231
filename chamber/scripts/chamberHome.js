@@ -120,6 +120,9 @@ const displayCompaniesData = (companies) => {
 
         companySlot.appendChild(portrait);
 
+        tag.innerText = company.companytag;
+        companySlot.appendChild(tag);
+
         
         companySlot.appendChild(companyName);
 

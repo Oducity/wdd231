@@ -28,7 +28,7 @@
       "membership": 2,
       "rating": 4,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/uniconsolar.svg",
-      "tag": "Go Green"
+      "companytag": "Go Green"
     },
     {
       "name": "Unicon Bio-Degester Technology",
@@ -38,7 +38,7 @@
       "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/bio-digestion.webp",
-      "tag": "Nothing is wasted"
+      "companytag": "Nothing is wasted"
     },
     {
       "name": "Unicon Painting and Decor",
@@ -48,7 +48,7 @@
       "membership": 1,
       "rating": 3,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/roller-brush.webp",
-      "tag": "Palace Makers"
+      "companytag": "Palace Makers"
     },
     {
       "name": "Unicon Clay and Pottery",
@@ -58,7 +58,7 @@
       "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/pottery.webp",
-      "tag": "Authentic Craftmanship"
+      "companytag": "Authentic Craftmanship"
     },
     {
       "name": "Unicon Audio Tools",
@@ -68,7 +68,7 @@
       "membership": 2,
       "rating": 4,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/unicon-audio.svg",
-      "tag": "Quality Sound good Inspiration"
+      "companytag": "Quality Sound good Inspiration"
     },
     {
       "name": "Unicon Graphics Design",
@@ -78,7 +78,7 @@
       "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/unicon-graphics.svg",
-      "tag": "Passion in design"
+      "companytag": "Passion in design"
     },
     {
       "name": "Unicon Web-Soft Tech",
@@ -88,7 +88,7 @@
       "membership": 2,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/web-soft-logo.svg",
-      "tag": "Quality and reliability"
+      "companytag": "Quality and reliability"
     },
     {
       "name": "Unicon Security and Surveillance Systems",
@@ -98,7 +98,7 @@
       "membership": 1,
       "rating": 3,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/unicon-security-surveillance.svg",
-      "tag": "Security brings peace"
+      "companytag": "Security brings peace"
     }
   ]
 }
