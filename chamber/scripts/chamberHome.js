@@ -40,7 +40,7 @@ function addClassName(allClass) {
     });
 };
 
-/*
+/************** Display random members of Edo chamber of commerce ************/
 
 function displayHeroImages(heros){
     heros.forEach(hero => {
@@ -71,3 +71,67 @@ heros: {
 displayHeroImages(heros);
 */
 
+async function getCompaniesData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    //console.table(data.prophets);   //this helpin viewing large amount of data in a table in the console.
+    displayCompaniesData(data.companies);
+};
+
+getCompaniesData();
+
+const displayCompaniesData = (companies) => {
+    companies.forEach((company) => {
+
+        let companySlot = document.createElement("section");
+        companySlot.setAttribute("class", "slot");
+
+        let companyName = document.createElement("h2"); // fullname containner
+        companyName.setAttribute("class", "company-name")
+
+        let tag = document.createElement("p");
+        tag.setAttribute("class", "tag");
+
+        let addressP = document.createElement("p"); // address box
+        addressP.setAttribute("class", "address");
+
+        let phoneP = document.createElement("p"); // Phone number box
+        phoneP.setAttribute("class", "phone");
+
+
+        let urlAnchor = document.createElement("a");
+        urlAnchor.setAttribute("href", "#");
+        urlAnchor.innerText = company.url;
+        let companyUrl = document.createElement("p");
+        companyUrl.setAttribute("class", "url");
+
+
+        //store object's company in a variable "name"
+        let name = company.name;
+        companyName.innerText = name;//Paces name in the element variable "companyName"
+        // Creates Image and its attributes
+        let portrait = document.createElement("img");
+        let imgAlt = `Photo of ${name}`;
+        portrait.setAttribute("src", company.imageurl);
+        portrait.setAttribute("alt", imgAlt);
+        portrait.setAttribute("loading", "lazy");
+        portrait.setAttribute("width", "80px");
+        portrait.setAttribute("heigth", "auto");
+
+        companySlot.appendChild(portrait);
+
+        
+        companySlot.appendChild(companyName);
+
+        addressP.innerText = `Address: ${company.address}`;
+        companySlot.appendChild(addressP);
+
+        phoneP.innerText = `Phone: ${company.phone}`;
+        companySlot.appendChild(phoneP);
+
+        companyUrl.appendChild(urlAnchor);
+        companySlot.appendChild(companyUrl);
+
+        cards.appendChild(companySlot);
+    });
+};

@@ -322,7 +322,7 @@ button.blue {
 footer {
     width: 100%;
     text-align: center;
-    background-color: var(--background-color1);
+    background-color: var(--background-color1); 
     font-size: 22px;
 }
 
