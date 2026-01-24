@@ -1,3 +1,5 @@
+const url = "https://oducity.github.io/wdd231/chamber/data/members.json";
+
 const cards = document.querySelector("#cards");
 const heroBox = document.querySelector("#hero-box");
 
@@ -92,11 +94,18 @@ const displayCompaniesData = (companies) => {
         let tag = document.createElement("p");
         tag.setAttribute("class", "tag");
 
+        let infoBox = document.createElement("div");
+        infoBox.setAttribute("class", "info-box");
+
         let addressP = document.createElement("p"); // address box
         addressP.setAttribute("class", "address");
 
         let phoneP = document.createElement("p"); // Phone number box
         phoneP.setAttribute("class", "phone");
+
+        let emailBox = document.createElement("p");
+        emailBox.setAttribute("class", "email");
+        emailBox.innerHTML = `<strong>Email:</strong> ${company.email}`;
 
 
         let urlAnchor = document.createElement("a");
@@ -109,6 +118,12 @@ const displayCompaniesData = (companies) => {
         //store object's company in a variable "name"
         let name = company.name;
         companyName.innerText = name;//Paces name in the element variable "companyName"
+        companySlot.appendChild(companyName);
+
+        tag.innerText = company.companytag;
+        companySlot.appendChild(tag);
+
+
         // Creates Image and its attributes
         let portrait = document.createElement("img");
         let imgAlt = `Photo of ${name}`;
@@ -118,22 +133,17 @@ const displayCompaniesData = (companies) => {
         portrait.setAttribute("width", "80px");
         portrait.setAttribute("heigth", "auto");
 
-        companySlot.appendChild(portrait);
+        infoBox.appendChild(portrait);
 
-        tag.innerText = company.companytag;
-        companySlot.appendChild(tag);
+        infoBox.appendChild(emailBox);
 
-        
-        companySlot.appendChild(companyName);
-
-        addressP.innerText = `Address: ${company.address}`;
-        companySlot.appendChild(addressP);
-
-        phoneP.innerText = `Phone: ${company.phone}`;
-        companySlot.appendChild(phoneP);
+        phoneP.innerHTML = `<strong>Phone:</strong> ${company.phone}`;
+        infoBox.appendChild(phoneP);
 
         companyUrl.appendChild(urlAnchor);
-        companySlot.appendChild(companyUrl);
+        infoBox.appendChild(companyUrl);
+
+        companySlot.appendChild(infoBox);
 
         cards.appendChild(companySlot);
     });
