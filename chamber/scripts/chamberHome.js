@@ -55,23 +55,23 @@ function displayHeroImages(heros){
 };
 
 
-heros: {
-    [
-        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero1.webp",
-    ],
-    [
-        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero2.webp",
-    ],
-    [
-        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero3.webp",
-    ],
-    [
-        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero4.webp",
-    ]
-};
+//heros: {
+//    [
+//        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero1.webp",
+//    ],
+//    [
+//        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero2.webp",
+//    ],
+//    [
+//        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero3.webp",
+//    ],
+//    [
+//        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero4.webp",
+//    ]
+//};
 
 displayHeroImages(heros);
-*/
+
 
 async function getCompaniesData() {
     const response = await fetch(url);
