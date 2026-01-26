@@ -64,7 +64,7 @@ async function getCompaniesData() {
 };
 
 
-const displayCompaniesData = (companies) => {
+function displayCompaniesData(companies){
     companies.forEach((company) => {
 
         let companySlot = document.createElement("section");
