@@ -65,68 +65,70 @@ async function getCompaniesData() {
 
 
 function displayCompaniesData(companies){
-    companies.forEach((company) => {
 
+    companies.forEach((company) => {
         let companySlot = document.createElement("section");
         companySlot.setAttribute("class", "slot");
+        if (company.rating > 1) {
 
-        let companyName = document.createElement("h2"); // fullname containner
-        companyName.setAttribute("class", "company-name")
+            let companyName = document.createElement("h2"); // fullname containner
+            companyName.setAttribute("class", "company-name")
 
-        let tag = document.createElement("p"); //Tag container
-        tag.setAttribute("class", "tag");
+            let tag = document.createElement("p"); //Tag container
+            tag.setAttribute("class", "tag");
 
-        let infoBox = document.createElement("div"); // Company information box
-        infoBox.setAttribute("class", "info-box");
+            let infoBox = document.createElement("div"); // Company information box
+            infoBox.setAttribute("class", "info-box");
 
-        let addressP = document.createElement("p"); // address box
-        addressP.setAttribute("class", "address");
+            let addressP = document.createElement("p"); // address box
+            addressP.setAttribute("class", "address");
 
-        let phoneP = document.createElement("p"); // Phone number box
-        phoneP.setAttribute("class", "phone");
+            let phoneP = document.createElement("p"); // Phone number box
+            phoneP.setAttribute("class", "phone");
 
-        let emailBox = document.createElement("p"); //Company email address containner
-        emailBox.setAttribute("class", "email");
-        emailBox.innerHTML = `<strong>Email:</strong> ${company.email}`;
-
-
-        let urlAnchor = document.createElement("a"); // Web address anchor link
-        urlAnchor.setAttribute("href", "#");
-        urlAnchor.innerText = company.url;
-        let companyUrl = document.createElement("p"); // Url anchor containner
-        companyUrl.setAttribute("class", "url");
+            let emailBox = document.createElement("p"); //Company email address containner
+            emailBox.setAttribute("class", "email");
+            emailBox.innerHTML = `<strong>Email:</strong> ${company.email}`;
 
 
-        //store company's name object in a variable "name"
-        let name = company.name;
-        companyName.innerText = name;//Paces name in the element variable "companyName"
-        companySlot.appendChild(companyName);
-
-        tag.innerText = company.companytag;
-        companySlot.appendChild(tag);
+            let urlAnchor = document.createElement("a"); // Web address anchor link
+            urlAnchor.setAttribute("href", "#");
+            urlAnchor.innerText = company.url;
+            let companyUrl = document.createElement("p"); // Url anchor containner
+            companyUrl.setAttribute("class", "url");
 
 
-        // Creates Image and its attributes
-        let portrait = document.createElement("img");
-        let imgAlt = `Photo of ${name}`;
-        portrait.setAttribute("src", company.imageurl);
-        portrait.setAttribute("alt", imgAlt);
-        portrait.setAttribute("loading", "lazy");
-        portrait.setAttribute("width", "80px");
-        portrait.setAttribute("heigth", "auto");
+            //store company's name object in a variable "name"
+            let name = company.name;
+            companyName.innerText = name;//Paces name in the element variable "companyName"
+            companySlot.appendChild(companyName);
 
-        infoBox.appendChild(portrait);
+            tag.innerText = company.companytag;
+            companySlot.appendChild(tag);
 
-        infoBox.appendChild(emailBox);
 
-        phoneP.innerHTML = `<strong>Phone:</strong> ${company.phone}`;
-        infoBox.appendChild(phoneP);
+            // Creates Image and its attributes
+            let portrait = document.createElement("img");
+            let imgAlt = `Photo of ${name}`;
+            portrait.setAttribute("src", company.imageurl);
+            portrait.setAttribute("alt", imgAlt);
+            portrait.setAttribute("loading", "lazy");
+            portrait.setAttribute("width", "80px");
+            portrait.setAttribute("heigth", "auto");
 
-        companyUrl.appendChild(urlAnchor);
-        infoBox.appendChild(companyUrl);
+            infoBox.appendChild(portrait);
 
-        companySlot.appendChild(infoBox);
+            infoBox.appendChild(emailBox);
 
+            phoneP.innerHTML = `<strong>Phone:</strong> ${company.phone}`;
+            infoBox.appendChild(phoneP);
+
+            companyUrl.appendChild(urlAnchor);
+            infoBox.appendChild(companyUrl);
+
+            companySlot.appendChild(infoBox);
+
+        };
         cards.appendChild(companySlot);
     });
 };
