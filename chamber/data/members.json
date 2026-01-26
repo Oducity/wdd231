@@ -9,7 +9,7 @@
       "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/unicondoorswindows.webp",
-      "tag": "Quality and durable windows & doors"
+      "companytag": "Quality and durable windows & doors"
     },
     {
       "name": "Unicon Aluminum and Steel Roof",
@@ -20,7 +20,7 @@
       "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/uniconroofsteel.webp",
-      "tag": "Authentic roofers"
+      "companytag": "Authentic roofers"
     },
     {
       "name": "Unicon Solar and Wind Energy",

@@ -54,24 +54,7 @@ function displayHeroImages(heros){
     });
 };
 
-
-//heros: {
-//    [
-//        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero1.webp",
-//    ],
-//    [
-//        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero2.webp",
-//    ],
-//    [
-//        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero3.webp",
-//    ],
-//    [
-//        imageUrl = "https://oducity.github.io/wdd231/chamber/images/hero4.webp",
-//    ]
-//};
-
-displayHeroImages(heros);
-
+getCompaniesData();
 
 async function getCompaniesData() {
     const response = await fetch(url);
@@ -80,7 +63,6 @@ async function getCompaniesData() {
     displayCompaniesData(data.companies);
 };
 
-getCompaniesData();
 
 const displayCompaniesData = (companies) => {
     companies.forEach((company) => {
@@ -91,10 +73,10 @@ const displayCompaniesData = (companies) => {
         let companyName = document.createElement("h2"); // fullname containner
         companyName.setAttribute("class", "company-name")
 
-        let tag = document.createElement("p");
+        let tag = document.createElement("p"); //Tag container
         tag.setAttribute("class", "tag");
 
-        let infoBox = document.createElement("div");
+        let infoBox = document.createElement("div"); // Company information box
         infoBox.setAttribute("class", "info-box");
 
         let addressP = document.createElement("p"); // address box
@@ -103,19 +85,19 @@ const displayCompaniesData = (companies) => {
         let phoneP = document.createElement("p"); // Phone number box
         phoneP.setAttribute("class", "phone");
 
-        let emailBox = document.createElement("p");
+        let emailBox = document.createElement("p"); //Company email address containner
         emailBox.setAttribute("class", "email");
         emailBox.innerHTML = `<strong>Email:</strong> ${company.email}`;
 
 
-        let urlAnchor = document.createElement("a");
+        let urlAnchor = document.createElement("a"); // Web address anchor link
         urlAnchor.setAttribute("href", "#");
         urlAnchor.innerText = company.url;
-        let companyUrl = document.createElement("p");
+        let companyUrl = document.createElement("p"); // Url anchor containner
         companyUrl.setAttribute("class", "url");
 
 
-        //store object's company in a variable "name"
+        //store company's name object in a variable "name"
         let name = company.name;
         companyName.innerText = name;//Paces name in the element variable "companyName"
         companySlot.appendChild(companyName);
