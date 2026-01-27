@@ -1,4 +1,5 @@
 const url = "https://oducity.github.io/wdd231/chamber/data/members.json";
+const awardUrl = "https://oducity.github.io/wdd231/chamber/data/members.json";
 
 //Create required variables for the weather url.
 const myKey = "595df96ec4974ae93556a6fd7e848f50";
@@ -7,6 +8,9 @@ const myLong = "5.62";
 
 // create the weather url
 const weatherUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
+
+/********************** Select all element in the Events box **********************/
+const eventcards = document.querySelector("#event-cards");
 
 /********************** Select all elements for current weather display ***********************/
 const weatherIcon = document.querySelector("#w-logo");
@@ -84,25 +88,40 @@ function displayHeroImages(heros){
 
 getApiData(url);
 getApiData(weatherUrl);
+getAwardApi(awardUrl);
 
 async function getApiData(arr) {
     try {
         const response = await fetch(arr);
         if (response.ok) {
-                const data = await response.json();
-                console.log(data);
-                //console.table(data.prophets);   //this helpin viewing large amount of data in a table in the console.
-                if (!data.companies) {
-                        displayWeatherData(data);
-                    } else if (data.companies) {
-                        displayCompaniesData(data.companies);
-                }
+            const data = await response.json();
+            console.log(data);
+            //console.table(data.prophets);   //this helpin viewing large amount of data in a table in the console.
+            if (!data.companies) {
+                displayWeatherData(data);
+            } else if (data.companies) {
+                displayCompaniesData(data.companies);
+            }
+
         } else {
             throw Error(await response.text());
         }
     } catch (error) {
         console.log(error);
     } 
+};
+
+async function getAwardApi(arr) {
+    try {
+        const response = await fetch(arr);
+        if (response.ok) {
+            const data = await response.json();
+            console.loge(data);
+            displayAward(data.companies);
+        };
+    } catch (error) {
+        console.log(error);
+    };
 };
 
 
@@ -112,7 +131,7 @@ function displayCompaniesData(companies){
     let filteredCompanies = companies.filter((company) => company.membership > 1);
 
     const threeCompanies = getRandomCompanies(filteredCompanies, 3)
-    threeCompanies.forEach((company) => {
+    threeCompanies.forEach((comp) => {
         
         let companySlot = document.createElement("section");
         companySlot.setAttribute("class", "slot");
@@ -134,29 +153,29 @@ function displayCompaniesData(companies){
 
         let emailBox = document.createElement("p"); //Company email address containner
         emailBox.setAttribute("class", "email");
-        emailBox.innerHTML = `<strong>Email:</strong> ${company.email}`;
+        emailBox.innerHTML = `<strong>Email:</strong> ${comp.email}`;
 
 
         let urlAnchor = document.createElement("a"); // Web address anchor link
         urlAnchor.setAttribute("href", "#");
-        urlAnchor.innerText = company.url;
+        urlAnchor.innerText = comp.url;
         let companyUrl = document.createElement("p"); // Url anchor containner
         companyUrl.setAttribute("class", "url");
 
 
         //store company's name object in a variable "name"
-        let name = company.name;
+        let name = comp.name;
         companyName.innerText = name;//Paces name in the element variable "companyName"
         companySlot.appendChild(companyName);
 
-        tag.innerText = company.companytag;
+        tag.innerText = comp.companytag;
         companySlot.appendChild(tag);
 
 
         // Creates Image and its attributes
         let portrait = document.createElement("img");
         let imgAlt = `Photo of ${name}`;
-        portrait.setAttribute("src", company.imageurl);
+        portrait.setAttribute("src", comp.imageurl);
         portrait.setAttribute("alt", imgAlt);
         portrait.setAttribute("loading", "lazy");
         portrait.setAttribute("width", "80px");
@@ -166,7 +185,7 @@ function displayCompaniesData(companies){
 
         infoBox.appendChild(emailBox);
 
-        phoneP.innerHTML = `<strong>Phone:</strong> ${company.phone}`;
+        phoneP.innerHTML = `<strong>Phone:</strong> ${comp.phone}`;
         infoBox.appendChild(phoneP);
 
         companyUrl.appendChild(urlAnchor);
@@ -214,4 +233,41 @@ function displayWeatherData(data) {
 
 function displayDaysData(data) {
 
+};
+
+
+/************** Events code starts here ***************/
+
+function displayAward(companies) {
+    let filteredawards = companies.filter((company) => company.award);
+    filteredawards.forEach((company) => {
+        eventcards.innerHTML = "";
+        let count = 0;
+        let awardCard = document.createElement("div");
+        awardCard.setAttribute("class", "award-card");
+        
+        let companyLogo = document.createElement("img");
+        companyLogo.setAttribute("scr", company.imageurl);
+        companyLogo.setAttribute("alt", `logo of ${company.name}`);
+        companyLogo.setAttribute("loading", "lazy");
+        companyLogo.setAttribute("width", "70px");
+        companyLogo.setAttribute("height", "70px");
+
+        let companyName = document.createElement("h2");
+        companyName.innerText = company.name;
+
+        let awardSpan = document.createElement("span");
+        awardSpan.innerHTML = `<strong>${company.award}</strong>`;
+
+        awardCard.appendChild(companyLogo);
+        awardCard.appendChild(companyName);
+        awardCard.appendChild(awardSpan);
+
+        eventcards.appendChild(awardCard);
+
+        for (let i = 0; i < 11000; i++){
+            count++;
+        }
+        count = 0;
+    });
 };

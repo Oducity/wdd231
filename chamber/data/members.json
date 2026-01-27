@@ -9,7 +9,8 @@
       "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/unicondoorswindows.webp",
-      "companytag": "Quality and durable windows & doors"
+      "companytag": "Quality and durable windows & doors",
+      "award": "Most Reliable Window Producer Award of The Years 2025"
     },
     {
       "name": "Unicon Aluminum and Steel Roof",
@@ -20,7 +21,8 @@
       "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/uniconroofsteel.webp",
-      "companytag": "Authentic roofers"
+      "companytag": "Authentic roofers",
+      "award": "Best Roofer of The Year 2025"
     },
     {
       "name": "Unicon Solar and Wind Energy",
@@ -42,7 +44,8 @@
       "membership": 3,
       "rating": 5,
       "imageurl": "https://oducity.github.io/wdd231/chamber/images/bio-digestion.webp",
-      "companytag": "Nothing is wasted"
+      "companytag": "Nothing is wasted",
+      "award": "Highest Gas Producing Bio-Dester of The Year 2023"
     },
     {
       "name": "Unicon Painting and Decor",
