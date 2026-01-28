@@ -103,13 +103,15 @@ async function getApiData(arr) {
             const data = await response.json();
             console.log(data);
             //console.table(data.prophets);   //this helpin viewing large amount of data in a table in the console.
-            if (!data.companies) {
+            if (!data.companies && data.name) {
                 displayWeatherData(data);
             } else if (data.companies) {
                 //displayCompaniesData(data.companies);
                 //displayCompaniesData(getRandomCompanies(data.companies.filter(company => company.membership > 1), 3));
                 displayCompaniesData(data.companies.filter(company => company.membership > 1));
-            }
+            }// else (data.city) {
+
+            //}
 
         } else {
             throw Error(await response.text());
@@ -239,8 +241,8 @@ function getRandomCompanies(arr, count) {
 
 
 function displayWeatherData(data) {
-    //let cityName = `${data.city.name}`;
-    //currentCity.innerHTML = `<strong>${cityName}</strong>`;
+    let cityName = `${data.name}`;
+    currentCity.innerHTML = `<strong>${cityName}</strong>`;
     let iconAddress = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute("SRC", iconAddress);
     weatherIcon.setAttribute("alt", data.weather[0].description);
