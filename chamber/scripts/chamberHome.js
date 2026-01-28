@@ -116,7 +116,7 @@ async function getAwardApi(arr) {
         const response = await fetch(arr);
         if (response.ok) {
             const data = await response.json();
-            console.loge(data);
+            console.log(data);
             displayAward(data.companies);
         };
     } catch (error) {
@@ -247,13 +247,13 @@ function displayAward(companies) {
         awardCard.setAttribute("class", "award-card");
         
         let companyLogo = document.createElement("img");
-        companyLogo.setAttribute("scr", company.imageurl);
+        companyLogo.setAttribute("SRC", company.imageurl);
         companyLogo.setAttribute("alt", `logo of ${company.name}`);
         companyLogo.setAttribute("loading", "lazy");
         companyLogo.setAttribute("width", "70px");
         companyLogo.setAttribute("height", "70px");
 
-        let companyName = document.createElement("h2");
+        let companyName = document.createElement("h3");
         companyName.innerText = company.name;
 
         let awardSpan = document.createElement("span");
@@ -265,7 +265,7 @@ function displayAward(companies) {
 
         eventcards.appendChild(awardCard);
 
-        for (let i = 0; i < 11000; i++){
+        for (let i = 0; i < 1000; i++){
             count++;
         }
         count = 0;
