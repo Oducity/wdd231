@@ -10,6 +10,7 @@ const myLong = "5.62";
 
 // create the weather url
 const weatherUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
+const fiveWeatherUrl = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${fiveDaysAPI}&units=metric`;
 
 /********************** Select all element in the Events box **********************/
 const eventcards = document.querySelector("#event-cards");
@@ -40,7 +41,7 @@ const newsCards = document.querySelector("#news");
 const hamburgerBtn = document.getElementById("ham-btn");
 const navBtn = document.getElementById("nav-bar");
 
-const navList = document.querySelectorAll("nav a");//This target and store all <a> element in navList variable
+const navList = document.querySelectorAll("nav a");//This target all <a> elements within the <nav> element and store store them in navList variable.
 const h1 = document.querySelector("h1");
 
 
@@ -97,12 +98,13 @@ async function getApiData(arr) {
         const response = await fetch(arr);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             //console.table(data.prophets);   //this helpin viewing large amount of data in a table in the console.
             if (!data.companies) {
                 displayWeatherData(data);
             } else if (data.companies) {
                 //displayCompaniesData(data.companies);
+                //displayCompaniesData(getRandomCompanies(data.companies.filter(company => company.membership > 1), 3));
                 displayCompaniesData(data.companies.filter(company => company.membership > 1));
             }
 
@@ -206,6 +208,7 @@ const displayCompaniesData = (companies) => {
         companyUrl.appendChild(urlAnchor);
         companySlot.appendChild(companyUrl);
 
+        
         cards.appendChild(companySlot);
     });
 };
@@ -245,7 +248,7 @@ function displayWeatherData(data) {
     sunSet.innerHTML = data.sys.sunset;
 };
 
-function displayDaysData(data) {
+function displayFiveDaysData(data) {
 
 };
 
