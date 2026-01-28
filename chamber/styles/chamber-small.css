@@ -147,11 +147,13 @@ header button {
 }
 
 .navigation .nav-ul .way {
-    background-color: var(--background-color1);
-    border-left: 2px solid var(--border-color1);
-    border-top: 2px solid var(--border-color1);
-    border-right: 2px solid var(--border-color1);
+    background-color: brown;
+    color: #fff;
+    border-left: 5px solid var(--border-color1);
+    border-top: 5px solid var(--border-color1);
+    border-right: 5px solid var(--border-color1);
     border-radius: 5px;
+    border-bottom: 5px solid var(--primary-color-blue);
 }
 
 
@@ -218,7 +220,7 @@ h1 {
     background-color: var(--background-color1);
     padding-left: .8rem;
     padding-top: 15px;
-    color: var(--primary-color-blue);
+    color: var(--primary-color-red);
 }
 /**************** Switch display **********************/
 .switch-display {
