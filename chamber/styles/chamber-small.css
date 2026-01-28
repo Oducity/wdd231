@@ -241,12 +241,6 @@ h1 {
     font-weight: 600;
 }
 
-.cards {
-    width: 100%;
-    max-width: 1600px;
-    justify-self: center;
-}
-
 
 #cards.cards.display-list {
     display: grid;
@@ -289,6 +283,9 @@ button.blue {
     background-color: var(--background-color1);
     grid-gap: 20px;
     padding: 12px;
+    width: 100%;
+    max-width: 1600px;
+    justify-self: center;
 }
 
 /*********************** News div styling ******************/
