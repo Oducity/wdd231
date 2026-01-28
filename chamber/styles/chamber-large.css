@@ -1,3 +1,22 @@
+@media screen and (min-width: 835px) {
+        .news {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .eventBox {
+        grid-column: 1/4;
+    }
+
+    .current-w {
+        grid-column: 4/6;
+    }
+
+    .forecast {
+        grid-column: 6/8;
+    }
+}
+
 @media screen and (min-width: 800px) {
 
     header .first-div-header {
@@ -55,4 +74,6 @@
     .nav-ul a {
         justify-content: space-around;
     }
+
+
 }

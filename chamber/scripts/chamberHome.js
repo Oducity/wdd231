@@ -3,8 +3,10 @@ const awardUrl = "https://oducity.github.io/wdd231/chamber/data/members.json";
 
 //Create required variables for the weather url.
 const myKey = "595df96ec4974ae93556a6fd7e848f50";
+const fiveDaysAPI = "00d232a82d2403a3cae68481ef9583ac";
 const myLat = "6.33";
 const myLong = "5.62";
+
 
 // create the weather url
 const weatherUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
@@ -38,7 +40,7 @@ const newsCards = document.querySelector("#news");
 const hamburgerBtn = document.getElementById("ham-btn");
 const navBtn = document.getElementById("nav-bar");
 
-const navList = document.querySelectorAll("a");//This target and store all <a> element in navList variable
+const navList = document.querySelectorAll("nav a");//This target and store all <a> element in navList variable
 const h1 = document.querySelector("h1");
 
 
@@ -100,7 +102,8 @@ async function getApiData(arr) {
             if (!data.companies) {
                 displayWeatherData(data);
             } else if (data.companies) {
-                displayCompaniesData(data.companies);
+                //displayCompaniesData(data.companies);
+                displayCompaniesData(data.companies.filter(company => company.membership > 1));
             }
 
         } else {
@@ -125,78 +128,89 @@ async function getAwardApi(arr) {
 };
 
 
-function displayCompaniesData(companies){
 
-    //let randomCompanies = Math.floor(Math.random() * companies.length);
-    let filteredCompanies = companies.filter((company) => company.membership > 1);
+const displayCompaniesData = (companies) => {
+    //const randomCompanies = getRandomCompanies(companies, 3);
+    companies.forEach((company) => {
+        let memberStar;
+        if (company.rating === 5) {
+            memberStar = `\u2605\u2605\u2605\u2605\u2605`;
+        } else if (company.rating === 4) {
+            memberStar = `\u2605\u2605\u2605\u2605\u2606`;
+        } else if (company.rating === 3) {
+            memberStar = `\u2605\u2605\u2605\u2606\u2606`;
+        } else if (company.rating === 2) {
+            memberStar = `\u2605\u2605\u2606\u2606\u2606`;
+        } else {
+            memberStar = `\u2605\u2606\u2606\u2606\u2606`;
+        }
 
-    const threeCompanies = getRandomCompanies(filteredCompanies, 3)
-    threeCompanies.forEach((comp) => {
-        
+        let membershipLevel = "member";
+
+        if (company.membership === 3) {
+            membershipLevel = "Gold";
+        } else if (company.membership === 2) {
+            membershipLevel = "Silver";
+        } else {
+            membershipLevel = membershipLevel;
+        }
+
         let companySlot = document.createElement("section");
         companySlot.setAttribute("class", "slot");
 
-        let companyName = document.createElement("h2"); // fullname containner
+        let companyName = document.createElement("h2"); // formerly fullname
         companyName.setAttribute("class", "company-name")
 
-        let tag = document.createElement("p"); //Tag container
-        tag.setAttribute("class", "tag");
-
-        let infoBox = document.createElement("div"); // Company information box
-        infoBox.setAttribute("class", "info-box");
-
-        let addressP = document.createElement("p"); // address box
+        let addressP = document.createElement("p"); // formerly birthDatePara
         addressP.setAttribute("class", "address");
 
-        let phoneP = document.createElement("p"); // Phone number box
+        let phoneP = document.createElement("p"); // formerly placeOfBirthPara
         phoneP.setAttribute("class", "phone");
 
-        let emailBox = document.createElement("p"); //Company email address containner
-        emailBox.setAttribute("class", "email");
-        emailBox.innerHTML = `<strong>Email:</strong> ${comp.email}`;
+        let statusP = document.createElement("p"); //Creted <p> element for company status.
+        statusP.setAttribute("class", "status-p");
 
-
-        let urlAnchor = document.createElement("a"); // Web address anchor link
+        let urlAnchor = document.createElement("a");
         urlAnchor.setAttribute("href", "#");
-        urlAnchor.innerText = comp.url;
-        let companyUrl = document.createElement("p"); // Url anchor containner
+        urlAnchor.innerText = company.url;
+        let companyUrl = document.createElement("p");
         companyUrl.setAttribute("class", "url");
 
 
-        //store company's name object in a variable "name"
-        let name = comp.name;
+        //store object's company in a variable "name"
+        let name = company.name;
         companyName.innerText = name;//Paces name in the element variable "companyName"
-        companySlot.appendChild(companyName);
-
-        tag.innerText = comp.companytag;
-        companySlot.appendChild(tag);
-
-
         // Creates Image and its attributes
         let portrait = document.createElement("img");
         let imgAlt = `Photo of ${name}`;
-        portrait.setAttribute("src", comp.imageurl);
+        portrait.setAttribute("src", company.imageurl);
         portrait.setAttribute("alt", imgAlt);
         portrait.setAttribute("loading", "lazy");
-        portrait.setAttribute("width", "80px");
+        portrait.setAttribute("width", "250px");
         portrait.setAttribute("heigth", "auto");
 
-        infoBox.appendChild(portrait);
+        companySlot.appendChild(portrait);
 
-        infoBox.appendChild(emailBox);
+        
+        companySlot.appendChild(companyName);
 
-        phoneP.innerHTML = `<strong>Phone:</strong> ${comp.phone}`;
-        infoBox.appendChild(phoneP);
+        addressP.innerText = `Address: ${company.address}`;
+        companySlot.appendChild(addressP);
+
+        phoneP.innerText = `Phone: ${company.phone}`;
+        companySlot.appendChild(phoneP);
+
+        statusP.innerText = `Membership: ${membershipLevel} || Rating: ${memberStar}`;
+        companySlot.appendChild(statusP);
 
         companyUrl.appendChild(urlAnchor);
-        infoBox.appendChild(companyUrl);
-
-        companySlot.appendChild(infoBox);
+        companySlot.appendChild(companyUrl);
 
         cards.appendChild(companySlot);
-    
     });
 };
+
+
 
 
 function getRandomCompanies(arr, count) {
