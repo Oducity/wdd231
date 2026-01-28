@@ -27,11 +27,7 @@ const sunSet = document.querySelector("#sunset");
 const currentCity = document.querySelector("#city");
 
 /******************* Select all alements for five days forecast ***********************/
-const today = document.querySelector("#today");
-const dayTwo = document.querySelector("#day-two");
-const dayThree = document.querySelector("#day-three");
-const dayFour = document.querySelector("#day-four");
-const dayFive = document.querySelector("#day-five");
+const moreForecast = document.querySelector("#more-forecast");
 
 /*********************** Select elements of IDs cards, hero-box and news *************************/
 const cards = document.querySelector("#cards");
@@ -109,9 +105,9 @@ async function getApiData(arr) {
                 //displayCompaniesData(data.companies);
                 //displayCompaniesData(getRandomCompanies(data.companies.filter(company => company.membership > 1), 3));
                 displayCompaniesData(data.companies.filter(company => company.membership > 1));
-            }// else (data.city) {
-
-            //}
+            } else {
+                displayFiveDaysData(data);
+            }
 
         } else {
             throw Error(await response.text());
@@ -258,8 +254,28 @@ function displayWeatherData(data) {
 
 
 /******************** Create displayFiveDaysData() to compute five days weather data *************/
-function displayFiveDaysData(data) {
+function displayFiveDaysData(items) {
+    const dateNow = new Date().toISOString().slice(0, 10);
+    let currentDate = "";
+    console.log(currentDate);
+    const city = document.createElement("h3");
+    city.innerHTML = `<strong>${items.city.name}</strong>`;
+    moreForecast.appendChild(city);
+    console.log(city);
 
+    items.list.forEach(item => {
+        let dayBox = document.createElement("P");
+        dayBox.setAttribute("class", "day-box");
+        
+        let operatingDate = item.dt_txt.slice(0, 10);
+        let operatingTemp = item.main.temp;
+        if (dateNow != operatingDate && currentDate != operatingDate) {
+            dayBox.innerHTML = `${operatingDate}: <strong>${operatingTemp}&degC</strong>`;
+            moreForecast.appendChild(dayBox);
+            currentDate = operatingDate;
+        }; 
+    });
+    
 };
 
 
