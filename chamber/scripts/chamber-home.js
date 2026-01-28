@@ -16,7 +16,7 @@ const fiveWeatherUrl = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&
 const eventcards = document.querySelector("#event-cards");
 
 /********************** Select all elements for current weather display ***********************/
-const weatherIcon = document.querySelector("#w-logo");
+const weatherLogo = document.querySelector("#weather-logo");
 const temp = document.querySelector("#temp");
 const myDescription = document.querySelector("#my-description");
 const highTemp = document.querySelector("#temp-high");
@@ -238,10 +238,13 @@ function getRandomCompanies(arr, count) {
 
 function displayWeatherData(data) {
     let cityName = `${data.name}`;
+    let weatherIcon = document.createElement("img");
+    weatherIcon.setAttribute("id", "w-logo");
     currentCity.innerHTML = `<strong>${cityName}</strong>`;
     let iconAddress = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute("SRC", iconAddress);
     weatherIcon.setAttribute("alt", data.weather[0].description);
+    weatherLogo.appendChild(weatherIcon);
     temp.innerHTML = `<strong>${data.main.temp}&degC`;
     myDescription.innerText = data.weather[0].description;
     highTemp.innerHTML = `High: ${data.main.temp_max}&degC`;
