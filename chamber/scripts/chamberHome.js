@@ -17,7 +17,6 @@ const eventcards = document.querySelector("#event-cards");
 
 /********************** Select all elements for current weather display ***********************/
 const weatherIcon = document.querySelector("#w-logo");
-const currentCity = document.querySelector("#city");
 const temp = document.querySelector("#temp");
 const myDescription = document.querySelector("#my-description");
 const highTemp = document.querySelector("#temp-high");
@@ -25,19 +24,21 @@ const lowTemp = document.querySelector("#temp-low");
 const humid = document.querySelector("#humid");
 const sunRise = document.querySelector("#sunrise");
 const sunSet = document.querySelector("#sunset");
+const currentCity = document.querySelector("#city");
 
-/******************* Select all alements for more days forecast ***********************/
+/******************* Select all alements for five days forecast ***********************/
 const today = document.querySelector("#today");
 const dayTwo = document.querySelector("#day-two");
 const dayThree = document.querySelector("#day-three");
 const dayFour = document.querySelector("#day-four");
 const dayFive = document.querySelector("#day-five");
 
-
+/*********************** Select elements of IDs cards, hero-box and news *************************/
 const cards = document.querySelector("#cards");
 const heroBox = document.querySelector("#hero-box");
 const newsCards = document.querySelector("#news");
 
+/************************Select all of the hamburger and navigation bar **************************/
 const hamburgerBtn = document.getElementById("ham-btn");
 const navBtn = document.getElementById("nav-bar");
 
@@ -89,16 +90,18 @@ function displayHeroImages(heros){
     });
 };
 
+getApiData(fiveWeatherUrl);
 getApiData(url);
 getApiData(weatherUrl);
 getAwardApi(awardUrl);
+
 
 async function getApiData(arr) {
     try {
         const response = await fetch(arr);
         if (response.ok) {
             const data = await response.json();
-            //console.log(data);
+            console.log(data);
             //console.table(data.prophets);   //this helpin viewing large amount of data in a table in the console.
             if (!data.companies) {
                 displayWeatherData(data);
@@ -116,6 +119,7 @@ async function getApiData(arr) {
     } 
 };
 
+/************ Create seperate async function to display award within the event element ************/
 async function getAwardApi(arr) {
     try {
         const response = await fetch(arr);
@@ -130,9 +134,11 @@ async function getAwardApi(arr) {
 };
 
 
+/****************** Create displayCompaniesData to compute companies data *******************/
 
 const displayCompaniesData = (companies) => {
     //const randomCompanies = getRandomCompanies(companies, 3);
+    console.log("Company API");
     companies.forEach((company) => {
         let memberStar;
         if (company.rating === 5) {
@@ -214,7 +220,7 @@ const displayCompaniesData = (companies) => {
 };
 
 
-
+/******************** Created getRandomCompanies() ******************/
 
 function getRandomCompanies(arr, count) {
     const compArrey = arr;
@@ -233,21 +239,23 @@ function getRandomCompanies(arr, count) {
 
 
 function displayWeatherData(data) {
-    console.log("Hello");
-
-    currentCity.innerText = data.name;
+    //let cityName = `${data.city.name}`;
+    //currentCity.innerHTML = `<strong>${cityName}</strong>`;
     let iconAddress = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    weatherIcon.setAttribute("src", iconAddress);
+    weatherIcon.setAttribute("SRC", iconAddress);
     weatherIcon.setAttribute("alt", data.weather[0].description);
     temp.innerHTML = `<strong>${data.main.temp}&degC`;
     myDescription.innerText = data.weather[0].description;
     highTemp.innerHTML = `High: ${data.main.temp_max}&degC`;
     lowTemp.innerHTML = `Low: ${data.main.temp_min}&degC`;
-    humid.innerHTML = `${data.main.humidity}%`;
-    sunRise.innerHTML = data.sys.sunrise;
-    sunSet.innerHTML = data.sys.sunset;
+    humid.innerHTML = `Humidity: ${data.main.humidity}%`;
+    sunRise.innerHTML = `Sunrise: ${data.sys.sunrise}`;
+    sunSet.innerHTML = `Sunset: ${data.sys.sunset}`;
+
 };
 
+
+/******************** Create displayFiveDaysData() to compute five days weather data *************/
 function displayFiveDaysData(data) {
 
 };
@@ -256,6 +264,7 @@ function displayFiveDaysData(data) {
 /************** Events code starts here ***************/
 
 function displayAward(companies) {
+    console.log("Award API");
     let filteredawards = companies.filter((company) => company.award);
     filteredawards.forEach((company) => {
         eventcards.innerHTML = "";

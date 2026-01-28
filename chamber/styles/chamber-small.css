@@ -323,8 +323,28 @@ button.blue {
     border-top-right-radius: 8px;
 }
 
+.award-card {
+    width: 100%;
+}
+
+.award-card h3, .award-card span, .award-card strong {
+    width: 100%;
+}
+.weather-logo {
+    grid-column: 1/2;
+}
+
+.current-w h3 {
+    height: 14px;
+}
+
 .weather-info {
+    display: flex;
+    flex-direction: column;
     grid-column: 2/4;
+}
+.weather-info p {
+    margin: 5px;
 }
 
 .today, .day-two, .day-three, .day-four, .day-five {
@@ -333,6 +353,7 @@ button.blue {
 }
  .event-cards {
     margin: 0 12px;
+    grid-column: 1/4;
  }
 
 @media screen and (max-width: 1000px) {
