@@ -162,9 +162,9 @@ function createCourseCard(clicked, course) {
         let card = document.createElement("div");
         let button = document.createElement("div");
         let p = document.createElement("p");
-        
-        
 
+
+        
         let courseCode = `${innerCourse.subject}${innerCourse.number}`;
         let courseTitle = innerCourse.title;
         let credit = innerCourse.credits;
