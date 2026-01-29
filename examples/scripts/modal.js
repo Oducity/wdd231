@@ -4,5 +4,5 @@ const closeModal = document.querySelector("#closeModal");
 modal.show();
 
 closeModal.addEventListener("click", () => {
-    modal.closest();
+    modal.close();
 })
