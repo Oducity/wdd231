@@ -49,6 +49,61 @@
         </nav>
         
         <main>
+            <h1></h1>
+            <div>
+                <form action="thankyou.html" method="get" id="chamber-form" class="chamber-form">
+                    <label for="first-name" id="first-label" class="first-label">
+                        <span class="text-span">First Name:<strong>*</strong></span> 
+                        <input type="text" id="firstName-input" class="firstName-input" name="first-name" autocomplete="given-name" required>
+                    </label>
+                    
+                    <label for="last-name" id="lastname-label" class="lastname-label">
+                        <span class="text-span">Last Name:<strong>*</strong></span>
+                        <input type="text" id="lastName-input" class="lastName-input" name="last-name" autocomplete="family-name" required>
+                    </label>
+
+                    <label for="businnes-title" id="businnestitle-label" class="businnestitle-label">
+                        <span class="text-span">Business Title:<strong>*</strong></span>
+                        <input type="text" name="businnes-title" id="Businesstitle-input" class="Businesstitle-input" autocomplete="organization" minlength="7" required>
+                    </label>
+
+                    <label for="email" id="email-label" class="email-label">
+                        <span class="text-span">Email:<strong>*</strong></span>
+                        <input type="text" name="email" id="email" class="email" autocomplete="email" placeholder="youraddress@email.com">
+                    </label>
+
+                    <label for="Phone">
+                        <span class="text-span">Mobile Phone:<strong>*</strong></span>
+                        <input type="tel" name="phone" id="phone" class="phone" placeholder="+234-XXX-XXX-XXXX">
+                    </label>
+                    
+                    <label for="businnes-name"> 
+                        <span class="text-span">Business Name: <strong>*</strong></span> 
+                        <input type="text" name="businnes-name" id="businnes-name" class="businnes-name" autocomplete="organization" required > 
+                    </label>
+
+                    <fieldset name="memberlevel" id="memberlevel" class="memberlevel">
+                        <h5 class="text-span">Membership Level<strong>*</strong></h5>
+                        <label for="membership-level">
+                            <span>Member:</span>
+                            <input type="radio" name="membership-level" id="membership-level" class="membership-level" value="member">
+                        </label>
+                        <label for="membership-level">
+                            <span class="text-span">Bronze:</span> 
+                            <input type="radio" id="membership-level" name="membership-level" value="Bronze" required >
+                        </label>
+                        <label for="membership-level">
+                            <span class="text-span">Silver:</span> 
+                            <input id="membership-level" type="radio" name="memberlevel" value="Silver" required>
+                        </label>
+                        <label for="membership-level">
+                            <span class="text-span">Gold:</span> 
+                            <input id="membership-level" type="radio" name="membership-level" value="Gold" required></label>
+                    </fieldset>
+                    
+
+                </form>
+            </div>
         </main>
         <footer>
             <p class="social">
