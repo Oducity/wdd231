@@ -53,8 +53,10 @@
             <div>
 
                 <form action="thankyou.html" method="get" id="chamber-form" class="chamber-form">
+
                     <fieldset name="personal-info" id="personal-info" class="personal-info">
-                        <h5>Your Information</h5>
+                        <legend>Your Names:</legend>
+
                         <label for="first-name" id="first-label" class="first-label">
                             <span class="text-span">First Name:<strong>*</strong></span> 
                             <input type="text" id="firstName-input" class="firstName-input" name="first-name" autocomplete="given-name" placeholder="Enter your given name here" required>
@@ -64,6 +66,10 @@
                             <span class="text-span">Last Name:<strong>*</strong></span>
                             <input type="text" id="lastName-input" class="lastName-input" name="last-name" autocomplete="family-name" placeholder="Enter your surename here" required>
                         </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Contact Details:</legend>
 
                         <label for="email" id="email-label" class="email-label">
                             <span class="text-span">Email:<strong>*</strong></span>
@@ -77,14 +83,13 @@
                     </fieldset>
 
                     <fieldset name="business-info" id="business-info" class="business-info">
-                            <h5>Business Information</h5>
-                            
+                        <legend>Business Information</legend>
+
                         <label for="business-title" id="businesstitle-label" class="businesstitle-label">
                             <span class="text-span">Business Title:<strong>*</strong></span>
                             <input type="text" name="business-title" id="businesstitle-input" class="businesstitle-input" autocomplete="organization" minlength="7" required>
                         </label>
 
-                        
                         <label for="business-name"> 
                             <span class="text-span">Business Name: <strong>*</strong></span> 
                             <input type="text" name="business-name" id="business-name" class="business-name" autocomplete="organization" required > 
@@ -92,7 +97,7 @@
                     </fieldset>
 
                     <fieldset name="memberlevel" id="memberlevel" class="memberlevel">
-                        <h5 class="text-span">Membership Level<strong>*</strong></h5>
+                        <legend class="text-span">Membership Level<strong>*</strong></legend>
 
                         <label for="membership-level">
                             <span>Non-profit:</span>
@@ -122,6 +127,7 @@
                     <label for="submit">
                         <button type="submit" name="submit" id="submit" class="submit">Register My Company</button>
                     </label>
+                    <div id="cards" class="cards"></div>
 
                 </form>
             </div>
