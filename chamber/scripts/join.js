@@ -2,6 +2,9 @@
 const cards = document.querySelector("#cards-join");
 const time = document.querySelector("#time");
 const modalBox = document.querySelector("#modal-box");
+const modalDialog = document.querySelector("#dialog-details");
+const closeDialog = document.querySelector("#close-dialog");
+closeDialog.innerText = `\u274C`;
 
 computeTimeStamp();
 
@@ -124,6 +127,12 @@ function displayLevelDetails (levelData) {
 
         modalBox.appendChild(pDetails);
         modalBox.appendChild(pBenefits);
-        
+        modalDialog.showModal();
+
     });
 };
+
+
+closeDialog.addEventListener ("click", () => {
+    modalDialog.close();              
+})
