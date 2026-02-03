@@ -60,3 +60,22 @@ function createMembershipCard () {
     cards.appendChild(goldCard);
 };
 
+const details = {
+    np : [
+        {detail: "This is a free membership level for non profit organizations"},
+        {benefits : "Free access to clients, 5gb of cloud space"}
+    ],
+    bronze : [
+        {detail: "Bronze level is a $100 paid annual membership level"},
+        {benefits: "One dedicated email addresses, access to 30 clients monthly, annual 20gb of cloud storage, five advert placement monthly, access to ten trainning materials"}
+    ],
+    silver : [
+        {detail : "Silver level is a $300 paid annual membership level"},
+        {benefits : "Three dedicated email addresses, unlimited access to clients, annual 50gb of cloud storage, fifteen advert placement monthly, access to 25 trainning materials annualy"}
+    ],
+    gold : [
+        {detail : "Gold level is a $500 paid annual membership level"},
+        {benefits : "Seven dedicated email addresses, unlimited access to clients, 150gb of cloud storage, thirty advert placement monthly, unlimited access to over 80 trainning library materials annualy, a dedicated business expert advisor"}
+    ]       
+};
+
