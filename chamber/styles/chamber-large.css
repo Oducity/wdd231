@@ -15,6 +15,23 @@
     .forecast {
         grid-column: 6/8;
     }
+    /************** Form large view starts *************/
+    .form-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 12px;
+    }
+
+    .form-main h1 {
+        grid-column: 1/3;
+    }
+    .form-div {
+        grid-column: 1/2;
+    }
+    .cards-join {
+        grid-column: 2/3;
+    }
+    /************* Form large view ends *************/
 }
 
 @media screen and (min-width: 800px) {

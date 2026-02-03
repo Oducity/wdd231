@@ -432,3 +432,21 @@ footer p {
     max-width: 1600px;
     justify-self: center;
 }
+
+.form-main fieldset {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.form-main legend {
+    margin-bottom: 1.2rem;
+}
+
+.form-main label {
+    display: grid;
+}
+
+.form-main #memberlevel.memberlevel label {
+    display: flex;
+    column-gap: 20px;
+}
