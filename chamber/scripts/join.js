@@ -1,6 +1,14 @@
 
 const cards = document.querySelector("#cards-join");
 
+const time = document.querySelector("#time");
+
+computeTimeStamp();
+
+function computeTimeStamp () {
+    const currentDate = new Date();
+    time.setAttribute("datetime", currentDate);
+}
 
 createMembershipCard();
 
