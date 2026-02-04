@@ -433,16 +433,9 @@ footer p {
     justify-self: center;
 }
 /************ form starts here ************/
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-    }
-}
 
-@keyframes colorMove {
+
+@keyframes memberCardsAnimation {
     form {
         background-color: var(--border-color1);
     }
@@ -539,7 +532,7 @@ legend {
     border-bottom-right-radius: 40%;
     margin: 10px 0;
     padding: 8px;
-    animation: colorMove 5s ease-in-out infinite alternate;
+    animation: memberCardsAnimation 5s ease-in-out infinite alternate;
 }
 
 .cards-join button[type=button] {
