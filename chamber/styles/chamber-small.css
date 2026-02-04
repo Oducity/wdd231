@@ -433,6 +433,26 @@ footer p {
     justify-self: center;
 }
 /************ form starts here ************/
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+}
+
+@keyframes colorMove {
+    form {
+        background-color: var(--border-color1);
+    }
+    to {
+        background-color: lightblue;
+        border: 1px solid var(--primary-color-red);
+        border-radius: 5px;
+    }
+}
+
 .form-parent {
     width: 100%;
     margin: 0 auto;
@@ -498,26 +518,28 @@ legend {
     width: 300px;
     margin: 12px auto;
     height: 44px;
-    background-color: var(--primary-color-red);
+    background-color: var(--primary-color-blue);
     color: #fff;
     font-size: 24px;
-    border: 5px solid var(--primary-color-blue);
+    border: 5px solid var(--primary-color-red);
     border-radius: 25%;
 }
+
+
 
 .cards-join h3, .cards-join h2 {
     background-color: var(--background-color);
     border: 1px solid var(--border-color1);
-    border-bottom-right-radius: 100%;
+    border-bottom-right-radius: 40%;
     width: 80%;
 }
 
 .nonprofit-card, .bronze-card, .silver-card, .gold-card {
     border: 1px solid var(--border-color1);
-    border-bottom-right-radius: 100%;
-
+    border-bottom-right-radius: 40%;
     margin: 10px 0;
     padding: 8px;
+    animation: colorMove 5s ease-in-out infinite alternate;
 }
 
 .cards-join button[type=button] {
@@ -527,6 +549,6 @@ legend {
     background-color: var(--primary-color-blue);
     color: #fff;
     border: 3px solid var(--primary-color-red);
-    border-bottom-right-radius: 100%;
+    border-bottom-right-radius: 40%;
     text-align: left;
 }
