@@ -215,7 +215,7 @@ h1 {
     width: 100%;
     max-width: 1600px;
     justify-self: center;
-    margin: 0 10px;
+    margin: 0 10px 20px 10px;
     background-color: var(--background-color1);
     padding-left: .8rem;
     padding-top: 15px;
@@ -432,6 +432,11 @@ footer p {
     max-width: 1600px;
     justify-self: center;
 }
+/************ form starts here ************/
+.form-parent {
+    width: 100%;
+    margin: 0 auto;
+}
 
 .form-main fieldset {
     display: grid;
@@ -449,4 +454,79 @@ footer p {
 .form-main #memberlevel.memberlevel label {
     display: flex;
     column-gap: 20px;
+}
+
+legend {
+    font-size: 18px;
+}
+
+.form-main label strong {
+    color: red;
+}
+
+.form-main legend>strong {
+    color: red;
+} 
+
+.form-main label span {
+    font-size: 22px;
+}
+
+.form-main label input {
+    min-height: 48px;
+    font-size: 16px;
+}
+
+.form-main textarea {
+    min-height: 5.5rem;
+    font-size: 16px;
+}
+
+.form-main label {
+    background-color: var(--background-color);
+}
+
+.form-main label[for=membership-level]>span {
+    padding: 15px 10px 0 0;
+}
+
+.form-main fieldset, label[for=description], label[for=submit] {
+    margin-bottom: 18px;
+}
+
+.form-main button[type=submit] {
+    width: 300px;
+    margin: 12px auto;
+    height: 44px;
+    background-color: var(--primary-color-red);
+    color: #fff;
+    font-size: 24px;
+    border: 5px solid var(--primary-color-blue);
+    border-radius: 25%;
+}
+
+.cards-join h3, .cards-join h2 {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color1);
+    border-bottom-right-radius: 100%;
+    width: 80%;
+}
+
+.nonprofit-card, .bronze-card, .silver-card, .gold-card {
+    border: 1px solid var(--border-color1);
+    border-bottom-right-radius: 100%;
+
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.cards-join button[type=button] {
+    height: 44px;
+    width: 160px;
+    font-size: 16px;
+    background-color: var(--primary-color-blue);
+    color: #fff;
+    border: 3px solid var(--primary-color-red);
+    border-bottom-right-radius: 100%;
+    text-align: left;
 }

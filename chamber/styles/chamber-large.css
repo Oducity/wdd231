@@ -16,10 +16,12 @@
         grid-column: 6/8;
     }
     /************** Form large view starts *************/
-    .form-main {
+    .form-parent {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 12px;
+        width: 100%;
+        max-width: 1600px;
     }
 
     .form-main h1 {
