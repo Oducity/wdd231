@@ -84,6 +84,8 @@ header .div-nav {
     color: var(--primary-color-red);
  }
 
+ .form-main
+
  /*======================== hamburber ===================*/
 
 .hamburger {
@@ -468,6 +470,7 @@ footer p {
 
 .form-main label {
     display: grid;
+    background-color: var(--background-color);
 }
 
 .form-main #memberlevel.memberlevel label {
@@ -499,10 +502,6 @@ legend {
 .form-main textarea {
     min-height: 5.5rem;
     font-size: 16px;
-}
-
-.form-main label {
-    background-color: var(--background-color);
 }
 
 .form-main label[for=membership-level]>span {
