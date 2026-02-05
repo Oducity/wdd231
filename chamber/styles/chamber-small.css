@@ -586,19 +586,35 @@ dialog::backdrop {
     margin-left: 8px;
 }
 
+.appreciation {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: var(--primary-color-red);
+    background-color: var(--background-color1);
+    border-radius: 5px;
+
+}
+
 .thanks-box {
-    display: grid;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
     border: 2px solid var(--border-color1);
     padding: 10px;
     border-radius: 12px;
+    animation: memberCardsAnimation 5s ease-in-out infinite alternate;
 }
 
 .databox {
     /*background-color: var(--primary-color-blue);*/
     border: 2px solid var(--border-color1);
     border-radius: 12px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     display: grid;
-    row-gap: 8px;
 }
 
 .databox p {
@@ -606,11 +622,15 @@ dialog::backdrop {
     grid-template-columns: repeat(3, 1fr);
     border-top: 2px solid var(--border-color1);
     grid-template-columns: 1fr 1fr;
-    padding: 5px;
+    padding: 20px 5px 0 5px;
+    margin-bottom: 0;
+    font-size: 18px;
+    background-color: var(--background-color1);
 }
 
 #thanks-box .databox>.instruction {
     display: block;
     border-top: 0;
-    text-align: center;
+    font-size: 22px;
+    text-align: left;
 }

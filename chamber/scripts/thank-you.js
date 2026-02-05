@@ -95,6 +95,11 @@ function desplayFormData (data) {
     descriptionBox.setAttribute("class", "descriptio");
     descriptionBox.innerHTML = `<strong>Your Business Description:</strong> <span>${description}</span>`;
 
+    const timeText = data.get(`time`);
+    const timeP = document.createElement("p");
+    timeP.setAttribute("class", "timep");
+    timeP.innerHTML = `<strong>Time:</strong> ${timeText}`;
+
     const appreciation = document.createElement("p");
     appreciation.setAttribute("class", "appreciation");
     appreciation.innerHTML = `Thank you <strong>${firstName}</strong> <strong>${lastName}</strong> for registring your company "<strong>${businessName}</strong>" with us.`;
@@ -108,6 +113,7 @@ function desplayFormData (data) {
     dataBox.appendChild(businessNameBox);
     dataBox.appendChild(membershipBox);
     dataBox.appendChild(descriptionBox);
+    dataBox.appendChild(timeP);
 
     
     pageHeader.innerText = pageHead;

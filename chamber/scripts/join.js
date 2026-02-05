@@ -55,9 +55,9 @@ computeTimeStamp();
 
 function computeTimeStamp () {
     const currentDate = new Date();
-    time.setAttribute("datetime", currentDate);
-    time.innerText = currentDate;
+    time.innerText = currentDate.toISOString();
 }
+
 
 
 
