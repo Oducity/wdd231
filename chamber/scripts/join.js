@@ -13,6 +13,10 @@ const directoryPage = document.getElementById("directory-pg");
 const joinUsPage = document.getElementById("join-pg");
 const aboutPage = document.getElementById("about-pg");
 
+const thanksHead = document.querySelector("#thankyou-head");//Select the h1 element in the thank you pahe.
+const thanksBox = document.querySelector("#thanks-box");//Select the thanks-box in the thank you page.
+
+
 hamburgerBtn.addEventListener("click", () => {
     hamburgerBtn.classList.toggle("show");
     navBtn.classList.toggle("show");
@@ -176,4 +180,23 @@ function displayLevelDetails (levelData) {
 
 closeDialog.addEventListener ("click", () => {
     modalDialog.close();              
-})
+});
+
+
+
+/********************* Thank you page ********************* */
+
+function displayThankYou () {
+    //const thanksHead = document.querySelector("#thankyou-head");//Select the h1 element in the thank you pahe.
+    //const thanksBox = document.querySelector("#thanks-box");//Select the thanks-box in the thank you page.
+    const joinName = document.querySelector("#firs-name").value;
+    const registerDetails = document.createElement("p");
+    registerDetails.class = "registration-details";
+    thanksBox.appendChild(registerDetails);
+};
+
+const joinSubmit = document.querySelector("#form-div #submit");
+
+joinSubmit.addEventListener("click", () => {
+    displayLevelDetails();
+});
