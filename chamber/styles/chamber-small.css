@@ -578,3 +578,39 @@ dialog>button {
 dialog::backdrop {
     background: rgb(95, 95, 7, 0.35);
 }
+
+/**************** thankyou.html starts here *****************/
+.thankyou-head {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 8px;
+}
+
+.thanks-box {
+    display: grid;
+    border: 2px solid var(--border-color1);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.databox {
+    /*background-color: var(--primary-color-blue);*/
+    border: 2px solid var(--border-color1);
+    border-radius: 12px;
+    display: grid;
+    row-gap: 8px;
+}
+
+.databox p {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 2px solid var(--border-color1);
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+}
+
+#thanks-box .databox>.instruction {
+    display: block;
+    border-top: 0;
+    text-align: center;
+}

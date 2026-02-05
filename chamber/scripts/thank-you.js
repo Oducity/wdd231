@@ -2,6 +2,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
 const thanksBox = document.querySelector("#thanks-box");
+thanksBox.setAttribute("class", "thanks-box");
 const pageHead = `Registration Completed`;
 
 const hamburgerBtn = document.getElementById("ham-btn");
@@ -57,42 +58,42 @@ function desplayFormData (data) {
     const firstName = data.get(`first-name`);
     const firstNameBox = document.createElement("P");
     firstNameBox.setAttribute("class", "firstname");
-    firstNameBox.innerHTML = `<strong>First Name</strong>: <span>${firstName}</span>`;
+    firstNameBox.innerHTML = `<strong>First Name:</strong> <span>${firstName}</span>`;
 
     const lastName = data.get(`last-name`);
     const lastNameBox = document.createElement("p");
     lastNameBox.setAttribute("class", "lastname");
-    lastNameBox.innerHTML = `<strong>Last Name</strong>: <span>${lastName}</span>`;
+    lastNameBox.innerHTML = `<strong>Last Name:</strong> <span>${lastName}</span>`;
 
     const email = data.get(`email`);
     const emailBox = document.createElement("p");
     emailBox.setAttribute("class", "email");
-    emailBox.innerHTML = `<strong> Your Email</strong>: <spans>${email}</span>`;
+    emailBox.innerHTML = `<strong> Your Email:</strong> <spans>${email}</span>`;
 
     const phone = data.get(`phone`);
     const phoneBox =document.createElement("p");
     phoneBox.setAttribute("class", "phone");
-    phoneBox.innerHTML = `<strong>Phone</strong>: <span>${phone}</span>`;
+    phoneBox.innerHTML = `<strong>Phone:</strong> <span>${phone}</span>`;
 
     const businessTitle = data.get(`business-title`);
     const businessTitleBox = document.createElement("p");
     businessTitleBox.setAttribute("class", "btitle");
-    businessTitleBox.innerHTML = `<strong>Your Business Title</strong>: <span>${businessTitle}</span>`;
+    businessTitleBox.innerHTML = `<strong>Your Business Title:</strong> <span>${businessTitle}</span>`;
 
     const businessName = data.get(`business-name`);
     const businessNameBox = document.createElement("p");
     businessNameBox.setAttribute("class", "bname");
-    businessNameBox.innerHTML = `<strong>Your Business Name</strong>: <span>${businessName}</span>`;
+    businessNameBox.innerHTML = `<strong>Your Business Name:</strong> <span>${businessName}</span>`;
 
     const membershipLevel = data.get(`membership-level`);
     const membershipBox = document.createElement("p");
     membershipBox.setAttribute("class", "membership");
-    membershipBox.innerHTML = `<strong>Membership</strong>: <span>${membershipLevel}</span>`;
+    membershipBox.innerHTML = `<strong>Membership:</strong> <span>${membershipLevel}</span>`;
 
     const description = data.get(`description`);
     const descriptionBox = document.createElement("p");
     descriptionBox.setAttribute("class", "descriptio");
-    descriptionBox.innerHTML = `<strong>Your Business Description</strong>: <span>${description}</span>`;
+    descriptionBox.innerHTML = `<strong>Your Business Description:</strong> <span>${description}</span>`;
 
     const appreciation = document.createElement("p");
     appreciation.setAttribute("class", "appreciation");
