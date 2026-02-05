@@ -60,7 +60,7 @@ function computeTimeStamp () {
     const year = currentDate.getFullYear();
     const timeNow = `${date}-${month}-${year}`;
     time.textContent = timeNow;
-}
+};
 
 
 
