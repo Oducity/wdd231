@@ -620,7 +620,6 @@ dialog::backdrop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-top: 2px solid var(--border-color1);
-    grid-template-columns: 1fr 1fr;
     padding: 20px 5px 0 5px;
     margin-bottom: 0;
     font-size: 18px;
