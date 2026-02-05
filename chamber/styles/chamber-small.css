@@ -483,11 +483,11 @@ legend {
 }
 
 .form-main label strong {
-    color: red;
+    color: var(--primary-color-red);
 }
 
 .form-main legend>strong {
-    color: red;
+    color: var(--primary-color-red);
 } 
 
 .form-main label span {
