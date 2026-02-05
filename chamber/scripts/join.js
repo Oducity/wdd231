@@ -55,7 +55,10 @@ computeTimeStamp();
 
 function computeTimeStamp () {
     const currentDate = new Date();
-    const timeNow = currentDate.toLocaleString();
+    const date = currentDate.getDate();
+    const month = currentDate.getMonth();
+    const year = currentDate.getFullYear();
+    const timeNow = `${date}-${month}-${year}`;
     time.textContent = timeNow;
 }
 
