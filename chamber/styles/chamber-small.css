@@ -434,6 +434,12 @@ footer p {
 }
 /************ form starts here ************/
 
+.form-div h2 {
+    border: 1px solid var(--border-color1);
+    background-color: var(--background-color);
+    padding: 0 20px ;
+    font-size: 26px;
+}
 
 @keyframes memberCardsAnimation {
     form {
@@ -518,9 +524,16 @@ legend {
     border-radius: 25%;
 }
 
+.cards-join h2 {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color1);
+    border-bottom-right-radius: 40%;
+    width: 80%;
+    font-size: 26px;
+    padding: 0 12px;
+}
 
-
-.cards-join h3, .cards-join h2 {
+.cards-join h3 {
     background-color: var(--background-color);
     border: 1px solid var(--border-color1);
     border-bottom-right-radius: 40%;
@@ -544,4 +557,24 @@ legend {
     border: 3px solid var(--primary-color-red);
     border-bottom-right-radius: 40%;
     text-align: left;
+}
+
+dialog {
+    max-width: 600px;
+    font-size: 20px;
+    background-color: var(--background-color1);
+    animation: memberCardsAnimation 2s ease-in-out infinite alternate;
+}
+dialog strong {
+    font-size: 24px;
+    color: var(--primary-color-red);
+}
+
+dialog>button {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+}
+dialog::backdrop {
+    background: rgb(95, 95, 7, 0.35);
 }
