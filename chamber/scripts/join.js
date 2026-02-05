@@ -56,6 +56,7 @@ computeTimeStamp();
 function computeTimeStamp () {
     const currentDate = new Date();
     time.setAttribute("datetime", currentDate);
+    time.innerText = currentDate;
 }
 
 
@@ -190,9 +191,11 @@ function displayThankYou () {
     //const thanksHead = document.querySelector("#thankyou-head");//Select the h1 element in the thank you pahe.
     //const thanksBox = document.querySelector("#thanks-box");//Select the thanks-box in the thank you page.
     const joinName = document.querySelector("#firs-name").value;
-    const registerDetails = document.createElement("p");
-    registerDetails.class = "registration-details";
-    thanksBox.appendChild(registerDetails);
+    //const registerDetails = document.createElement("p");
+    //registerDetails.class = "registration-details";
+    //registerDetails.innerText = joinName;
+    //thanksBox.appendChild(registerDetails);
+    console.log(joinName);
 };
 
 const joinSubmit = document.querySelector("#form-div #submit");
