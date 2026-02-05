@@ -55,7 +55,8 @@ computeTimeStamp();
 
 function computeTimeStamp () {
     const currentDate = new Date();
-    time.textContent = `${currentDate.toISOString()}`;
+    const timeNow = currentDate.toLocaleString();
+    time.textContent = timeNow;
 }
 
 
