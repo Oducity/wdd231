@@ -45,21 +45,19 @@ function addClassName(allClass) {
 
 
 const cards = document.querySelector("#cards-join");
-const time = document.querySelector("#time");
+
 const modalBox = document.querySelector("#modal-box");
 const modalDialog = document.querySelector("#dialog-details");
 const closeDialog = document.querySelector("#close-dialog");
 closeDialog.innerText = `\u274C`;
+const timeStampInput = document.querySelector("#timestamp-input");
 
-computeTimeStamp();
 
 function computeTimeStamp () {
     const currentDate = new Date();
-    const timeNow = currentDate.toLocaleString();
-    time.setAttribute("value", `${timeNow}`);
+    return currentDate;
 };
-
-
+timeStampInput.value = computeTimeStamp();
 
 
 createMembershipCard();
@@ -189,13 +187,13 @@ closeDialog.addEventListener ("click", () => {
 /********************* Thank you page ********************* */
 
 function displayThankYou () {
-    //const thanksHead = document.querySelector("#thankyou-head");//Select the h1 element in the thank you pahe.
-    //const thanksBox = document.querySelector("#thanks-box");//Select the thanks-box in the thank you page.
+    const thanksHead = document.querySelector("#thankyou-head");//Select the h1 element in the thank you pahe.
+    const thanksBox = document.querySelector("#thanks-box");//Select the thanks-box in the thank you page.
     const joinName = document.querySelector("#firs-name").value;
-    //const registerDetails = document.createElement("p");
-    //registerDetails.class = "registration-details";
-    //registerDetails.innerText = joinName;
-    //thanksBox.appendChild(registerDetails);
+    const registerDetails = document.createElement("p");
+    registerDetails.class = "registration-details";
+    registerDetails.innerText = joinName;
+    thanksBox.appendChild(registerDetails);
     console.log(joinName);
 };
 

@@ -95,7 +95,7 @@ function desplayFormData (data) {
     descriptionBox.setAttribute("class", "descriptio");
     descriptionBox.innerHTML = `<strong>Your Business Description:</strong> <span>${description}</span>`;
 
-    const timeText = data.get(`time`);
+    const timeText = data.get(`timestamp`);
     const timeP = document.createElement("p");
     timeP.setAttribute("class", "timep");
     timeP.innerHTML = `<strong>Time:</strong> <span>${timeText}</span>`;
