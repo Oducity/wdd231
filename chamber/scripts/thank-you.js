@@ -98,7 +98,8 @@ function desplayFormData (data) {
     const timeText = data.get(`time`);
     const timeP = document.createElement("p");
     timeP.setAttribute("class", "timep");
-    timeP.innerHTML = `<strong>Time:</strong> ${timeText}`;
+    timeP.innerHTML = `<strong>Time:</strong> <span>${timeText}</span>`;
+    console.log(timeText);
 
     const appreciation = document.createElement("p");
     appreciation.setAttribute("class", "appreciation");

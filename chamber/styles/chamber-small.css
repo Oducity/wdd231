@@ -620,10 +620,16 @@ dialog::backdrop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-top: 2px solid var(--border-color1);
+    width: 100%;
     padding: 20px 5px 0 5px;
     margin-bottom: 0;
     font-size: 18px;
     background-color: var(--background-color1);
+}
+
+.databox span {
+    grid-column: 2/4;
+    display: block;
 }
 
 #thanks-box .databox>.instruction {
