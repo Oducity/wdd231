@@ -603,7 +603,7 @@ dialog::backdrop {
     border: 2px solid var(--border-color1);
     padding: 10px;
     border-radius: 12px;
-    animation: memberCardsAnimation 5s ease-in-out infinite alternate;
+    animation: memberCardsAnimation 3s ease-in-out infinite alternate;
 }
 
 .databox {
