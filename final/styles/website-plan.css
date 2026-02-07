@@ -25,6 +25,22 @@ header div {
     display: flex;
 }
 
+@media screen and (max-width: 600px) {
+    header div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header div img {
+        margin: 0 auto;
+    }
+
+    header div span {
+        padding: 0;
+    }
+}
+
 header img {
     height: 100%;
     max-height: 120px;
