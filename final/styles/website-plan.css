@@ -61,6 +61,7 @@ nav ul li {
     margin: 0 22px 0 0;
     color: var(--blue-color);
     text-decoration: none;
+    font-family: "Sofia", sans-serif;
 }
 
 nav ul li a {
@@ -93,10 +94,12 @@ h2 {
 p {
     padding: 10px;
     font-size: 18px;
+    font-family: "Lato", sans-serif;
 }
 
 section li {
     font-size: 18px;
+    font-family: "Lato", sans-serif;
 }
 
  .img-txt {
@@ -121,4 +124,5 @@ footer p a {
     padding: 5px;
     text-decoration: none;
     color: var(--light-blue);
+    font-family: "Sofia", sans-serif;
 }
