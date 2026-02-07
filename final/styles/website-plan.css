@@ -30,7 +30,7 @@ header img {
     width: 120px;
     border: 1px solid grey;
     border-radius: 12px;
-    margin: 15px 0 0 10px;
+    margin: 55px 0 0 10px;
 }
 
 header span {
@@ -69,8 +69,7 @@ nav ul li a {
     height: 30px;
     margin-top: 2px;
     font-size: 22px;
-    padding: 15px 0 0 0;
-    border: 2px solid var(--light-blue);
+    padding: 15px 10px 0 10px;
     color: var(--white-color);
 }
 main {
