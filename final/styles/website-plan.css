@@ -1,0 +1,121 @@
+:root {
+    --purple-color: #4C115F;
+    --light-blue: #CEE9EE;
+    --dark-red: #500202;
+    --bright-red: #c52020;
+    --blue-color: #1b007a;
+    --white-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+header {
+    display: grid;
+    background-color: var(--light-blue);
+}
+header div {
+    display: flex;
+}
+
+header img {
+    height: 120px;
+    width: 120px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    margin: 15px 0 0 10px;
+}
+
+header span {
+    padding: 90px 0 0 0;
+    color: var(--bright-red);
+    font-size: 32px;
+    text-align: center;
+
+}
+
+header nav {
+    width: 100%;
+    display: block;
+    height: 30px;
+    padding-top: 2px;
+    background-color: var(--purple-color);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 30px;
+    padding-left: 10px;
+}
+
+nav ul li {
+    margin: 0 22px 0 0;
+    color: var(--blue-color);
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    height: 30px;
+    margin-top: 2px;
+    font-size: 22px;
+    padding: 15px 0 0 0;
+    border: 2px solid var(--light-blue);
+    color: var(--white-color);
+}
+main {
+    border: 2px solid var(--purple-color);
+}
+
+h1 {
+    background-color: var(--light-blue);
+    color: var(--purple-color);
+    padding: 10px;
+}
+
+h2 {
+    background-color: var(--light-blue);
+    color: var(--purple-color);
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+    font-size: 18px;
+}
+
+section li {
+    font-size: 18px;
+}
+
+ .img-txt {
+    font-size: 26px;
+    list-style-type: none;
+ }
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--light-blue);
+    padding: 10px 0 10px 0;
+}
+footer p {
+    font-size: 22px;
+    padding: 10px 0 10px 0;
+}
+
+footer p a {
+    background-color: var(--bright-red);
+    font-size: 22pxp;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--light-blue);
+}

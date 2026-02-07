@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD231 final project site plan, containing large and small view wireframes">
     <meta name="author" content="Odumamwen Evans Henry Aisiokuebor">
+    <link rel="stylesheet" href="styles/website-plan.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Momo+Trust+Sans:wght@200..800&family=Sofia&display=swap" rel="stylesheet">
@@ -12,12 +13,14 @@
 </head>
 <body>
     <header>
-        <img src="" alt=""> <!--Logo comes in here-->
-        <span>WDD231 - Front-End Web Developement I Final Project Site Plan</span>
+        <div>
+            <img src="" alt="Logo">
+            <span>WDD231 - Front-End Web Developement I Final Project Site Plan</span>
+        </div>
         <nav>
             <ul>
-                <li><a href="images/wdd231-final-project-wirefram-wide.webp">Large Display</a></li>
-                <li><a href="images/wdd231-final-project-wirefram - mobile-view.webp">Small Display</a></li>
+                <li><a href="images/wdd231-final-project-wirefram-wide.webp" target="_blank">Large Display</a></li>
+                <li><a href="images/wdd231-final-project-wirefram - mobile-view.webp" target="_blank">Small Display</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +34,7 @@
         </section>
         <section>
             <h2 class="purpose">Site Purpose: </h2>
-            <p class="details">The purpose of this site is to project the image of this
+            <p class="details"><span>Web Presence:</span> The purpose of this site is to project the image of this
                 company in the web space and to showcase her areas of specialization.
                 To make larger community know of the company function and bring more customer traffic.
             </p>
@@ -40,9 +43,14 @@
         <section>
             <h2 class="scenarios">Scenarios:</h2>
             <p class="details">
-                This site will provide answers to commonly asked question and scenarios like; where to get
-                good aluminum materials for roofing, quality solar materials for installation, where to get qualified
-                solar energy engineers etc.
+                <ul>
+                    <li>What is the best quality aluminum?</li>
+                    <li>What is the cost of my roof?</li>
+                    <li>What is the capacity and cost of the solar power generator that will be sufficient for my appliances?</li>
+                    <li>How can I get the best solar power generator?</li>
+                    <li>What is the cost and capacity of the bio-digester that will be sufficient for my home?</li>
+                    <li>How can I get cooking gas from my bio-digester?</li>
+                </ul>
             </p>
         </section>
         <section>
@@ -62,8 +70,8 @@
             <h2 class="font">Typography:</h2>
             <p class="details">Below are google fonts family to be used in the site project;
                 <ul>
-                    <li>Lato+Mono+Trust google font family</li>
-                    <li>Sofia google font family</li>
+                    <li>Lato+Mono+Trust google font family - for the body text</li>
+                    <li>Sofia google font family - for h1 to h6 elements</li>
                 </ul>
             </p>
         </section>
@@ -72,11 +80,11 @@
             <p class="details">Bellow are the wireframes for both the mobile view and the large view.</p>
             <ul>
                 <li>
-                    <span>Mobile View</span>
+                    <span class="img-txt">Mobile View </span>
                     <img src="images/wdd231-final-project-wirefram - mobile-view.webp" alt="wireframe for small view display">
                 </li>
                 <li>
-                    <span>Wide view</span>
+                    <span class="img-txt">Wide view </span>
                     <img src="images/wdd231-final-project-wirefram-wide.webp" alt="wireframe for large view display">
                 </li>
             </ul>
@@ -85,6 +93,8 @@
     <footer>
         <p>
             <a href="images/wdd231-final-project-wirefram-wide.webp" target="_blank">wide view</a>
+        </p>
+        <p>
             <a href="images/wdd231-final-project-wirefram - mobile-view.webp" target="_blank">Small view</a>
         </p>
     </footer>
