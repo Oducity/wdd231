@@ -31,7 +31,7 @@
     },
     {
       "name": "Golden Crave Restaurant",
-      "address": "242 Nomayo Junction, Upper Sakponba, Benin City, Edo State.",
+      "address": "242 Nomayo Junction, Upper Sakponba Road, Benin City, Edo State.",
       "imgurl": "../chamber/images/golden-crave-restaurant.webp",
       "description": " It is a restaurant known for serving diverse meals, including Naija-style dishes, and offers a lively atmosphere for dining."
     },
@@ -42,7 +42,7 @@
       "description": "High-end international hotels typically have rigorous private security protocols, including guest screening, surveillance, and access control, to ensure guest safety."
     },
     {
-      "name": "Beni Ogba Zoo",
+      "name": "Benin Ogba Zoo",
       "address": "Ogba Zoo is located on Airport Road, Opposite the NPDC Complex, Ogba District, Benin City, Edo State.",
       "imgurl": "../chamber/images/ogba-zoo.webp",
       "description": "Ogba Zoo & Nature Park in Benin City, Edo State, Nigeria, is a 750-acre, state-owned conservation center established in 1965 (some sources say 1971/1966). Located in the Ogba District, it features a mix of forest, recreational facilities, and wildlife, including lions, chimpanzees, monkeys, and tortoises, operating daily from 9 AM to 6 PM. "
