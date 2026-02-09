@@ -1,5 +1,5 @@
 {
-  "places": [
+  export const places = [
     {
       "name": "Oba Palace",
       "address": "6 Usunobun street, Benin City",
