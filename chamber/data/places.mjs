@@ -57,7 +57,7 @@
     },
     {
       "name": "Benin City Nigeria Temple",
-      "address": "1 Commercial Avenue, Benin City, Nigeria.",
+      "address": "16 Commercial Avenue, Benin City, Nigeria.",
       "imgurl": "../chamber/images/benin-city-nigeria-temple.webp",
       "description": "This house of the Lord will be constructed on a 2.17-acre site located at 16 Commercial Avenue in Benin City. Plans call for a two-story temple of approximately 30,700 square feet with an arrival center and patron housing on site. Religious centers, especially prominent, modern, and high-value ones, often employ substantial private security details and sometimes receive additional police patrols, providing a peaceful and secure environment for worship and spiritual ordinances. This facility is owned by the Church of Jesus Christ of Latter-Day Saints.",
       "type": "church"

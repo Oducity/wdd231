@@ -62,19 +62,40 @@ function displayPlaces(places) {
 
         const addressBox = document.createElement("p");
         addressBox.setAttribute("class", "address");
-        addressBox.innerText = place.address;
+        addressBox.innerHTML = `<strong>Address:</strong> ${place.address}`;
         placeCard.appendChild(addressBox);
 
         const descriptionBox = document.createElement("p");
         descriptionBox.setAttribute("class", "description");
-        descriptionBox.innerText = place.description;
+        descriptionBox.innerHTML = `<strong>Description:</strong> ${place.description}`;
         placeCard.appendChild(descriptionBox);
+
+        const typeBox = document.createElement("p");
+        typeBox.setAttribute("class", "type");
+        typeBox.innerHTML = `<strong>Type:</strong> ${place.type}`;
+        placeCard.appendChild(typeBox);
 
         const img = document.createElement("img");
         img.setAttribute("SRC", place.imgurl);
         img.setAttribute("loading", "lazy");
         img.setAttribute("ALT", `Image of ${place.name}`);
         placeCard.appendChild(img);
+
+        const labelBox = document.createElement("p")
+        labelBox.setAttribute("class", "label-box");
+
+        const label = document.createElement("label");
+        label.setAttribute("for", "button");
+
+        const button = document.createElement("button");
+        button.setAttribute("type", "button");
+        button.innerText = "Learn More";
+        label.appendChild(button);
+
+        labelBox.appendChild(label)
+
+        placeCard.appendChild(labelBox);
+
 
         parentDiv.appendChild(placeCard);
     });
@@ -83,3 +104,5 @@ function displayPlaces(places) {
 };
 
 displayPlaces(places);
+
+
