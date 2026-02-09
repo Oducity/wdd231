@@ -1,3 +1,11 @@
+
+@media screen and (min-width: 64rem){ 
+    #main .parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media screen and (min-width: 835px) {
         .news {
         display: grid;

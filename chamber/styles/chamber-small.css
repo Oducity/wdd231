@@ -11,6 +11,7 @@
     font-family: "Josefin", sans-serif;
     box-sizing: border-box;
     font-family: "Trust", Georgia;
+
 }
 /*************** header and nav *****************/
 header {
@@ -638,4 +639,87 @@ dialog::backdrop {
     border-top: 0;
     font-size: 22px;
     text-align: left;
+}
+
+
+
+#main .parent {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.parent section {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color1);
+    border-radius: 10px;
+    box-shadow:  5px 5px 3px 3px var(--border-color1);
+    margin: 15px;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "image"
+    "address"
+    "describe"
+    "type"
+    "button";
+}
+
+#main .parent .card {
+    text-align: left;
+    padding: 0 8px;
+}
+
+.parent h2 {
+    grid-area: title;
+    color: var(--primary-color-blue);
+    text-align: left;
+    margin: 15px 0 15px 10px;
+}
+
+.parent .address {
+    grid-area: address;
+    text-align: left;
+}
+
+.parent .description {
+    grid-area: describe;
+    text-align: left;
+}
+
+.parent .type {
+    grid-area: type;
+    
+}
+
+.parent img {
+    grid-area: image;
+    margin-left: 5px;
+    margin-right: 12px;
+    width: 300px;
+
+}
+
+.parent .label-box {
+    grid-area: button;
+    margin: 15px auto;
+}
+
+.parent .label-box button {
+    font-size: 18px;
+    height: 44px;
+    background-color: var(--primary-color-red);
+    color: var(--background-color);
+    border: 2px solid var(--border-color1);
+    border-radius: 8px;
+    
+}
+
+.parent strong {
+    grid-column: 1/2;
+}
+
+.parent span {
+    grid-column: 2/5;
+    justify-items: left;
 }

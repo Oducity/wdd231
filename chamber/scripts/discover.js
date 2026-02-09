@@ -62,17 +62,17 @@ function displayPlaces(places) {
 
         const addressBox = document.createElement("p");
         addressBox.setAttribute("class", "address");
-        addressBox.innerHTML = `<strong>Address:</strong> ${place.address}`;
+        addressBox.innerHTML = `<strong>Address:</strong> <span>${place.address}</span>`;
         placeCard.appendChild(addressBox);
 
         const descriptionBox = document.createElement("p");
         descriptionBox.setAttribute("class", "description");
-        descriptionBox.innerHTML = `<strong>Description:</strong> ${place.description}`;
+        descriptionBox.innerHTML = `<strong>Description:</strong> <span>${place.description}</span>`;
         placeCard.appendChild(descriptionBox);
 
         const typeBox = document.createElement("p");
         typeBox.setAttribute("class", "type");
-        typeBox.innerHTML = `<strong>Type:</strong> ${place.type}`;
+        typeBox.innerHTML = `<strong>Type:</strong> <span>${place.type}</span>`;
         placeCard.appendChild(typeBox);
 
         const img = document.createElement("img");
@@ -81,7 +81,7 @@ function displayPlaces(places) {
         img.setAttribute("ALT", `Image of ${place.name}`);
         placeCard.appendChild(img);
 
-        const labelBox = document.createElement("p")
+        const labelBox = document.createElement("div")
         labelBox.setAttribute("class", "label-box");
 
         const label = document.createElement("label");
