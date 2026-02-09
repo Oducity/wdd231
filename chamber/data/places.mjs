@@ -1,7 +1,7 @@
   export const places = [
     {
       "name": "Oba Palace",
-      "address": "6 Usunobun street, Benin City",
+      "address": "Specific Identifier: 8JJC+R4G, Benin City 300102",
       "imgurl": "../chamber/images/oba-royal-palace.webp",
       "description": "A UNESCO listed site and the residence of the traditional ruler of the Benin Kingdom. It is one of the most respected historical monuments in Nigeria, though visitors must adhere to strict native protocols. As the official residence of the traditional ruler, this site benefits from dedicated traditional and state security personnel who enforce strict entry and conduct protocols, focusing heavily on the safety and sanctity of the premises.",
       "type": "traditional-grand"
