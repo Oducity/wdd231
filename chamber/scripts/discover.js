@@ -65,6 +65,16 @@ function displayPlaces(places) {
         addressBox.innerText = place.address;
         placeCard.appendChild(addressBox);
 
+        const descriptionBox = document.createElement("p");
+        descriptionBox.setAttribute("class", "description");
+        descriptionBox.innerText = place.description;
+        placeCard.appendChild(descriptionBox);
+
+        const img = document.createElement("img");
+        img.setAttribute("SRC", place.imgurl);
+        img.setAttribute("loading", "lazy");
+        img.setAttribute("ALT", `Image of ${place.name}`);
+        placeCard.appendChild(img);
 
         parentDiv.appendChild(placeCard);
     });
