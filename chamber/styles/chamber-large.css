@@ -4,6 +4,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    #main .parent img:hover {
+        border: 5px dotted var(--primary-color-red);
+        border-radius: 15%;
+        padding: 8px;
+    }
 }
 
 @media screen and (min-width: 835px) {
