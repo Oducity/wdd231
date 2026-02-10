@@ -658,11 +658,11 @@ dialog::backdrop {
     display: grid;
     grid-template-areas: 
     "title"
-    "image"
     "address"
     "describe"
     "type"
-    "button";
+    "button"
+    "image";
 }
 
 #main .parent .card {
