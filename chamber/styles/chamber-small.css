@@ -446,7 +446,7 @@ footer p {
 }
 
 @keyframes memberCardsAnimation {
-    form {
+    from {
         background-color: var(--border-color1);
     }
     to {
