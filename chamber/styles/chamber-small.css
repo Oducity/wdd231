@@ -641,12 +641,23 @@ dialog::backdrop {
     text-align: left;
 }
 
-
+/***********************Discover page************************/
 
 #main .parent {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+}
+
+#main .visited {
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    color: var(--primary-color-blue);
+    margin: 0 auto;
+    padding: 12px;
+    width: 100%;
+    max-width: 1600px;
 }
 
 .parent section {

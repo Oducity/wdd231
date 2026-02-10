@@ -2,6 +2,7 @@ import {places} from '../data/places.mjs';
 console.log(places);
 
 const screen = document.querySelector("#main");
+const visited = document.querySelector("#visited");
 
 
 const hamburgerBtn = document.getElementById("ham-btn");
@@ -103,4 +104,28 @@ function displayPlaces(places) {
 
 displayPlaces(places);
 
+function getDateGreeting() {
+    const newDate = new Date();
+    const dateString = newDate.toISOString();
+     const passedDate = localStorage.getItem("savedDate");
+     const oneDay = 1000 * 60 * 60 * 24;
 
+     let dateGreeting = "";
+     
+     if (passedDate) {
+        const dateObj = Date.parse(passedDate);
+        
+        if (((newDate - dateObj) / oneDay)  < oneDay) {
+            dateGreeting = "Back so soon! Awesome!";
+        } else {
+            dateGreeting = `You last visited ${Math.round((newDate - dateObj) / oneDay)} days ago.`;
+        }
+     } else {
+        dateGreeting = "Welcome! Let us know if you have any questions."
+     }
+
+     localStorage.setItem('savedDate', dateString);
+     visited.innerText = dateGreeting;
+};
+
+getDateGreeting();
