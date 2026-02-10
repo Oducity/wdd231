@@ -3,8 +3,6 @@ console.log(places);
 
 const screen = document.querySelector("#main");
 
-const headOne = document.createElement("h1");
-screen.appendChild(headOne);
 
 const hamburgerBtn = document.getElementById("ham-btn");
 const navBtn = document.getElementById("nav-bar");
