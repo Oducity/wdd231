@@ -14,8 +14,10 @@ createWayFinder();
 getYear();
 lastModify();
 
+
 function displayProducts (products){
     console.log(products);
+
 }
 
 displayProducts(windows);

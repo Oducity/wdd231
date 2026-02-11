@@ -22,5 +22,5 @@ export function createWayFinder() {
 
             navItem.classList.add("way");
         });
-    }) ;
+    });
 };
