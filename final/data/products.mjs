@@ -84,15 +84,9 @@ export const roofs = [
         "imageurl": ""
     },
     {
-        "name": "Lonspan",
-        "color": "Blue",
-        "Guage": "0.45mm",
-        "imageurl": ""
-    },
-    {
-        "name": "Lonspan",
-        "color": "Grey-Betch",
-        "Guage": "0.45mm",
+        "name": "Metro",
+        "color": "Black",
+        "guage": "0.55",
         "imageurl": ""
     }
 ];
