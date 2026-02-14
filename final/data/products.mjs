@@ -5,7 +5,7 @@ export const heroImages = [
     },
     {
         "name": "completed blue roof project",
-        "imageurl": "../final/images/blueroof-hero-image(2).webp"
+        "imageurl": "../final/images/blueroof-hero-image.webp"
     },
     {
         "name": "complete housing project",

@@ -5,12 +5,14 @@ import { roofs } from "../data/products.mjs";
 import { solar } from "../data/products.mjs";
 import { toggleHamBtn } from "./navigation.mjs";
 import { createWayFinder } from "./navigation.mjs";
+import { displayHeroImages } from "./displayHeroImg.mjs";
 
 
 
 
 toggleHamBtn();
 createWayFinder();
+displayHeroImages();
 getYear();
 lastModify();
 
