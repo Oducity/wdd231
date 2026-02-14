@@ -19,6 +19,7 @@ export function displayHomeCards(jobs) {
 
     const p = document.createElement("p");
     p.innerText = `Photo of ${randItem.name}`;
+    section.appendChild(p);
 
     const img = document.createElement("img");
     img.setAttribute("SRC", randItem.imageurl);
