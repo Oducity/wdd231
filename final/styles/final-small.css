@@ -1,0 +1,19 @@
+:root {
+    --purple-color: #4C115F;
+    --light-blue: #CEE9EE ;
+    --dark-red: #500202;
+    --bright-red: #c52020;
+    --blue-color: #1b007a;
+    --actionbtn-txt: #ffffff;
+    --common-border: 1px solid grey;
+}
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+

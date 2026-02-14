@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg fill="#070aaa" width="800px" height="800px" viewBox="0 0 24 24" id="facebook-circle" data-name="Line Color"
+    xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+    <path id="secondary" d="M16,9H14a2,2,0,0,0-2,2V21"
+        style="fill: none; stroke: #070aaa; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;">
+    </path>
+    <line id="secondary-2" data-name="secondary" x1="9" y1="14" x2="15" y2="14"
+        style="fill: #781118; stroke: #070aaa; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;">
+    </line>
+    <circle id="primary" cx="12" cy="12" r="9"
+        style="fill: none; stroke: #070aaa; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;">
+    </circle>
+</svg>
