@@ -1,13 +1,14 @@
  import { heroImages } from "../data/products.mjs";
 
 
-export function displayHeroImages(images){
+export function displayHeroImage(images){
 
 
         //document.querySelector("#hero-box-inner").innerHTML = "";
         const heroBoxInner = document.querySelector("#hero-box-inner");
 
-        const randomIndex = Math.floor(Math.random() * images.length);
+        const randomIndex = Math.floor(Math.random() *  images.length);
+        console.log(randomIndex);
         const randItem = images[randomIndex];
         console.log(randItem);
 
@@ -22,4 +23,4 @@ export function displayHeroImages(images){
 
 };
 
-displayHeroImages(heroImages);
+displayHeroImage(heroImages);

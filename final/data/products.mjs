@@ -7,7 +7,6 @@ export const heroImages = [
         "name": "complete housing project",
         "imageurl": "../final/images/hero-image3.webp"
     },
-    ,
     {
         "name": "completed solar project",
         "imageurl": "../final/images/hero-image5.webp"
