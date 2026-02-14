@@ -10,7 +10,7 @@ export function displayHomeCards(jobs) {
     section.setAttribute("class", "job-section");
 
     const h2 = document.createElement("h2");
-    const randomIndex = Math.floor(Math.random() *  images.length);
+    const randomIndex = Math.floor(Math.random() *  jobs.length);
     console.log(randomIndex);
     const randItem = jobs[randomIndex];
     console.log(randItem);

@@ -33,7 +33,7 @@ export const windows = [
         "profilecolor": "Black",
         "type": "Sitting Room",
         "glass" : ["thickness: 6mm", "color: blue"],
-        "imageurl": "../final/image/window-small.webp"
+        "imageurl": "../final/images/window-small.webp"
     },
     {
         "name": "Casement Window",
@@ -49,7 +49,7 @@ export const windows = [
         "profilecolor": "Black",
         "type": "Rest Room",
         "glass" : ["thickness: 6mm", "color: blue"],
-        "imageurl": "../final/images/windowconstruction-small.webp"
+        "imageurl": "../final/images/windowonconstruction-small.webp"
     }
 ];
     
