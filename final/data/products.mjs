@@ -20,7 +20,7 @@ export const heroImages = [
 
 export const windows = [
     {
-        "name": "slidding",
+        "name": "Slidding Window",
         "size": "600 * 600",
         "profilecolor": "white",
         "type": "Rest Room",
@@ -28,7 +28,7 @@ export const windows = [
         "imageurl": "../final/images/slidding-window-cream-small.webp"
     },
     {
-        "name": "Casement",
+        "name": "Casement Window",
         "size": "1200mm * 1200mm",
         "profilecolor": "Black",
         "type": "Sitting Room",
@@ -36,7 +36,7 @@ export const windows = [
         "imageurl": "../final/image/window-small.webp"
     },
     {
-        "name": "Casement",
+        "name": "Casement Window",
         "size": "1000mm * 1000mm",
         "profilecolor": "Black",
         "type": "Rest Room & Kitchen Room",
@@ -44,7 +44,7 @@ export const windows = [
         "imageurl": "../final/images/window-small1.webp"
     },
     {
-        "name": "Casement",
+        "name": "Casement Window",
         "size": "700mm * 600mm",
         "profilecolor": "Black",
         "type": "Rest Room",
@@ -56,43 +56,43 @@ export const windows = [
 
 export const roofs = [
     {
-        "name": "Black straight corogated Lonspan",
+        "name": "Black Straight Corogated Lonspan Roof",
         "color": "Black",
         "Guage": "0.45mm",
         "imageurl": "../final/images/blackroof-small.webp"
     },
     {
-        "name": "Black straight corogated Lonspan ",
+        "name": "Black Straight Corogated Lonspan Roof",
         "color": "Black",
         "Guage": "0.45mm",
         "imageurl": "../final/images/black-roof2-small.webp"
     },
     {
-        "name": "Stucco or Silver straight corogated Lonspan",
+        "name": "Stucco Straight Corogated Lonspan Roof",
         "color": "Stucco",
         "Guage": "0.45mm",
         "imageurl": "../final/images/stucco-greyberge.webp"
     },
     {
-        "name": "Vidal Brown straight corogated Lonspan",
+        "name": "Vidal Brown Straight Corogated Lonspan Roof",
         "color": "Vidal Brown",
         "Guage": "0.7mm",
         "imageurl": "../final/images/vidalbrown-roof.webp"
     },
     {
-        "name": "Black Metcopo roof",
+        "name": "Black Metcopo Roof",
         "color": "Black",
         "Guage": "0.45mm",
         "imageurl": "../final/images/blackmetcopo-small.webp"
     },
     {
-        "name": "Black Metro roof",
+        "name": "Black Metro-Tile Roof",
         "color": "Black",
         "guage": "0.55",
         "imageurl": "../final/images/black-metro-small.webp"
     },
     {
-        "name": "Blue Longspan roof",
+        "name": "Blue Straight Corogated Longspan Roof",
         "color": "Ocean Blue",
         "guage": "0.45",
         "imageurl": "../final/images/blueroof-top-view-small.webp"
@@ -121,7 +121,7 @@ export const solar = [
     },
     {
         "name": "UniSol-H10k",
-        "capcity": "H10kva",
+        "capcity": "10.00kva",
         "type": "Non-hybrid",
         "details": "This fully hybrid solar power system has the capacity to power all your vital appliances including air conditional, water pump, pressing iron and water heater devices. The maximun capacity of this solar power generator is 10,000 watts hour.",
         "imageurl": "../final/images/solar-10kwh.webp"
