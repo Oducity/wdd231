@@ -1,51 +1,52 @@
+export const heroImages = [
+    {
+        "name": "completed job",
+        "imageurl": "../final/images/hero-image2.webp",
+    },
+    {
+        "name": "completed blue roof project",
+        "imageurl": "../final/images/blueroof-hero-image(2).webp"
+    },
+    {
+        "name": "complete housing project",
+        "imageurl": "../final/images/hero-image3.webp"
+    },
+    ,
+    {
+        "name": "completed solar project",
+        "imageurl": "../final/images/hero-image5.webp"
+    },
+    {
+        "name": "On going windows project",
+        "imageurl": "../final/images/hero-image1.webp"
+    }
+
+]
+
 export const windows = [
-    {
-        "name": "slidding",
-        "size": "1800 * 1200",
-        "profilecolor": "white",
-        "type": "Sitting Room",
-        "glass" : ["thickness: 5mm", "color: blue"],
-        "imageurl": ""
-    },
-    {
-        "name": "slidding",
-        "size": "1200 * 1200",
-        "profilecolor": "White",
-        "type": "Bead Room",
-        "glass" : ["thickness: 5mm", "color: blue"],
-        "imageurl": ""
-    },
-    {
-        "name": "slidding",
-        "size": "800 * 1000",
-        "profilecolor": "white",
-        "type": "Kitchen Room",
-        "glass" : ["thickness: 5mm", "color: blue"],
-        "imageurl": ""
-    },
     {
         "name": "slidding",
         "size": "600 * 600",
         "profilecolor": "white",
         "type": "Rest Room",
         "glass" : ["thickness: 5mm", "color: blue"],
-        "imageurl": ""
+        "imageurl": "../final/images/slidding-window-cream-small.webp"
     },
     {
         "name": "Casement",
-        "size": "1200mm * 700mm",
+        "size": "1200mm * 1200mm",
         "profilecolor": "Black",
         "type": "Sitting Room",
         "glass" : ["thickness: 6mm", "color: blue"],
-        "imageurl": ""
+        "imageurl": "../final/image/window-small.webp"
     },
     {
         "name": "Casement",
-        "size": "800mm * 1000mm",
+        "size": "1000mm * 1000mm",
         "profilecolor": "Black",
         "type": "Rest Room & Kitchen Room",
         "glass" : ["thickness: 6mm", "color: blue"],
-        "imageurl": ""
+        "imageurl": "../final/images/window-small1.webp"
     },
     {
         "name": "Casement",
@@ -53,41 +54,53 @@ export const windows = [
         "profilecolor": "Black",
         "type": "Rest Room",
         "glass" : ["thickness: 6mm", "color: blue"],
-        "imageurl": ""
+        "imageurl": "../final/images/windowconstruction-small.webp"
     }
 ];
     
 
 export const roofs = [
     {
-        "name": "Lonspan",
+        "name": "Black straight corogated Lonspan",
         "color": "Black",
         "Guage": "0.45mm",
-        "imageurl": ""
+        "imageurl": "../final/images/blackroof-small.webp"
     },
     {
-        "name": "Lonspan",
+        "name": "Black straight corogated Lonspan ",
+        "color": "Black",
+        "Guage": "0.45mm",
+        "imageurl": "../final/images/black-roof2-small.webp"
+    },
+    {
+        "name": "Stucco or Silver straight corogated Lonspan",
         "color": "Stucco",
         "Guage": "0.45mm",
-        "imageurl": ""
+        "imageurl": "../final/images/stucco-greyberge.webp"
     },
     {
-        "name": "Lonspan",
+        "name": "Vidal Brown straight corogated Lonspan",
         "color": "Vidal Brown",
         "Guage": "0.7mm",
-        "imageurl": ""
+        "imageurl": "../final/images/vidalbrown-roof.webp"
     },
     {
-        "name": "Metcopo",
+        "name": "Black Metcopo roof",
         "color": "Black",
         "Guage": "0.45mm",
-        "imageurl": ""
+        "imageurl": "../final/images/blackmetcopo-small.webp"
     },
     {
-        "name": "Metro",
+        "name": "Black Metro roof",
         "color": "Black",
         "guage": "0.55",
-        "imageurl": ""
+        "imageurl": "../final/images/black-metro-small.webp"
+    },
+    {
+        "name": "Blue Longspan roof",
+        "color": "Ocean Blue",
+        "guage": "0.45",
+        "imageurl": "../final/images/blueroof-top-view-small.webp"
     }
 ];
 
@@ -96,27 +109,26 @@ export const solar = [
         "name": "UniSol-H5k",
         "capcity": "5.00kva",
         "type": "Hybrid",
-        "imageurl": ""
+        "imageurl": "../final/images/blackroof-solar-small.webp"
     },
     {
         "name": "UniSol-NH5k",
         "capcity": "5.00kva",
         "type": "Non-hybrid",
-        "imageurl": "",
-        "imageurl": ""
+        "imageurl": "../final/images/black-roof-solar.webp"
     },
     {
         "name": "UniSol-H3.5k",
-        "capcity": "3.50kva",
+        "capcity": "10.00kva",
         "type": "Hybrid",
         "details": "This fully hybrid solar power system has the capacity to power all your vital appliances including air conditional, water pump and pressing iron devices simultaneously. The maximun output capacity of this solar power generator is 5000 watts hour.",
-        "imageurl": ""
+        "imageurl": "..final/images/alum-solar.webp"
     },
     {
-        "name": "UniSol-NH3.5k",
-        "capcity": "NH3.50kva",
+        "name": "UniSol-H10k",
+        "capcity": "H10kva",
         "type": "Non-hybrid",
-        "details": "This non-hybrid solar power system has the capacity to power all your vital appliances including air conditional, water pump and pressing iron devices alternatively. The maximun capacity of this solar pawer generator is 3500 watts hour.",
-        "imageurl": ""
+        "details": "This fully hybrid solar power system has the capacity to power all your vital appliances including air conditional, water pump, pressing iron and water heater devices. The maximun capacity of this solar power generator is 10,000 watts hour.",
+        "imageurl": "../final/images/solar-10kwh.webp"
     }
 ]
