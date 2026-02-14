@@ -113,13 +113,6 @@ export const solar = [
         "imageurl": "../final/images/black-roof-solar.webp"
     },
     {
-        "name": "UniSol-H3.5k",
-        "capcity": "10.00kva",
-        "type": "Hybrid",
-        "details": "This fully hybrid solar power system has the capacity to power all your vital appliances including air conditional, water pump and pressing iron devices simultaneously. The maximun output capacity of this solar power generator is 5000 watts hour.",
-        "imageurl": "..final/images/alum-solar.webp"
-    },
-    {
         "name": "UniSol-H10k",
         "capcity": "10.00kva",
         "type": "Non-hybrid",
