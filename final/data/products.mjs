@@ -56,25 +56,25 @@ export const windows = [
 
 export const roofs = [
     {
-        "name": "Black Straight Corogated Lonspan Roof",
+        "name": "Black Lonspan Roof",
         "color": "Black",
         "Guage": "0.45mm",
         "imageurl": "../final/images/blackroof-small.webp"
     },
     {
-        "name": "Black Straight Corogated Lonspan Roof",
+        "name": "Black Lonspan Roof",
         "color": "Black",
         "Guage": "0.45mm",
         "imageurl": "../final/images/black-roof2-small.webp"
     },
     {
-        "name": "Stucco Straight Corogated Lonspan Roof",
+        "name": "Stucco Lonspan Roof",
         "color": "Stucco",
         "Guage": "0.45mm",
         "imageurl": "../final/images/stucco-greyberge.webp"
     },
     {
-        "name": "Vidal Brown Straight Corogated Lonspan Roof",
+        "name": "Vidal Brown Lonspan Roof",
         "color": "Vidal Brown",
         "Guage": "0.7mm",
         "imageurl": "../final/images/vidalbrown-roof.webp"
@@ -92,7 +92,7 @@ export const roofs = [
         "imageurl": "../final/images/black-metro-small.webp"
     },
     {
-        "name": "Blue Straight Corogated Longspan Roof",
+        "name": "Blue Longspan Roof",
         "color": "Ocean Blue",
         "guage": "0.45",
         "imageurl": "../final/images/blueroof-top-view-small.webp"
