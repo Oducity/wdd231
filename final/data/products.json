@@ -1,27 +1,8 @@
 {
-    "heroImages": [
-        {
-            "name": "completed job",
-            "imageurl": "../final/images/hero-image2.webp"
-        },
-        {
-            "name": "complete housing project",
-            "imageurl": "../final/images/hero-image3.webp"
-        },
-        {
-            "name": "completed solar project",
-            "imageurl": "../final/images/hero-image5.webp"
-        },
-        {
-            "name": "On going windows project",
-            "imageurl": "../final/images/hero-image1.webp"
-        }
-
-    ],
-
-    "windows": [
+    "products": [
         {
             "name": "Slidding Window",
+            "category": "window",
             "size": "600 * 600",
             "profilecolor": "white",
             "type": "Rest Room",
@@ -30,6 +11,7 @@
         },
         {
             "name": "Casement Window",
+            "category": "window",
             "size": "1200mm * 1200mm",
             "profilecolor": "Black",
             "type": "Sitting Room",
@@ -38,6 +20,7 @@
         },
         {
             "name": "Casement Window",
+            "category": "window",
             "size": "1000mm * 1000mm",
             "profilecolor": "Black",
             "type": "Rest Room & Kitchen Room",
@@ -46,75 +29,79 @@
         },
         {
             "name": "Casement Window",
+            "category": "window",
             "size": "700mm * 600mm",
             "profilecolor": "Black",
             "type": "Rest Room",
             "glass" : ["thickness: 6mm", "color: blue"],
             "imageurl": "../final/images/windowonconstruction-small.webp"
-        }
-    ],
-    
-
-    "roofs": [
+        },
         {
             "name": "Black Lonspan Roof",
+            "category": "roof",
             "color": "Black",
             "Guage": "0.45mm",
             "imageurl": "../final/images/blackroof-small.webp"
         },
         {
             "name": "Black Lonspan Roof",
+            "category": "roof",
             "color": "Black",
             "Guage": "0.45mm",
             "imageurl": "../final/images/black-roof2-small.webp"
         },
         {
             "name": "Stucco Lonspan Roof",
+            "category": "roof",
             "color": "Stucco",
             "Guage": "0.45mm",
             "imageurl": "../final/images/stucco-greyberge.webp"
         },
         {
             "name": "Vidal Brown Lonspan Roof",
+            "category": "roof",
             "color": "Vidal Brown",
             "Guage": "0.7mm",
             "imageurl": "../final/images/vidalbrown-roof.webp"
         },
         {
             "name": "Black Metcopo Roof",
+            "category": "roof",
             "color": "Black",
             "Guage": "0.45mm",
             "imageurl": "../final/images/blackmetcopo-small.webp"
         },
         {
             "name": "Black Metro-Tile Roof",
+            "category": "roof",
             "color": "Black",
             "guage": "0.55",
             "imageurl": "../final/images/black-metro-small.webp"
         },
         {
             "name": "Blue Longspan Roof",
+            "category": "roof",
             "color": "Ocean Blue",
             "guage": "0.45",
             "imageurl": "../final/images/blueroof-top-view-small.webp"
-        }
-    ],
-
-    "solar": [
+        },
         {
             "name": "UniSol-H5k",
+            "category": "Solar",
             "capcity": "5.00kva",
             "type": "Hybrid",
             "imageurl": "../final/images/blackroof-solar-small.webp"
         },
         {
             "name": "UniSol-NH5k",
+            "category": "Solar",
             "capcity": "5.00kva",
             "type": "Non-hybrid",
             "imageurl": "../final/images/black-roof-solar.webp"
         },
         {
             "name": "UniSol-H10k",
+            "category": "Solar",
             "capcity": "10.00kva",
             "type": "Non-hybrid",
             "details": "This fully hybrid solar power system has the capacity to power all your vital appliances including air conditional, water pump, pressing iron and water heater devices. The maximun capacity of this solar power generator is 10,000 watts hour.",
