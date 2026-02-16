@@ -229,3 +229,59 @@ footer .social {
 .wide {
     text-align: right;
 }
+
+/***********************Products*************************/
+
+.products section {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.5rem;
+    background-color: var(--light-blue);
+    border: var(--common-border);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.products section h2 {
+    font-size: 28px;
+    color: var(--dark-red);
+}
+
+@keyframes productCardsAnimation {
+    to {
+        background-color: rgb(153, 206, 239);
+    }
+}
+
+.products .card {
+    display: grid;
+    grid-template-areas: 
+    "head"
+    "para"
+    "picture"
+    ;
+    border: var(--common-border);
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px 4px var(--purple-color);
+    animation: productCardsAnimation 2s ease-in-out infinite alternate;
+}
+
+.products h3 {
+    grid-area: head;
+    font-size: 24px;
+    border-bottom: var(--common-border);
+    color: var(--dark-red);
+    animation: productCardsAnimation 2s ease-in-out infinite alternate;
+}
+
+.products p {
+    grid-area: para;
+}
+
+.products img {
+    grid-area: picture;
+    width: 300px;
+    height: 200px;
+}

@@ -1,0 +1,10 @@
+@media screen and (min-width: 44rem) {
+    .products section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .products h2 {
+        grid-column: 1/3;
+    }
+}

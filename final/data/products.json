@@ -3,7 +3,7 @@
         {
             "name": "Slidding Window",
             "category": "window",
-            "size": "1800mm by 1800mm",
+            "size": "1800mm by 1200mm",
             "profilecolor": "white",
             "type": "Rest Room",
             "glass" : ["thickness: 5mm", "color: blue"],
