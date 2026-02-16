@@ -10,5 +10,3 @@ const url = "../final/data/products.json";
 toggleHamBtn();
 createWayFinder();
 getApiData(url);
-
-
