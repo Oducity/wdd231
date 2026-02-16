@@ -1,0 +1,23 @@
+@media screen and (min-width: 64rem) {
+
+    header img {
+        grid-column: 1/2;
+        margin: 10px;
+    }
+
+    header span {
+        grid-column: 2/7;
+        margin-top: 30px;
+    }
+
+    .home-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .home-cards span {
+        grid-column: 1/4;
+        font-size: 28px;
+    }
+    
+}

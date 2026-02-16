@@ -13,6 +13,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: "Lato", sans-serif;
 }
 
 header {
@@ -21,6 +22,7 @@ header {
     border: var(--common-border);
     border-radius: 12px;
     background-color: var(--light-blue);
+    padding-top: 10px;
 }
 
 header img {
@@ -40,7 +42,8 @@ header span {
     grid-column: 1/7;
     font-size: 44px;
     margin: 0 0 0 12px;
-    color: var(--bright-red);
+    color: var(--dark-red);
+    padding-top: 30px;
 }
 
 
@@ -91,10 +94,8 @@ header span {
 
 .navigation a {
     color: var(--actionbtn-txt);
-    font-size: 25px;
+    font-size: 23px;
     text-decoration: none;
-    margin-top: 12px;
-    margin-bottom: 0;
     height: 44px;
 }
 
@@ -117,29 +118,37 @@ header span {
     border: var(--common-border);
 }
 
-.hero-box-nner {
-    position: relative;
+.intro-div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .actionBtn {
-    position: absolute;
-    width: 150px;
-    top: 24%;
-    left: 59%;
-    font-size: 22px;
+    grid-column: 5/6;
+    width: 180px;
+    height: 44px;
+    font-size: 28px;
+    font-weight: 600;
     background-color: var(--bright-red);
     color: var(--actionbtn-txt);
     border: 2px solid var(--blue-color);
     border-radius: 10px;
+    margin-right: 12px;
+    cursor: pointer;
 }
 
 h1 {
+    grid-column: 1/5;
     padding-left: 12px;
-    color: var(--bright-red);
+    color: var(--dark-red);
+}
+
+.intro-div p {
+    grid-column: 1/6;
 }
 
 p{
-    font-size: 24px;
+    font-size: 22px;
     padding: 12px;
     background-color: var(--light-blue);
 }
@@ -161,12 +170,15 @@ p{
     border: var(--common-border);
     border-radius: 12px;
     margin-top: 15px;
+    box-shadow: 1px 1px 8px 4px var(--purple-color);
+    padding-top: 10px;
     
 }
 
 .job-section h2 {
     color: var(--blue-color);
     font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .home-cards img {
@@ -176,6 +188,8 @@ p{
 
 footer {
     display: grid;
+    padding: 12px;
+    background-color: var(--light-blue);
 }
 
 footer div {
@@ -187,6 +201,7 @@ footer div {
 footer p {
     text-align: center;
     font-size: 22px;
+    font-family: "Lato", sans-serif;
 }
 
 footer .social {
@@ -194,4 +209,23 @@ footer .social {
     flex-direction: row;
 }
 
+.wireframe-box ol { 
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 3rem;
+    list-style-type: none;
+}
 
+.wireframe-box ol li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: var(--dark-red);
+    border: 2px solid var(--common-border);
+    border-radius: .5rem;
+    color: var(--actionbtn-txt);
+    font-family: "Lato", sans-serif;
+}
+
+.wide {
+    text-align: right;
+}
