@@ -1,5 +1,5 @@
 
-export function toggleHamBtn() {1
+export function toggleHamBtn() {
     const hamburgerBtn = document.getElementById("hambtn");
     const navBtn = document.getElementById("navbar");
     hamburgerBtn.addEventListener("click", () => {
@@ -9,10 +9,17 @@ export function toggleHamBtn() {1
 };
 
 
+
 export function createWayFinder() {
     const navList = document.querySelectorAll("nav a");
     const h1 = document.querySelector("h1");
-
+    if (document.querySelector(".homeh1")) {
+        h1.innerText = document.querySelector("#home-btn").innerText;
+    } else if (document.querySelector(".abouth1")) {
+        h1.innerText = document.querySelector("#about-btn").innerText;
+    } else {
+        h1.innerText = document.querySelector("#contact-btn").innerText;
+    }
     navList.forEach(navItem => {
         navItem.addEventListener("click", () => {
             h1.innerText = navItem.innerText;
