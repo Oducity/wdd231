@@ -286,3 +286,10 @@ footer .social {
     width: 300px;
     height: 200px;
 }
+
+footer .w3c {
+    width: 88px;
+    height: 31px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
