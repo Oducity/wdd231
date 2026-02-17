@@ -30,9 +30,6 @@
         "picture head"
         "picture para"
         ;
-    }
-    
-    .products .card h3 {
-        padding-top: 10px;
+        animation: productCardsAnimation 2s ease-in-out infinite alternate;
     }
 }

@@ -265,12 +265,13 @@ footer .social {
     padding: 5px;
     border-radius: 8px;
     box-shadow: 1px 1px 8px 4px var(--purple-color);
-    animation: productCardsAnimation 2s ease-in-out infinite alternate;
+    
 }
 
 .products h3 {
     grid-area: head;
     font-size: 24px;
+    padding-top: 10px;
     border-bottom: var(--common-border);
     color: var(--dark-red);
     animation: productCardsAnimation 2s ease-in-out infinite alternate;
