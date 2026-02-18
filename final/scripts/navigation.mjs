@@ -17,8 +17,10 @@ export function createWayFinder() {
         h1.innerText = document.querySelector("#home-btn").innerText;
     } else if (document.querySelector(".abouth1")) {
         h1.innerText = document.querySelector("#about-btn").innerText;
-    } else {
+    } else if (document.querySelector(".contact-btn")) {
         h1.innerText = document.querySelector("#contact-btn").innerText;
+    } else {
+        h1.innerText = "Thank You for Placing Your Request";
     }
     navList.forEach(navItem => {
         navItem.addEventListener("click", () => {

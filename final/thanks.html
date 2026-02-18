@@ -42,115 +42,20 @@
 
         <main class="contact-main">
             <h1 class="contacth1"></h1>
-            <form action="thanks.html" method="GET" id="request-form" class="request-form">
-                <h2>Request Form</h2>
 
 
-                <fieldset class="cinfo">
-                    <legend>Customer's Information</legend>
-                    <label for="first-name" class="fname-label">
-                        <span class="fname-span">Your First Name: <strong class="req">&#10033</strong></span>
-                        <input type="text" id="first-name" name="first-name" placeholder="Please Enter You Given Name" autocomplete="given-name" title="E.g; Dr." required>
-                    </label>
+            <div id="confirm-box" class="confirm-box">
+                <h2></h2>
 
-                    <label for="last-name" class="lname-label">
-                        <span class="lname-span">Your Last Name: <strong class="req">&#10033</strong></span>
-                        <input type="text" id="last-name" name="last-name" class="last-name" placeholder="Please Enter You Family Name" autocomplete="family-name" title="No title" required>
-                    </label>
+                <section class="your-info" id="your-info">
+                    
+                </section>
+                <section id="your-request" class="your-request">
 
-                    <label for="email" class="email=label">
-                        <span class="email-span">Your Email: <strong class="req">&#10033</strong></span>
-                        <input type="email" class="email" id="email" name="email" title="email" autocomplete="email" placeholder="example@email.com" required>
-                    </label>
-
-                    <label for="phone" class="phone-label">
-                        <span class="phone-span">Phone: <strong class="req">&#10033</strong></span>
-                        <input type="tel" name="phone" id="phone" class="phone" title="+234-XXX-XXX-XXXX" required autocomplete="tel">
-                    </label>
-                </fieldset>
+                </section>
+            </div>
 
 
-                <fieldset class="roof-info">
-                    <legend>Make Your Request <strong class="req">&#10033</strong></legend>
-
-                    <label for="lonspan" class="radio-btn">
-                        <span class="roof-span">Lonspan:</span>
-                        <input type="radio" id="lonspan" name="roof" value="lonspan" required>
-                    </label>
-
-                    <label for="metcopo" class="radio-btn">
-                        <span class="metcopo-span">Metcopo:</span>
-                        <input type="radio" id="metcopo" name="roof" value="metcopo" required>
-                    </label>
-
-                    <label for="steptile" class="radio-btn">
-                        <span class="steptile-span">Steptile:</span>
-                        <input type="radio" id="steptile" name="roof" value="steptile" required>
-                    </label>
-
-                    <label for="shingo" class="radio-btn">
-                        <span class="shingo-span">Metro Shingo</span>
-                        <input type="radio" id="shingo" name="roof" value="shingo" required>
-                    </label>
-
-                    <label for="classic" class="radio-btn">
-                        <span class="classic-span">Metro Classic:</span>
-                        <input type="radio" id="classic" name="roof" value="classic" required>
-                    </label>
-
-                    <label for="bond" class="radio-btn">
-                        <span class="bond-span">Metro Bond:</span>
-                        <input type="radio" id="bond" name="roof" value="bond" required>
-                    </label>
-
-                    <label for="roof-color" class="similar">
-                        <span class="color-span">Pick Roof Color: <strong class="req">&#10033</strong></span>
-                        <select name="roof-color" id="roof-color" required>
-                            <option value="none">Click Here</option>
-                            <option value="bush-green">Bush-green</option>
-                            <option value="greybedge">Greybedge</option>
-                            <option value="ocean-blue">Ocean Blue</option>
-                            <option value="nul-brown">NulBrown</option>
-                            <option value="jet-black">Jet Black</option>
-                            <option value="wine-red">Wine Red</option>
-                            <option value="t-red">Taracuta Red</option>
-                            <option value="stucco">Stucco</option>
-                        </select>
-                    </label>
-
-                    <label for="guage" class="similar">
-                        <span class="guage-span">Pick Roof Guage: <strong class="req">&#10033</strong></span>
-                        <select name="guage" id="guage" required>
-                            <option value="none">Click Here</option>
-                            <option value="0.4" >0.40mm</option>
-                            <option value="0.45">0.45mm</option>
-                            <option value="0.5">0.50mm</option>
-                            <option value="0.55">0.55mm</option>
-                            <option value="0.7">0.70mm</option>
-                        </select>
-                    </label>
-                    <label for="total-meter" class="similar">
-                        <span>Enter Total Meters: <strong class="req">&#10033</strong></span>
-                        <input type="number" id="total-meter" name="total-meter" value="total-meter" required>
-                    </label>
-
-                    <label for="more-roof-info" class="similar">
-                        <span class="more-info-span">Enter More Roof Information:</span>
-                        <textarea name="more-roof-info" id="more-roof-info" class="more-info" placeholder="Feel free to provide more information about your roof."></textarea>
-                    </label>
-                </fieldset>
-
-                <label for="submit">
-                    <button type="submit" name="submit" id="submit" class="submit">Request My Products</button>
-                </label>
-            </form>
-
-<!--------------------------------------------Dialog box------------------------>
-
-            <dialog id="dialog-details">
-                <div id="modal-box" class="modal-box"></div>
-                <button id="close-dialog" class="close-dialog" type="button"></button>
-            </dialog>
         </main>
         <footer>
         <div>
@@ -170,7 +75,6 @@
                         <img width="88" height="31" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" >
                     </a>
                 </p>
-            <!--<p>Links to more projects photos</p>-->
             <div class="wireframe-box"><ol><li class="wide"><a href="images/wdd231-final-project-wirefram-wide.webp" target="_blank">Wireframe for wide view</a></li><li class="small"><a href="images/wdd231-final-project-wirefram-mobile-view.webp" target="_blank">Wireframe for small view</a></li></ol></div>
         </div>
         </footer>
