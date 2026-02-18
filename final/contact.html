@@ -1,46 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Company description">
+        <meta name="description" content="Products page of Unicon Aluminum and Solar Solution">
         <meta name="author" content="Odumamwen Evans Henry Aisiokuebor">
-        <meta property="og:description" content="Company page description">
-        <meta property="og:title" content="page title">
+        <meta property="og:description" content="Products page of Unicon Aluminum and Solar Solution">
+        <meta property="og:title" content="Products Page">
         <meta property="og:image" content="">
-        <meta property="og:locale" content="this website address">
-        <meta property="og:url" content="https://oducity.github.io/wdd231/final/index.html">
-        <meta name="twitter:url" content="https://oducity.github.io/wdd231/final/index.html">
-        <meta name="twitter:title" content="Page title">
-        <meta name="twitter:description" content="Page description and function">
+        <meta property="og:locale" content="https://oducity.github.io/wdd231/final/products.html">
+        <meta property="og:url" content="https://oducity.github.io/wdd231/final/products.html">
+        <meta name="twitter:url" content="https://oducity.github.io/wdd231/final/products.html">
+        <meta name="twitter:title" content="Products Page">
+        <meta name="twitter:description" content="Products page of Unicon Aluminum and Solar Solution">
         <meta name="twitter:card" content="summary">
         <link rel="icon" href="../final/favicon.ico">
         <link rel="stylesheet" href="styles/final-small.css">
+        <link rel="stylesheet" href="styles/final-medium.css">
         <link rel="stylesheet" href="styles/final-large.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Momo+Trust+Sans:wght@200..800&family=Sofia&display=swap" rel="stylesheet">
-        <script type="module" src="scripts/uniconhome.js"></script>
+        <script type="module" src="scripts/products.js"></script>
         <script src="scripts/lastmodified.js" defer></script>
-        <title>Unicon aluminum and solar solution home page</title>
+        <title>Products page - Unicon aluminum and solar solution</title>
     </head>
-<body>
-    <header>
-        
-            <img src="images/unicon-alu-solar-logo.webp" alt="unicon aluminum and solar solution logo" width="90" height="90">
-            <span class="site-name">Unicon Aluminum And Solar Solution</span>
-            <button id="hambtn" class="hambtn" type="button" title="hambtn"></button>
-    </header>
-    <nav id="navbar" class="navigation">
-        <ul>
-            <li><a href="#" id="home-btn">Home</a></li>
-            <li><a href="#" id="about-btn">Our Products</a></li>
-            <li><a href="#" id="contact-btn">Contact Us</a></li>
-        </ul>
-    </nav>
+    <body>
+        <header>
+            
+                <img src="images/unicon-alu-solar-logo.webp" alt="unicon aluminum and solar solution logo" width="90" height="90">
+                <span class="site-name">Unicon Aluminum And Solar Solution</span>
+                <button id="hambtn" class="hambtn" type="button" title="hambtn"></button>
+        </header>
+        <nav id="navbar" class="navigation">
+            <ul>
+                <li><a href="index.html" target="_parent" id="home-btn">Home</a></li>
+                <li><a href="products.html" target="_parent" id="about-btn">Our Products</a></li>
+                <li><a href="#" target="_self" id="contact-btn">Contact Us</a></li>
+            </ul>
+        </nav>
 
-    <main></main>
-    <footer>
+        <main class="contact-main">
+            <h1 class="contacth1"></h1>
+            <form action="thanks.html" method="GET" id="request-form" class="request-form">
+                <h2>Request Form</h2>
+
+
+                <fieldset class="cinfo">
+                    <legend>Customer's Information</legend>
+                    <label for="first-name" class="fname-label">
+                        <span class="fname-span">Your First Name: <strong class="req">&#10033</strong></span>
+                        <input type="text" id="first-name" name="first-name" placeholder="Please Enter You Given Name" autocomplete="given-name" title="E.g; Dr." required>
+                    </label>
+
+                    <label for="last-name" class="lname-label">
+                        <span class="lname-span">Your Last Name: <strong class="req">&#10033</strong></span>
+                        <input type="text" id="last-name" name="last-name" class="last-name" placeholder="Please Enter You Family Name" autocomplete="family-name" title="No title" required>
+                    </label>
+
+                    <label for="email" class="email=label">
+                        <span class="email-span">Your Email: <strong class="req">&#10033</strong></span>
+                        <input type="email" class="email" id="email" name="email" title="email" autocomplete="email" placeholder="example@email.com" required>
+                    </label>
+
+                    <label for="phone" class="phone-label">
+                        <span class="phone-span">Phone: <strong class="req">&#10033</strong></span>
+                        <input type="tel" name="phone" id="phone" class="phone" title="+234-XXX-XXX-XXXX" required autocomplete="tel">
+                    </label>
+                </fieldset>
+
+
+                <fieldset class="roof-info">
+                    <legend>Make Your Request <strong class="req">&#10033</strong></legend>
+
+                    <label for="lonspan" class="radio-btn">
+                        <span class="roof-span">Lonspan:</span>
+                        <input type="radio" id="lonspan" name="roof" value="lonspan" required>
+                    </label>
+
+                    <label for="metcopo" class="radio-btn">
+                        <span class="metcopo-span">Metcopo:</span>
+                        <input type="radio" id="metcopo" name="roof" value="metcopo" required>
+                    </label>
+
+                    <label for="steptile" class="radio-btn">
+                        <span class="steptile-span">Steptile:</span>
+                        <input type="radio" id="steptile" name="roof" value="steptile" required>
+                    </label>
+
+                    <label for="shingo" class="radio-btn">
+                        <span class="shingo-span">Metro Shingo</span>
+                        <input type="radio" id="shingo" name="roof" value="shingo" required>
+                    </label>
+
+                    <label for="classic" class="radio-btn">
+                        <span class="classic-span">Metro Classic:</span>
+                        <input type="radio" id="classic" name="roof" value="classic" required>
+                    </label>
+
+                    <label for="bond" class="radio-btn">
+                        <span class="bond-span">Metro Bond:</span>
+                        <input type="radio" id="bond" name="roof" value="bond" required>
+                    </label>
+
+                    <label for="roof-color" class="similar">
+                        <span class="color-span">Pick Roof Color: <strong class="req">&#10033</strong></span>
+                        <select name="roof-color" id="roof-color" required>
+                            <option value="none">Click Here</option>
+                            <option value="bush-green">Bush-green</option>
+                            <option value="greybedge">Greybedge</option>
+                            <option value="ocean-blue">Ocean Blue</option>
+                            <option value="nul-brown">NulBrown</option>
+                            <option value="jet-black">Jet Black</option>
+                            <option value="wine-red">Wine Red</option>
+                            <option value="t-red">Taracuta Red</option>
+                            <option value="stucco">Stucco</option>
+                        </select>
+                    </label>
+
+                    <label for="guage" class="similar">
+                        <span class="guage-span">Pick Roof Guage: <strong class="req">&#10033</strong></span>
+                        <select name="guage" id="guage" required>
+                            <option value="none">Click Here</option>
+                            <option value="0.4" >0.40mm</option>
+                            <option value="0.45">0.45mm</option>
+                            <option value="0.5">0.50mm</option>
+                            <option value="0.55">0.55mm</option>
+                            <option value="0.7">0.70mm</option>
+                        </select>
+                    </label>
+                    <label for="total-meter" class="similar">
+                        <span>Enter Total Meters: <strong class="req">&#10033</strong></span>
+                        <input type="number" id="total-meter" name="total-meter" value="total-meter" required>
+                    </label>
+
+                    <label for="more-roof-info" class="similar">
+                        <span class="more-info-span">Enter More Roof Information:</span>
+                        <textarea name="more-roof-info" id="more-roof-info" class="more-info" placeholder="Feel free to provide more information about your roof."></textarea>
+                    </label>
+                </fieldset>
+
+                <label for="submit">
+                    <button type="submit" name="submit" id="submit" class="submit">Request My Products</button>
+                </label>
+            </form>
+
+<!--------------------------------------------Dialog box------------------------>
+
+            <dialog id="dialog-details">
+                <div id="modal-box" class="modal-box"></div>
+                <button id="close-dialog" class="close-dialog" type="button"></button>
+            </dialog>
+        </main>
+        <footer>
         <div>
             <p class="cousreBox"> <span class="Institution"> Brigham Young University Idaho. U.S.A</span> <span class="course">WDD231 - Web Front-End Developement</span></p>
             <div class="social">
@@ -61,6 +173,6 @@
             <!--<p>Links to more projects photos</p>-->
             <div class="wireframe-box"><ol><li class="wide"><a href="images/wdd231-final-project-wirefram-wide.webp" target="_blank">Wireframe for wide view</a></li><li class="small"><a href="images/wdd231-final-project-wirefram-mobile-view.webp" target="_blank">Wireframe for small view</a></li></ol></div>
         </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

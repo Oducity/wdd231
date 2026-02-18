@@ -20,7 +20,7 @@ header {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     border: var(--common-border);
-    border-radius: 12px;
+    border-radius: .8rem;
     background-color: var(--light-blue);
     padding-top: 10px;
 }
@@ -78,12 +78,14 @@ header span {
     height: 38px;
     background-color: var(--purple-color);
     color: var(--actionbtn-txt);
+    border: var(--common-border);
+    
 }
 
 .navigation ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     height: 44px;
 }
 
@@ -114,8 +116,9 @@ header span {
     margin: 0 2px;
 }
 
-.home-main {
+main {
     border: var(--common-border);
+    border-radius: .8rem;
 }
 
 .intro-div {
@@ -190,6 +193,8 @@ footer {
     display: grid;
     padding: 12px;
     background-color: var(--light-blue);
+    border: var(--common-border);
+    border-radius: .8rem;
 }
 
 footer div {
@@ -293,3 +298,80 @@ footer .w3c {
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
+/*************************** Contact ***************************/
+.contact-main {
+    display: grid;
+    padding: 0;
+    background-color: var(--light-blue);
+    grid-template-areas: 
+    "h1"
+    "form"
+    "more";
+}
+
+h2 {
+    color: var(--dark-red);
+
+}
+.contact-main form {
+    grid-area: form;
+    background-color: var(--light-blue);
+    width: 100%;
+    padding: 12px;
+    border: var(--common-border);
+    border-radius: .8rem;
+}
+
+.contact-main .req {
+    color: var(--bright-red);
+}
+
+.cinfo, .roof-info {
+    width: 100%;
+    max-width: 40rem; 
+}
+
+.contact-main fieldset {
+    display: grid;
+    font-size: 1.3rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.cinfo label, .roof-info .similar {
+    margin: .6rem 0 .6rem 0;
+}
+
+.cinfo input, #roof-color, #total-meter, #guage, #phone {
+    font-size: 1.2rem;
+    height: 2.8rem;
+    padding: .8rem .8rem 0 .8rem;
+    border-radius: 5px;
+}
+
+.radio-btn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: .8rem;
+}
+
+.contact-main textarea {
+    min-height: 6rem;
+    font-size: 1.2rem;
+}
+
+button[type=submit] {
+    width: 100%;
+    margin-left: 1rem;
+    max-width: 38rem;
+    font-size: 1.8rem;
+    border: .3rem solid var(--blue-color);
+    border-radius: .8rem;
+    color: var(--actionbtn-txt);
+    background-color: var(--bright-red);
+}
+
+
+
+
+

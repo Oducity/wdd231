@@ -1,13 +1,17 @@
 @media screen and (min-width: 64rem) {
-
+    header {
+        display: flex;
+    }
     header img {
-        grid-column: 1/2;
         margin: 10px;
     }
 
     header span {
-        grid-column: 2/7;
         margin-top: 30px;
+    }
+
+    header .hambtn {
+        margin-right: 1rem;
     }
 
     .home-cards {
