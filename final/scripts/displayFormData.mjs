@@ -72,6 +72,12 @@ export function displayFormData(data) {
     totalMeter.setAttribute("class", "total");
     totalMeter.innerHTML = `<strong>Total Meter</strong>: ${meterValue} meters`;
     materialBox.appendChild(totalMeter);
+
+    const timeStamp = document.createElement("p");
+    timeStamp.setAttribute("class", "form-time");
+    const timeStampValue = data.get("timestamp");
+    timeStamp.innerHTML = `You place your request on ${timeStampValue}`;
+    materialBox.appendChild(timeStamp);
     
 
     confirmBox.appendChild(cusBox)
