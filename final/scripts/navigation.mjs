@@ -20,7 +20,7 @@ export function createWayFinder() {
     } else if (document.querySelector(".contact-btn")) {
         h1.innerText = document.querySelector("#contact-btn").innerText;
     } else {
-        h1.innerText = "Congratulations! Request Completed";
+        h1.innerText = "Congratulations! Request Sent";
     }
     navList.forEach(navItem => {
         navItem.addEventListener("click", () => {
