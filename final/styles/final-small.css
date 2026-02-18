@@ -393,6 +393,10 @@ button[type=submit] {
     font-size: 1.8rem;
 }
 
+#timestamp-label {
+    display: none;
+}
+
 /******************* Thanks page **********************/
 .confirm-box {
     padding: .8rem;
