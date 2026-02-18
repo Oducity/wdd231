@@ -11,16 +11,16 @@ export function displayFormData(data) {
     infoRecieved.innerText = `Information received is as follows;`;
     confirmBox.appendChild(infoRecieved);
 
-    const firstH2 = document.createElement("h2");
-    firstH2.innerText = "Personal Information";
-    confirmBox.appendChild(firstH2);
-
 
     const cusBox = document.createElement("section");
     cusBox.setAttribute("class", "cusbox");
 
-    const firstName = data.get(`first-name`);
-    const lastName = data.get(`last-name`);
+    const firstH2 = document.createElement("h2");
+    firstH2.innerText = "Your Information";
+    cusBox.appendChild(firstH2);
+
+    const firstName = data.get(`firstname`);
+    const lastName = data.get(`lastname`);
     const cusNameH2 = document.createElement("p");
     cusNameH2.setAttribute("class", "name-head");
     cusNameH2.innerHTML = `<strong>Full Name</strong>: ${firstName} ${lastName}`;
@@ -46,7 +46,7 @@ export function displayFormData(data) {
 
     const materialH2 = document.createElement("h2");
     materialH2.setAttribute("class", "mat-head");
-    materialH2.innerText = `Requested Materials`;
+    materialH2.innerText = `Your Requested Materials`;
     materialBox.appendChild(materialH2);
 
     const materialType = data.get(`roof`);
@@ -64,7 +64,7 @@ export function displayFormData(data) {
     const guageValue = data.get(`guage`);
     const guage = document.createElement("p");
     guage.setAttribute("class", "guage");
-    guage.innerHTML = `<strong>Guage</strong>: ${guageValue}`;
+    guage.innerHTML = `<strong>Guage</strong>: ${guageValue}mm`;
     materialBox.appendChild(guage);
 
     const meterValue = data.get(`total-meter`);

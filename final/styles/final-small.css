@@ -371,6 +371,23 @@ button[type=submit] {
     background-color: var(--bright-red);
 }
 
+/******************* Contact **********************/
+.confirm-box {
+    padding: .8rem;
+}
+
+.confirm-box section {
+    border: var(--common-border);
+    animation: productCardsAnimation 2s ease-in-out infinite alternate;
+    box-shadow: 1px 1px 8px 4px var(--purple-color);
+}
+
+.confirm-box .cusbox {
+    margin-bottom: .8rem;
+}
+.confirm-box h2 {
+    margin: .8rem .8rem 0 .8rem;
+}
 
 
 
