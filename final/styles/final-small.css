@@ -144,6 +144,7 @@ h1 {
     grid-column: 1/5;
     padding-left: 12px;
     color: var(--dark-red);
+    font-family: "Sofia", sans-serif;
 }
 
 .intro-div p {
@@ -300,21 +301,22 @@ footer .w3c {
 }
 
 /*************************** Contact ***************************/
-.contact-main {
+.contact-div {
     display: grid;
     padding: 0;
     background-color: var(--light-blue);
     grid-template-areas: 
-    "h1"
     "form"
     "more";
 }
 
 h2 {
     color: var(--dark-red);
+    font-family: "Sofia", sans-serif;
+    font-size: 1.7rem;
 
 }
-.contact-main form {
+.contact-div form {
     grid-area: form;
     background-color: var(--light-blue);
     width: 100%;
@@ -323,7 +325,14 @@ h2 {
     border-radius: .8rem;
 }
 
-.contact-main .req {
+.detail-cards {
+    grid-area: more;
+    border: var(--common-border);
+    border-radius: .8rem;
+    padding: .8rem;
+}
+
+.contact-div .req {
     color: var(--bright-red);
 }
 
@@ -332,7 +341,7 @@ h2 {
     max-width: 40rem; 
 }
 
-.contact-main fieldset {
+.contact-div fieldset {
     display: grid;
     font-size: 1.3rem;
     margin: 1rem 0 1rem 0;
@@ -351,11 +360,11 @@ h2 {
 
 .radio-btn {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: .8rem;
 }
 
-.contact-main textarea {
+.contact-div textarea {
     min-height: 6rem;
     font-size: 1.2rem;
 }
@@ -371,7 +380,20 @@ button[type=submit] {
     background-color: var(--bright-red);
 }
 
-/******************* Contact **********************/
+.detail-cards div {
+    border: var(--common-border);
+    padding: .8rem;
+    border-radius: .6rem;
+    margin: .8rem 0;
+    animation: productCardsAnimation 2s ease-in-out infinite alternate;
+    box-shadow: 2px 2px 2px 2px var(--purple-color);
+}
+
+.detail-cards div p {
+    font-size: 1.8rem;
+}
+
+/******************* Thanks page **********************/
 .confirm-box {
     padding: .8rem;
 }
@@ -388,6 +410,7 @@ button[type=submit] {
 .confirm-box h2 {
     margin: .8rem .8rem 0 .8rem;
 }
+
 
 
 

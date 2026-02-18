@@ -36,4 +36,19 @@
         ;
         animation: productCardsAnimation 2s ease-in-out infinite alternate;
     }
+
+    
+/******************* Contact page*********************/
+
+    .contact-div {
+        display: grid;
+        grid-template-areas: 
+        "form more";
+    }
+
+    .radio-btn {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: .8rem;
+    }
 }

@@ -4,6 +4,12 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .radio-btn {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: .8rem;
+    }
+
     .products h2 {
         grid-column: 1/3;
     }
