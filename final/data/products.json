@@ -5,7 +5,7 @@
             "category": "window",
             "size": "1800mm by 1200mm",
             "profilecolor": "white",
-            "type": "Rest Room",
+            "type": "Sitting Room",
             "glass" : ["thickness: 5mm", "color: blue"],
             "imageurl": "../final/images/slidding-window-cream-small.webp"
         },
@@ -14,7 +14,7 @@
             "category": "window",
             "size": "1200mm by 1200mm",
             "profilecolor": "Black",
-            "type": "Sitting Room",
+            "type": "Sitting Room and Bedroom",
             "glass" : ["thickness: 6mm", "color: blue"],
             "imageurl": "../final/images/window-small.webp"
         },
@@ -23,7 +23,7 @@
             "category": "window",
             "size": "1000mm by 1000mm",
             "profilecolor": "Black",
-            "type": "Rest Room & Kitchen Room",
+            "type": "Restroom & Kitchen Room",
             "glass" : ["thickness: 6mm", "color: blue"],
             "imageurl": "../final/images/window-small1.webp"
         },
@@ -32,7 +32,7 @@
             "category": "window",
             "size": "700mm by 600mm",
             "profilecolor": "Black",
-            "type": "Rest Room",
+            "type": "Restroom",
             "glass" : ["thickness: 6mm", "color: blue"],
             "imageurl": "../final/images/windowonconstruction-small.webp"
         }
