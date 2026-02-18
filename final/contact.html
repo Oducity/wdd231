@@ -132,8 +132,8 @@
                             </select>
                         </label>
                         <label for="total-meter" class="similar">
-                            <span>Enter Total Meters: <strong class="req">&#10033</strong></span>
-                            <input type="number" id="total-meter" name="total-meter" value="total-meter" required>
+                            <span>Enter Total Meters:(min 10) <strong class="req">&#10033</strong></span>
+                            <input type="number" id="total-meter" name="total-meter" min="10" required>
                         </label>
 
                         <label for="more-roof-info" class="similar">
@@ -142,9 +142,14 @@
                         </label>
                     </fieldset>
 
+                    <label for="timestamp">
+                        <input id="timestamp" name="timestamp" title="timestamp">
+                    </label>
+
                     <label for="submit">
                         <button type="submit" name="submit" id="submit" class="submit">Request My Products</button>
                     </label>
+                    
                 </form>
                 
                 <section id="detail-cards" class="detail-cards">

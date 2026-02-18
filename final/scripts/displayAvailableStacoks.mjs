@@ -1,11 +1,4 @@
-import { lonspan } from "../data/stocks.mjs";
-import { steptiles } from "../data/stocks.mjs";
-import { metcopo } from "../data/stocks.mjs";
-import { metroShingo } from "../data/stocks.mjs";
-import { metroBond } from "../data/stocks.mjs";
-import { metroClassic } from "../data/stocks.mjs";
-
-
+//This file display available stock to the contact us page.
 
 export function displayAvailableStocks(stocks) {
     const cards = document.querySelector("#detail-cards");
@@ -33,4 +26,5 @@ export function displayAvailableStocks(stocks) {
         cards.appendChild(card);
 
     });
-}
+};
+

@@ -8,6 +8,9 @@ import { metroBond } from "../data/stocks.mjs";
 import { metroClassic } from "../data/stocks.mjs";
 import { metroShingo } from "../data/stocks.mjs";
 import { displayAvailableStocks } from "./displayAvailableStacoks.mjs";
+import { computeTimeStamp } from "./timeStamp.mjs";
+import { checkPositiveInput } from "./checkPositiveInput.mjs";
+const timeStampInput = document.querySelector("#timestamp-input");
 
 
 toggleHamBtn();
@@ -18,3 +21,6 @@ displayAvailableStocks(metcopo);
 displayAvailableStocks(metroBond);
 displayAvailableStocks(metroClassic);
 displayAvailableStocks(metroShingo);
+checkPositiveInput();
+
+timeStampInput.value = computeTimeStamp();
