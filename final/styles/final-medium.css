@@ -1,4 +1,13 @@
 @media screen and (min-width: 44rem) {
+
+    #hambtn {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
     .products section {
         display: grid;
         grid-template-columns: 1fr 1fr;

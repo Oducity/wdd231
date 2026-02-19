@@ -16,7 +16,7 @@ export function displayAvailableStocks(stocks) {
         const button = document.createElement("button");
         button.setAttribute("class", "actionBtn");
         button.setAttribute("type", "button");
-        button.setAttribute("id", "more-button");
+        button.setAttribute("id", stockName);
         button.setAttribute("name", "more-button");
         button.innerText = "Show Details";
 

@@ -10,6 +10,9 @@ import { metroShingo } from "../data/stocks.mjs";
 import { displayAvailableStocks } from "./displayAvailableStacoks.mjs";
 import { computeTimeStamp } from "./timeStamp.mjs";
 import { checkPositiveInput } from "./checkPositiveInput.mjs";
+
+
+
 const timeStampInput = document.querySelector("#timestamp-input");
 
 
@@ -22,5 +25,12 @@ displayAvailableStocks(metroBond);
 displayAvailableStocks(metroClassic);
 displayAvailableStocks(metroShingo);
 checkPositiveInput();
+//displayProductDetails(lonspan);
+
 
 timeStampInput.value = computeTimeStamp();
+
+
+
+
+
