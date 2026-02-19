@@ -338,6 +338,8 @@ h2 {
     border: var(--common-border);
     border-radius: .8rem;
     padding: .8rem;
+    max-width: 35.5rem;
+    margin-left: 0;
 }
 
 .contact-div .req {
@@ -386,12 +388,6 @@ button[type=submit] {
     border-radius: .5rem;
     color: var(--actionbtn-txt);
     background-color: var(--bright-red);
-}
-
-.detail-cards {
-    max-width: 35.5rem;
-    margin-left: 0;
-    
 }
 
 .detail-cards div {
