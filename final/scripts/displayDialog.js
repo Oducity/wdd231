@@ -1,22 +1,3 @@
-import { lonspan, steptiles, metcopo, metroBond, metroShingo, metroClassic } from "../data/stocks.mjs";
-
-const lonspanBtn = document.getElementById("lonspan");
-const steptilesBtn = document.querySelector("#steptiles");
-const metcopoBtn = document.querySelector("#metcopo");
-const metroBondBtn = document.querySelector("#Bond");
-const metroClassicBtn = document.querySelector("#Classic");
-const metroShingoBtn = document.querySelector("#Shingo");
-const modalDialog = document.querySelector("#dialog-details");
-const closeDialog = document.querySelector("#close-dialog");
-closeDialog.innerText = `\u274C`;
-
-
-
-//steptilesBtn
-//metcopoBtn
-//metroBondBtn
-//metroClassicBtn
-//metroShingoBtn
 
 function displayProductDetails(products) {
     const modalBox = document.querySelector("#modal-box");
@@ -45,5 +26,5 @@ lonspanBtn.addEventListener("click", (lonspan) => {
 });
 
 closeDialog.addEventListener("click", () => {
-    modalDialog.close();
+    
 });

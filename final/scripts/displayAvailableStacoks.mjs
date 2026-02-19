@@ -1,5 +1,7 @@
 //This file display available stock to the contact us page.
 
+
+
 export function displayAvailableStocks(stocks) {
     const cards = document.querySelector("#detail-cards");
 

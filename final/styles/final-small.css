@@ -308,6 +308,7 @@ footer .w3c {
     grid-template-areas: 
     "form"
     "more";
+    
 }
 
 h2 {
@@ -378,6 +379,12 @@ button[type=submit] {
     border-radius: .8rem;
     color: var(--actionbtn-txt);
     background-color: var(--bright-red);
+}
+
+.detail-cards {
+    max-width: 35.5rem;
+    margin-left: 0;
+    
 }
 
 .detail-cards div {
