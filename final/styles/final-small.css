@@ -317,6 +317,8 @@ h2 {
 
 }
 .contact-div form {
+    display: grid;
+    justify-content: left;
     grid-area: form;
     background-color: var(--light-blue);
     width: 100%;
@@ -371,8 +373,6 @@ h2 {
 
 button[type=submit] {
     width: 100%;
-    margin-left: 1rem;
-    max-width: 38rem;
     font-size: 1.8rem;
     border: .3rem solid var(--blue-color);
     border-radius: .8rem;
