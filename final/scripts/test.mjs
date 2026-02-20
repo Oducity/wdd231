@@ -1,1 +1,0 @@
-const products = `../final/data/products.mjs`
