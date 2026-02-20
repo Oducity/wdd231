@@ -8,9 +8,7 @@ export function displayHeroImage(images){
         const heroBoxInner = document.querySelector("#hero-box-inner");
 
         const randomIndex = Math.floor(Math.random() *  images.length);
-        console.log(randomIndex);
         const randItem = images[randomIndex];
-        console.log(randItem);
 
         const img = document.createElement("img");
         img.setAttribute("SRC", randItem.imageurl);
