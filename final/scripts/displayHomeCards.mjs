@@ -11,9 +11,7 @@ export function displayHomeCards(jobs) {
 
     const h2 = document.createElement("h2");
     const randomIndex = Math.floor(Math.random() *  jobs.length);
-    console.log(randomIndex);
     const randItem = jobs[randomIndex];
-    console.log(randItem);
     h2.innerText = randItem.name;
     section.appendChild(h2);
 
