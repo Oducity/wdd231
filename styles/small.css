@@ -249,7 +249,8 @@ div {
 .cse210-course-card,
 .wdd130-course-card,
 .wdd131-course-card,
-.wdd231-course-card {
+.wdd231-course-card,
+.wdd330-course-card {
 margin-bottom: 1rem;
 text-align: center;
 }
@@ -268,7 +269,8 @@ text-align: center;
 .cse210-info,
 .wdd130-info,
 .wdd131-info,
-.wdd231-info {
+.wdd231-info,
+.wdd330-info {
     display: none;
 }
 
@@ -283,7 +285,8 @@ text-align: center;
 .cse210-info.cse-two-ten-info,
 .wdd130-info.wdd-one-thirty-info,
 .wdd131-info.wdd-one-three-one-info,
-.wdd231-info.wdd-two-three-one-info {
+.wdd231-info.wdd-two-three-one-info,
+.wdd330-info.wdd-three-thirty-info {
     display: block;
     line-height: 2rem;
 }
