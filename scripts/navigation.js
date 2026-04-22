@@ -115,7 +115,7 @@ const courses = [
       "This course builds on prior experience with Frontend Web Development I and programming. Students will focus on user experience, accessibility, compliance, performance optimization, colaborative work, serious DOM manipulation, bugs fixing, site deployment, third-party APIs usage, CI/CD.",
     technology: ["HTML", "CSS", "JavaScript", "Vite", "Git", "Render", "trello"],
     completed: true,
-  },
+  }
 ];
 
 
