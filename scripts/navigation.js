@@ -246,5 +246,5 @@ wddTwoThreeOne.addEventListener("click", () => {
 });
 
 wddThreeThirty.addEventListener("click", () => {
-    wddThreeThirtyInfo.classList.toggle("wdd-three-thirty");
+    wddThreeThirtyInfo.classList.toggle("wdd-three-thirty-info");
 })
